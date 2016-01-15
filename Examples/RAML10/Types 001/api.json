@@ -43,7 +43,55 @@
                                 }
                             }
                         }
+                    },
+                    "responses": {
+                        "204": {
+                            "body": {
+                                "application/json": {
+                                    "type": "User"
+                                }
+                            }
+                        }
                     }
+                }
+            ],
+            "resources": [
+                {
+                    "relativeUri": "/{id}",
+                    "relativeUriPathSegments": [
+                        "{id}"
+                    ],
+                    "uriParameters": {
+                        "id": {
+                            "type": "string",
+                            "displayName": "id",
+                            "required": true
+                        }
+                    },
+                    "methods": [
+                        {
+                            "method": "get",
+                            "protocols": [
+                                "HTTP"
+                            ],
+                            "responses": {
+                                "200": {
+                                    "body": {
+                                        "application/json": {
+                                            "type": "Team"
+                                        }
+                                    }
+                                },
+                                "404": {
+                                    "body": {
+                                        "text/plain": {
+                                            "type": "object"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
                 }
             ]
         },
@@ -115,7 +163,7 @@
     "types": {
         "Address": {
             "type": "object",
-            "example": "{\r\n  \"country\": \"US\",\r\n  \"city\": \"SF\",\r\n  \"street\": \"Geary Street\",\r\n  \"house\": \"77, Suite 400\",\r\n  \"zip\": 94108\r\n}\r\n",
+            "example": "{\n  \"country\": \"US\",\n  \"city\": \"SF\",\n  \"street\": \"Geary Street\",\n  \"house\": \"77, Suite 400\",\n  \"zip\": 94108\n}\n",
             "properties": {
                 "country": {
                     "type": "string",
