@@ -1,0 +1,237 @@
+{
+    "title": "TCK Sample. RAML 1.0 Types 001.",
+    "version": "v1",
+    "baseUri": "http://api.samplehost.com/{version}",
+    "protocols": [
+        "HTTP"
+    ],
+    "resources": [
+        {
+            "relativeUri": "/teams",
+            "relativeUriPathSegments": [
+                "teams"
+            ],
+            "methods": [
+                {
+                    "method": "get",
+                    "protocols": [
+                        "HTTP"
+                    ],
+                    "responses": {
+                        "200": {
+                            "body": {
+                                "application/xml": {
+                                    "type": "Team[]"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "method": "post",
+                    "description": "create new team with desired title",
+                    "protocols": [
+                        "HTTP"
+                    ],
+                    "body": {
+                        "applciation/json": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string",
+                                    "pattern": "[A-Z][a-z]*"
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "relativeUri": "/users",
+            "relativeUriPathSegments": [
+                "users"
+            ],
+            "methods": [
+                {
+                    "method": "get",
+                    "protocols": [
+                        "HTTP"
+                    ],
+                    "responses": {
+                        "200": {
+                            "body": {
+                                "application/json": {
+                                    "type": "User[]"
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "relativeUri": "/users/{id}",
+            "relativeUriPathSegments": [
+                "users",
+                "{id}"
+            ],
+            "uriParameters": {
+                "id": {
+                    "type": "string",
+                    "displayName": "id",
+                    "required": true
+                }
+            },
+            "methods": [
+                {
+                    "method": "get",
+                    "protocols": [
+                        "HTTP"
+                    ],
+                    "responses": {
+                        "200": {
+                            "body": {
+                                "application/json": {
+                                    "type": "User"
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "baseUriParameters": {
+        "version": {
+            "type": "string",
+            "displayName": "version",
+            "required": true,
+            "enum": [
+                "v1"
+            ]
+        }
+    },
+    "types": {
+        "Address": {
+            "type": "object",
+            "example": "{\r\n  \"country\": \"US\",\r\n  \"city\": \"SF\",\r\n  \"street\": \"Geary Street\",\r\n  \"house\": \"77, Suite 400\",\r\n  \"zip\": 94108\r\n}\r\n",
+            "properties": {
+                "country": {
+                    "type": "string",
+                    "enum": [
+                        "US",
+                        "ARG",
+                        "RUS",
+                        "GB"
+                    ]
+                },
+                "city": {
+                    "type": "string"
+                },
+                "street": {
+                    "type": "string"
+                },
+                "house": {
+                    "type": "string"
+                },
+                "zip": {
+                    "type": "number"
+                }
+            }
+        },
+        "Email": {
+            "type": "string",
+            "example": "press@mulesoft.com",
+            "minLength": 15,
+            "maxLength": 64,
+            "pattern": "[a-zA-Z0-9\\.]{1-32}@[a-zA-Z0-9]+\\.com"
+        },
+        "User": {
+            "type": "object",
+            "facets": {
+                "role": {
+                    "type": "string",
+                    "default": "user",
+                    "enum": [
+                        "user",
+                        "manager",
+                        "admin",
+                        "super-admin"
+                    ]
+                }
+            },
+            "properties": {
+                "id": {
+                    "type": "number"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "Email"
+                },
+                "phone": {
+                    "type": "string",
+                    "optional": true,
+                    "minLength": 14,
+                    "maxLength": 14
+                },
+                "address": {
+                    "type": "Address",
+                    "optional": true
+                }
+            }
+        },
+        "Manager": {
+            "type": "User",
+            "fixedFacets": {
+                "role": "manager"
+            }
+        },
+        "Admin": {
+            "type": "User",
+            "fixedFacets": {
+                "role": "admin"
+            }
+        },
+        "SuperAdmin": {
+            "type": "Admin"
+        },
+        "Team": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "number"
+                },
+                "title": {
+                    "type": "string",
+                    "pattern": "[A-Z][a-z]*"
+                },
+                "manager": {
+                    "type": "Manager"
+                },
+                "admin": {
+                    "type": "Admin|SuperAdmin"
+                },
+                "members": {
+                    "type": "User[]"
+                },
+                "info": {
+                    "type": "object",
+                    "properties": {
+                        "address": {
+                            "type": "Address"
+                        },
+                        "email": {
+                            "type": "Email"
+                        },
+                        "size": {
+                            "type": "number"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
