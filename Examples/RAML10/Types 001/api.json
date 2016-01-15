@@ -221,13 +221,13 @@
                 },
                 "phone": {
                     "type": "string",
-                    "optional": true,
+                    "required": false,
                     "minLength": 14,
                     "maxLength": 14
                 },
                 "address": {
                     "type": "Address",
-                    "optional": true
+                    "required": false
                 }
             }
         },
