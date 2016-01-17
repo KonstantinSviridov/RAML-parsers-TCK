@@ -1,0 +1,91 @@
+{
+    "title": "TCK Sample. RAML 1.0 Annotations 001.",
+    "version": "v1",
+    "baseUri": "http://api.samplehost.com/{version}",
+    "protocols": [
+        "HTTP"
+    ],
+    "resources": [
+        {
+            "relativeUri": "/helloWorld",
+            "relativeUriPathSegments": [
+                "helloWorld"
+            ],
+            "methods": [
+                {
+                    "annotations": {
+                        "simpleAnnotation": {
+                            "value": "simpleAnnotation_value_on_method"
+                        },
+                        "objectAnnotation": {
+                            "property1": {
+                                "field2": "19"
+                            }
+                        }
+                    },
+                    "method": "get",
+                    "protocols": [
+                        "HTTP"
+                    ]
+                }
+            ]
+        }
+    ],
+    "baseUriParameters": {
+        "version": {
+            "type": "string",
+            "displayName": "version",
+            "required": true,
+            "enum": [
+                "v1"
+            ]
+        }
+    },
+    "types": {
+        "MyType": {
+            "annotations": {
+                "simpleAnnotation": {
+                    "value": "simpleAnnotation_value_on_type"
+                },
+                "objectAnnotation": {
+                    "property2": "baseProperty2_value",
+                    "property1": {
+                        "field1": "field1_value",
+                        "field2": "15"
+                    }
+                }
+            },
+            "type": "string"
+        }
+    },
+    "annotationTypes": {
+        "simpleAnnotation": {
+            "type": "string",
+            "minLength": 8,
+            "maxLength": 64,
+            "pattern": "[a-zA-Z0-9]{8,32}"
+        },
+        "objectAnnotation": {
+            "type": "object",
+            "properties": {
+                "property1": {
+                    "type": "object",
+                    "properties": {
+                        "field1": {
+                            "type": "string",
+                            "required": false
+                        },
+                        "field2": {
+                            "type": "number"
+                        }
+                    }
+                },
+                "property2": {
+                    "type": "string",
+                    "required": false
+                }
+            },
+            "allowMultiple": true
+        }
+    }
+}
