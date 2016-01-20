@@ -1,30 +1,9 @@
 {
     "types": {
-        "MyType": {
-            "annotations": {
-                "simpleAnnotation": "simpleAnnotation_value_on_type",
-                "objectAnnotation": {
-                    "property2": "baseProperty2_value",
-                    "property1": {
-                        "field1": "field1_value",
-                        "field2": "15"
-                    }
-                }
-            },
-            "type": "string"
-        }
-    },
-    "annotationTypes": {
-        "simpleAnnotation": {
-            "type": "string",
-            "minLength": 8,
-            "maxLength": 64,
-            "pattern": "[a-zA-Z0-9]{8,32}"
-        },
-        "objectAnnotation": {
+        "baseAnnotation": {
             "type": "object",
             "properties": {
-                "property1": {
+                "baseProperty1": {
                     "type": "object",
                     "properties": {
                         "field1": {
@@ -36,15 +15,50 @@
                         }
                     }
                 },
-                "property2": {
+                "baseProperty2": {
                     "type": "string",
                     "required": false
                 }
+            }
+        },
+        "MyType": {
+            "annotations": {
+                "childAnnotation": {
+                    "baseProperty2": "baseProperty2_value",
+                    "childProperty1": "enum_value1",
+                    "childProperty2": "17",
+                    "baseProperty1": {
+                        "field1": "field1_value",
+                        "field2": "15"
+                    }
+                }
             },
-            "allowMultiple": true
+            "type": "string"
         }
     },
-    "title": "TCK Sample. RAML 1.0 Annotations 001.",
+    "annotationTypes": {
+        "childAnnotation": {
+            "type": "baseAnnotation",
+            "properties": {
+                "childProperty1": {
+                    "type": "string",
+                    "default": "enum_defaultValue",
+                    "enum": [
+                        "enum_defaultValue",
+                        "enum_value1",
+                        "enum_value2"
+                    ]
+                },
+                "childProperty2": {
+                    "type": "number",
+                    "required": false,
+                    "default": 22
+                }
+            },
+            "allowMultiple": null
+        }
+    },
+    "title": "TCK Sample. RAML 1.0 Annotations 002.",
     "version": "v1",
     "baseUri": "http://api.samplehost.com/{version}",
     "protocols": [
@@ -59,9 +73,9 @@
             "methods": [
                 {
                     "annotations": {
-                        "simpleAnnotation": "simpleAnnotation_value_on_method",
-                        "objectAnnotation": {
-                            "property1": {
+                        "childAnnotation": {
+                            "childProperty1": "enum_value2",
+                            "baseProperty1": {
                                 "field2": "19"
                             }
                         }

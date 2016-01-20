@@ -1,0 +1,218 @@
+{
+    "uses": [
+        {
+            "usage": "Data types and annotation types for AWS API Gateway",
+            "types": {
+                "amazon-apigateway-method": {
+                    "type": "string",
+                    "example": "POST",
+                    "enum": [
+                        "GET",
+                        "PATCH",
+                        "PUT",
+                        "POST",
+                        "DELETE"
+                    ]
+                },
+                "amazon-apigateway-status": {
+                    "type": "string",
+                    "pattern": "^[12345]\\d\\d$"
+                },
+                "amazon-apigateway-templates": {
+                    "type": "object",
+                    "properties": {
+                        "[\\w+/\\w+]": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "amazon-apigateway-auth-type": {
+                    "type": "string",
+                    "enum": [
+                        "aws_iam"
+                    ]
+                },
+                "amazon-apigateway-integration-lambda": {
+                    "type": "object",
+                    "properties": {
+                        "type": {
+                            "type": "string",
+                            "enum": [
+                                "lambda"
+                            ]
+                        }
+                    }
+                },
+                "amazon-apigateway-integration-HTTP": {
+                    "type": "object",
+                    "properties": {
+                        "type": {
+                            "type": "string",
+                            "enum": [
+                                "HTTP"
+                            ]
+                        }
+                    }
+                },
+                "amazon-apigateway-integration-mock": {
+                    "type": "object",
+                    "properties": {
+                        "type": {
+                            "type": "string",
+                            "enum": [
+                                "mock"
+                            ]
+                        }
+                    }
+                },
+                "amazon-apigateway-integration-aws": {
+                    "type": "object",
+                    "example": "[object Object]",
+                    "properties": {
+                        "type": {
+                            "type": "string",
+                            "enum": [
+                                "aws"
+                            ]
+                        },
+                        "uri": {
+                            "type": "string"
+                        },
+                        "httpMethod": {
+                            "type": "amazon-apigateway-method"
+                        },
+                        "credentials": {
+                            "type": "string"
+                        },
+                        "requestTemplates": {
+                            "type": "amazon-apigateway-templates"
+                        },
+                        "requestParameters": {
+                            "type": "object"
+                        },
+                        "cacheNamespace": {
+                            "type": "string"
+                        },
+                        "cacheKeyParameters": {
+                            "type": "string[]"
+                        },
+                        "responses": {
+                            "type": "object",
+                            "properties": {
+                                "[]": {
+                                    "type": "object",
+                                    "properties": {
+                                        "statusCode": {
+                                            "type": "amazon-apigateway-status"
+                                        },
+                                        "responseParameters": {
+                                            "type": "object"
+                                        },
+                                        "responseTemplates": {
+                                            "type": "amazon-apigateway-templates"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "amazon-apigateway-integration": {
+                    "type": "amazon-apigateway-integration-lambda | amazon-apigateway-integration-HTTP | amazon-apigateway-integration-mock | amazon-apigateway-integration-aws"
+                }
+            },
+            "annotationTypes": {
+                "amazon-apigateway-auth": {
+                    "type": "amazon-apigateway-auth-type"
+                },
+                "amazon-apigateway-integration": {}
+            },
+            "name": "AWS"
+        }
+    ],
+    "securitySchemes": [
+        {
+            "key": {
+                "type": "Pass Through",
+                "describedBy": {
+                    "headers": {
+                        "x-api-key": {
+                            "type": "string",
+                            "displayName": "x-api-key"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "title": "API Gateway Test API",
+    "version": "1.0.0",
+    "baseUri": "https://api.uber.com",
+    "mediaType": "application/json",
+    "protocols": [
+        "HTTPS"
+    ],
+    "resources": [
+        {
+            "description": "The Products endpoint returns information about the *Uber* products\noffered at a given location. The response includes the display name\nand other details about each product, and lists the products in the\nproper display order.\n",
+            "relativeUri": "/products",
+            "relativeUriPathSegments": [
+                "products"
+            ],
+            "displayName": "Product Types",
+            "methods": [
+                {
+                    "annotations": {
+                        "AWS.amazon-apigateway-auth": "aws_iam",
+                        "AWS.amazon-apigateway-integration": {
+                            "type": "aws",
+                            "uri": "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:ACCOUNT_ID:function:myFunction/invocations",
+                            "httpMethod": "POST",
+                            "credentials": "arn:aws:iam::ACCOUNT_ID:role/lambda_exec_role",
+                            "cacheNamespace": "cache namespace",
+                            "cacheKeyParameters": null,
+                            "requestTemplates": {
+                                "[\\w+/\\w+]": "xml request template 2"
+                            },
+                            "requestParameters": {},
+                            "responses": {
+                                "2\\d{2}": {
+                                    "statusCode": "200",
+                                    "responseParameters": {},
+                                    "responseTemplates": {
+                                        "[\\w+/\\w+]": "xml 200 response template"
+                                    }
+                                },
+                                "default": {
+                                    "statusCode": "400",
+                                    "responseParameters": {},
+                                    "responseTemplates": {
+                                        "[\\w+/\\w+]": "xml 400 response template"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "queryParameters": {
+                        "latitude": {
+                            "description": "Latitude component of location",
+                            "type": "number",
+                            "required": "true",
+                            "displayName": "latitude"
+                        },
+                        "longitude": {
+                            "description": "Longitude component of location",
+                            "type": "number",
+                            "required": "true",
+                            "displayName": "longitude"
+                        }
+                    },
+                    "protocols": [
+                        "HTTPS"
+                    ],
+                    "method": "get"
+                }
+            ]
+        }
+    ]
+}

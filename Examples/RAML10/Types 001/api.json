@@ -1,165 +1,4 @@
 {
-    "title": "TCK Sample. RAML 1.0 Types 001.",
-    "version": "v1",
-    "baseUri": "http://api.samplehost.com/{version}",
-    "protocols": [
-        "HTTP"
-    ],
-    "resources": [
-        {
-            "relativeUri": "/teams",
-            "relativeUriPathSegments": [
-                "teams"
-            ],
-            "methods": [
-                {
-                    "method": "get",
-                    "protocols": [
-                        "HTTP"
-                    ],
-                    "responses": {
-                        "200": {
-                            "body": {
-                                "application/xml": {
-                                    "type": "Team[]"
-                                }
-                            }
-                        }
-                    }
-                },
-                {
-                    "method": "post",
-                    "description": "create new team with desired title",
-                    "protocols": [
-                        "HTTP"
-                    ],
-                    "body": {
-                        "applciation/json": {
-                            "type": "object",
-                            "properties": {
-                                "title": {
-                                    "type": "string",
-                                    "pattern": "[A-Z][a-z]*"
-                                }
-                            }
-                        }
-                    },
-                    "responses": {
-                        "204": {
-                            "body": {
-                                "application/json": {
-                                    "type": "User"
-                                }
-                            }
-                        }
-                    }
-                }
-            ],
-            "resources": [
-                {
-                    "relativeUri": "/{id}",
-                    "relativeUriPathSegments": [
-                        "{id}"
-                    ],
-                    "uriParameters": {
-                        "id": {
-                            "type": "string",
-                            "displayName": "id",
-                            "required": true
-                        }
-                    },
-                    "methods": [
-                        {
-                            "method": "get",
-                            "protocols": [
-                                "HTTP"
-                            ],
-                            "responses": {
-                                "200": {
-                                    "body": {
-                                        "application/json": {
-                                            "type": "Team"
-                                        }
-                                    }
-                                },
-                                "404": {
-                                    "body": {
-                                        "text/plain": {
-                                            "type": "object"
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "relativeUri": "/users",
-            "relativeUriPathSegments": [
-                "users"
-            ],
-            "methods": [
-                {
-                    "method": "get",
-                    "protocols": [
-                        "HTTP"
-                    ],
-                    "responses": {
-                        "200": {
-                            "body": {
-                                "application/json": {
-                                    "type": "User[]"
-                                }
-                            }
-                        }
-                    }
-                }
-            ]
-        },
-        {
-            "relativeUri": "/users/{id}",
-            "relativeUriPathSegments": [
-                "users",
-                "{id}"
-            ],
-            "uriParameters": {
-                "id": {
-                    "type": "string",
-                    "displayName": "id",
-                    "required": true
-                }
-            },
-            "methods": [
-                {
-                    "method": "get",
-                    "protocols": [
-                        "HTTP"
-                    ],
-                    "responses": {
-                        "200": {
-                            "body": {
-                                "application/json": {
-                                    "type": "User"
-                                }
-                            }
-                        }
-                    }
-                }
-            ]
-        }
-    ],
-    "baseUriParameters": {
-        "version": {
-            "type": "string",
-            "displayName": "version",
-            "required": true,
-            "enum": [
-                "v1"
-            ]
-        }
-    },
     "types": {
         "Address": {
             "type": "object",
@@ -280,6 +119,167 @@
                     }
                 }
             }
+        }
+    },
+    "title": "TCK Sample. RAML 1.0 Types 001.",
+    "version": "v1",
+    "baseUri": "http://api.samplehost.com/{version}",
+    "protocols": [
+        "HTTP"
+    ],
+    "resources": [
+        {
+            "relativeUri": "/teams",
+            "relativeUriPathSegments": [
+                "teams"
+            ],
+            "methods": [
+                {
+                    "protocols": [
+                        "HTTP"
+                    ],
+                    "responses": {
+                        "200": {
+                            "body": {
+                                "application/xml": {
+                                    "type": "Team[]"
+                                }
+                            }
+                        }
+                    },
+                    "method": "get"
+                },
+                {
+                    "description": "create new team with desired title",
+                    "protocols": [
+                        "HTTP"
+                    ],
+                    "body": {
+                        "applciation/json": {
+                            "type": "object",
+                            "properties": {
+                                "title": {
+                                    "type": "string",
+                                    "pattern": "[A-Z][a-z]*"
+                                }
+                            }
+                        }
+                    },
+                    "responses": {
+                        "204": {
+                            "body": {
+                                "application/json": {
+                                    "type": "User"
+                                }
+                            }
+                        }
+                    },
+                    "method": "post"
+                }
+            ],
+            "resources": [
+                {
+                    "relativeUri": "/{id}",
+                    "relativeUriPathSegments": [
+                        "{id}"
+                    ],
+                    "uriParameters": {
+                        "id": {
+                            "type": "string",
+                            "displayName": "id",
+                            "required": true
+                        }
+                    },
+                    "methods": [
+                        {
+                            "protocols": [
+                                "HTTP"
+                            ],
+                            "responses": {
+                                "200": {
+                                    "body": {
+                                        "application/json": {
+                                            "type": "Team"
+                                        }
+                                    }
+                                },
+                                "404": {
+                                    "body": {
+                                        "text/plain": {
+                                            "type": "object"
+                                        }
+                                    }
+                                }
+                            },
+                            "method": "get"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "relativeUri": "/users",
+            "relativeUriPathSegments": [
+                "users"
+            ],
+            "methods": [
+                {
+                    "protocols": [
+                        "HTTP"
+                    ],
+                    "responses": {
+                        "200": {
+                            "body": {
+                                "application/json": {
+                                    "type": "User[]"
+                                }
+                            }
+                        }
+                    },
+                    "method": "get"
+                }
+            ]
+        },
+        {
+            "relativeUri": "/users/{id}",
+            "relativeUriPathSegments": [
+                "users",
+                "{id}"
+            ],
+            "uriParameters": {
+                "id": {
+                    "type": "string",
+                    "displayName": "id",
+                    "required": true
+                }
+            },
+            "methods": [
+                {
+                    "protocols": [
+                        "HTTP"
+                    ],
+                    "responses": {
+                        "200": {
+                            "body": {
+                                "application/json": {
+                                    "type": "User"
+                                }
+                            }
+                        }
+                    },
+                    "method": "get"
+                }
+            ]
+        }
+    ],
+    "baseUriParameters": {
+        "version": {
+            "type": "string",
+            "displayName": "version",
+            "required": true,
+            "enum": [
+                "v1"
+            ]
         }
     }
 }
