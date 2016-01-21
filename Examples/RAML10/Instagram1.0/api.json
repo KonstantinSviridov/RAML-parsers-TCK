@@ -7,20 +7,16 @@
                     "example": "[object Object]",
                     "properties": {
                         "id": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
                         "name": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
                         "latitude": {
-                            "type": "number",
-                            "required": false
+                            "type": "number"
                         },
                         "longtitude": {
-                            "type": "number",
-                            "required": false
+                            "type": "number"
                         }
                     }
                 },
@@ -38,12 +34,10 @@
                     "example": "[object Object]",
                     "properties": {
                         "meta": {
-                            "type": "Meta",
-                            "required": false
+                            "type": "Meta"
                         },
                         "data": {
-                            "type": "Location[]",
-                            "required": false
+                            "type": "Location[]"
                         }
                     }
                 },
@@ -52,16 +46,13 @@
                     "example": "[object Object]",
                     "properties": {
                         "media": {
-                            "type": "integer",
-                            "required": false
+                            "type": "integer"
                         },
                         "follows": {
-                            "type": "integer",
-                            "required": false
+                            "type": "integer"
                         },
                         "followed_by": {
-                            "type": "integer",
-                            "required": false
+                            "type": "integer"
                         }
                     }
                 },
@@ -73,32 +64,25 @@
                             "type": "object",
                             "properties": {
                                 "id": {
-                                    "type": "string",
-                                    "required": false
+                                    "type": "string"
                                 },
                                 "username": {
-                                    "type": "string",
-                                    "required": false
+                                    "type": "string"
                                 },
                                 "full_name": {
-                                    "type": "string",
-                                    "required": false
+                                    "type": "string"
                                 },
                                 "profile_picture": {
-                                    "type": "string",
-                                    "required": false
+                                    "type": "string"
                                 },
                                 "bio": {
-                                    "type": "string",
-                                    "required": false
+                                    "type": "string"
                                 },
                                 "website": {
-                                    "type": "string",
-                                    "required": false
+                                    "type": "string"
                                 },
                                 "count": {
-                                    "type": "Counts",
-                                    "required": false
+                                    "type": "Counts"
                                 }
                             }
                         }
@@ -109,32 +93,23 @@
                     "example": "[object Object]",
                     "properties": {
                         "id": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
                         "username": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
                         "full_name": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
-                        "profile_picture": {
-                            "type": "string",
-                            "required": false
-                        },
+                        "profile_picture": {},
                         "bio": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
                         "website": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
                         "count": {
-                            "type": "Counts",
-                            "required": false
+                            "type": "Counts"
                         }
                     }
                 },
@@ -143,48 +118,37 @@
                     "example": "[object Object]",
                     "properties": {
                         "meta": {
-                            "type": "Meta",
-                            "required": false
+                            "type": "Meta"
                         },
                         "data": {
                             "type": "object",
-                            "required": false,
                             "properties": {
                                 "object": {
-                                    "type": "string",
-                                    "required": false
+                                    "type": "string"
                                 },
                                 "object_id": {
-                                    "type": "string",
-                                    "required": false
+                                    "type": "string"
                                 },
                                 "aspect": {
-                                    "type": "string",
-                                    "required": false
+                                    "type": "string"
                                 },
                                 "callback_url": {
-                                    "type": "string",
-                                    "required": false
+                                    "type": "string"
                                 },
                                 "type": {
-                                    "type": "string",
-                                    "required": false
+                                    "type": "string"
                                 },
                                 "id": {
-                                    "type": "string",
-                                    "required": false
+                                    "type": "string"
                                 },
                                 "lat": {
-                                    "type": "number",
-                                    "required": false
+                                    "type": "number"
                                 },
                                 "lng": {
-                                    "type": "number",
-                                    "required": false
+                                    "type": "number"
                                 },
                                 "radius": {
-                                    "type": "number",
-                                    "required": false
+                                    "type": "number"
                                 }
                             }
                         }
@@ -195,28 +159,22 @@
                     "example": "[object Object]",
                     "properties": {
                         "id": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
                         "type": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
                         "object": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
                         "aspect": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
                         "callback_url": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
                         "object_id": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         }
                     }
                 },
@@ -225,12 +183,10 @@
                     "example": "[object Object]",
                     "properties": {
                         "meta": {
-                            "type": "Meta",
-                            "required": false
+                            "type": "Meta"
                         },
                         "data": {
-                            "type": "SubscriptionData[]",
-                            "required": false
+                            "type": "SubscriptionData[]"
                         }
                     }
                 },
@@ -239,12 +195,10 @@
                     "example": "[object Object]",
                     "properties": {
                         "meta": {
-                            "type": "Meta",
-                            "required": false
+                            "type": "Meta"
                         },
                         "data": {
-                            "type": "SubscriptionData",
-                            "required": false
+                            "type": "SubscriptionData"
                         }
                     }
                 },
@@ -254,15 +208,12 @@
                     "properties": {
                         "data": {
                             "type": "object",
-                            "required": false,
                             "properties": {
                                 "media_count": {
-                                    "type": "integer",
-                                    "required": false
+                                    "type": "integer"
                                 },
                                 "name": {
-                                    "type": "string",
-                                    "required": false
+                                    "type": "string"
                                 }
                             }
                         }
@@ -273,12 +224,10 @@
                     "example": "[object Object]",
                     "properties": {
                         "media_count": {
-                            "type": "integer",
-                            "required": false
+                            "type": "integer"
                         },
                         "name": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         }
                     }
                 },
@@ -287,12 +236,10 @@
                     "example": "[object Object]",
                     "properties": {
                         "meta": {
-                            "type": "Meta",
-                            "required": false
+                            "type": "Meta"
                         },
                         "data": {
-                            "type": "SerachTagItem[]",
-                            "required": false
+                            "type": "SerachTagItem[]"
                         }
                     }
                 },
@@ -301,20 +248,16 @@
                     "example": "[object Object]",
                     "properties": {
                         "first_name": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
                         "last_name": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
                         "id": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
                         "type": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         }
                     }
                 },
@@ -323,8 +266,7 @@
                     "example": "[object Object]",
                     "properties": {
                         "data": {
-                            "type": "MediaLike[]",
-                            "required": false
+                            "type": "MediaLike[]"
                         }
                     }
                 },
@@ -333,38 +275,30 @@
                     "example": "[object Object]",
                     "properties": {
                         "created_time": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
                         "text": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
                         "from": {
                             "type": "object",
-                            "required": false,
                             "properties": {
                                 "username": {
-                                    "type": "string",
-                                    "required": false
+                                    "type": "string"
                                 },
                                 "profile_pictures": {
-                                    "type": "string",
-                                    "required": false
+                                    "type": "string"
                                 },
                                 "id": {
-                                    "type": "string",
-                                    "required": false
+                                    "type": "string"
                                 },
                                 "full_name": {
-                                    "type": "string",
-                                    "required": false
+                                    "type": "string"
                                 }
                             }
                         },
                         "id": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         }
                     }
                 },
@@ -385,52 +319,40 @@
                     "example": "[object Object]",
                     "properties": {
                         "author_id": {
-                            "type": "integer",
-                            "required": false
+                            "type": "integer"
                         },
                         "author_name": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
                         "author_url": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
                         "heght": {
-                            "type": "integer",
-                            "required": false
+                            "type": "integer"
                         },
                         "media_id": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
                         "provider_name": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
                         "provider_url": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
                         "title": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
                         "type": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
                         "url": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
                         "version": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
                         "width": {
-                            "type": "integer",
-                            "required": false
+                            "type": "integer"
                         }
                     }
                 },
@@ -439,16 +361,13 @@
                     "example": "[object Object]",
                     "properties": {
                         "meta": {
-                            "type": "Meta",
-                            "required": false
+                            "type": "Meta"
                         },
                         "data": {
                             "type": "object",
-                            "required": false,
                             "properties": {
                                 "outgoing_status": {
-                                    "type": "string",
-                                    "required": false
+                                    "type": "string"
                                 }
                             }
                         }
@@ -459,20 +378,16 @@
                     "example": "[object Object]",
                     "properties": {
                         "meta": {
-                            "type": "Meta",
-                            "required": false
+                            "type": "Meta"
                         },
                         "data": {
                             "type": "object",
-                            "required": false,
                             "properties": {
                                 "outgoing_status": {
-                                    "type": "string",
-                                    "required": false
+                                    "type": "string"
                                 },
                                 "incoming_status": {
-                                    "type": "string",
-                                    "required": false
+                                    "type": "string"
                                 }
                             }
                         }
@@ -561,30 +476,24 @@
                     "example": "[object Object]",
                     "properties": {
                         "created_time": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
                         "text": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
                         "from": {
                             "type": "object",
-                            "required": false,
                             "properties": {
                                 "username": {
-                                    "type": "string",
-                                    "required": false
+                                    "type": "string"
                                 },
                                 "id": {
-                                    "type": "string",
-                                    "required": false
+                                    "type": "string"
                                 }
                             }
                         },
                         "id": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         }
                     }
                 },
@@ -593,12 +502,10 @@
                     "example": "[object Object]",
                     "properties": {
                         "count": {
-                            "type": "number",
-                            "required": false
+                            "type": "number"
                         },
                         "data": {
-                            "type": "User[]",
-                            "required": false
+                            "type": "User[]"
                         }
                     }
                 },
@@ -607,16 +514,13 @@
                     "example": "[object Object]",
                     "properties": {
                         "url": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
                         "width": {
-                            "type": "number",
-                            "required": false
+                            "type": "number"
                         },
                         "height": {
-                            "type": "number",
-                            "required": false
+                            "type": "number"
                         }
                     }
                 },
@@ -625,16 +529,13 @@
                     "example": "[object Object]",
                     "properties": {
                         "low_resolution": {
-                            "type": "Resolution",
-                            "required": false
+                            "type": "Resolution"
                         },
                         "thumbnail": {
-                            "type": "Resolution",
-                            "required": false
+                            "type": "Resolution"
                         },
                         "standard_resolution": {
-                            "type": "Resolution",
-                            "required": false
+                            "type": "Resolution"
                         }
                     }
                 },
@@ -643,8 +544,7 @@
                     "example": "[object Object]",
                     "properties": {
                         "data": {
-                            "type": "TagsRecentMediaItem []",
-                            "required": false
+                            "type": "TagsRecentMediaItem []"
                         }
                     }
                 },
@@ -653,62 +553,48 @@
                     "example": "[object Object]",
                     "properties": {
                         "type": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
                         "users_in_photo": {
-                            "type": "string[]",
-                            "required": false
+                            "type": "string[]"
                         },
                         "filter": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
                         "tags": {
-                            "type": "string[]",
-                            "required": false
+                            "type": "string[]"
                         },
                         "comments": {
                             "type": "object",
-                            "required": false,
                             "properties": {
                                 "data": {
-                                    "type": "Comment[]",
-                                    "required": false
+                                    "type": "Comment[]"
                                 },
                                 "count": {
-                                    "type": "number",
-                                    "required": false
+                                    "type": "number"
                                 }
                             }
                         },
                         "caption": {
-                            "type": "Caption",
-                            "required": false
+                            "type": "Caption"
                         },
                         "likes": {
-                            "type": "Likes",
-                            "required": false
+                            "type": "Likes"
                         },
                         "link": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
                         "created_time": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
                         "images": {
-                            "type": "Image",
-                            "required": false
+                            "type": "Image"
                         },
                         "id": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         },
                         "location": {
-                            "type": "string",
-                            "required": false
+                            "type": "string"
                         }
                     }
                 },
@@ -746,19 +632,16 @@
                                     "type": "string"
                                 },
                                 "tags": {
-                                    "type": "string []",
-                                    "required": false
+                                    "type": "string []"
                                 },
                                 "comments": {
                                     "type": "object",
                                     "properties": {
                                         "data": {
-                                            "type": "Comment[]",
-                                            "required": false
+                                            "type": "Comment[]"
                                         },
                                         "count": {
-                                            "type": "number",
-                                            "required": false
+                                            "type": "number"
                                         }
                                     }
                                 },
@@ -810,12 +693,10 @@
                             "type": "object",
                             "properties": {
                                 "data": {
-                                    "type": "Comment[]",
-                                    "required": false
+                                    "type": "Comment[]"
                                 },
                                 "count": {
-                                    "type": "number",
-                                    "required": false
+                                    "type": "number"
                                 }
                             }
                         },
@@ -871,7 +752,6 @@
                                 },
                                 "standard_resoulution": {
                                     "type": "object",
-                                    "required": false,
                                     "properties": {
                                         "url": {
                                             "type": "string"
@@ -897,12 +777,10 @@
                                     "type": "object",
                                     "properties": {
                                         "data": {
-                                            "type": "Comment[]",
-                                            "required": false
+                                            "type": "Comment[]"
                                         },
                                         "count": {
-                                            "type": "number",
-                                            "required": false
+                                            "type": "number"
                                         }
                                     }
                                 },
@@ -938,8 +816,7 @@
                     "type": "object",
                     "properties": {
                         "meta": {
-                            "type": "Meta",
-                            "required": false
+                            "type": "Meta"
                         },
                         "data": {
                             "type": "MediaSearchFirstType | MediaSearchSecondType"
@@ -953,121 +830,134 @@
     "resourceTypes": [
         {
             "usersListing": {
-                "get": {
-                    "responses": {
-                        "200": {
-                            "body": {
-                                "application/json": {
-                                    "type": "object",
-                                    "example": "{\n    \"data\": [{\n        \"username\": \"jack\",\n        \"first_name\": \"Jack\",\n        \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_66_75sq.jpg\",\n        \"id\": \"66\",\n        \"last_name\": \"Dorsey\"\n    },\n    {\n        \"username\": \"sammyjack\",\n        \"first_name\": \"Sammy\",\n        \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_29648_75sq_1294520029.jpg\",\n        \"id\": \"29648\",\n        \"last_name\": \"Jack\"\n    },\n    {\n        \"username\": \"jacktiddy\",\n        \"first_name\": \"Jack\",\n        \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_13096_75sq_1286441317.jpg\",\n        \"id\": \"13096\",\n        \"last_name\": \"Tiddy\"\n    }]\n}",
-                                    "schema": "undefined"
+                "methods": [
+                    {
+                        "responses": {
+                            "200": {
+                                "body": {
+                                    "application/json": {
+                                        "example": "{\n    \"data\": [{\n        \"username\": \"jack\",\n        \"first_name\": \"Jack\",\n        \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_66_75sq.jpg\",\n        \"id\": \"66\",\n        \"last_name\": \"Dorsey\"\n    },\n    {\n        \"username\": \"sammyjack\",\n        \"first_name\": \"Sammy\",\n        \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_29648_75sq_1294520029.jpg\",\n        \"id\": \"29648\",\n        \"last_name\": \"Jack\"\n    },\n    {\n        \"username\": \"jacktiddy\",\n        \"first_name\": \"Jack\",\n        \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_13096_75sq_1286441317.jpg\",\n        \"id\": \"13096\",\n        \"last_name\": \"Tiddy\"\n    }]\n}",
+                                        "schema": "undefined"
+                                    }
                                 }
                             }
-                        }
+                        },
+                        "method": "get"
                     }
-                },
+                ],
                 "type": "base"
             }
         },
         {
             "mediaSearch": {
-                "get": {
-                    "responses": {
-                        "200": {
-                            "body": {
-                                "application/json": {
-                                    "type": "object",
-                                    "example": "{\n    \"data\": {\n        \"type\": \"image\",\n        \"users_in_photo\": [{\n            \"user\": {\n                \"username\": \"kevin\",\n                \"full_name\": \"Kevin S\",\n                \"id\": \"3\",\n                \"profile_picture\": \"...\"\n            },\n            \"position\": {\n                \"x\": 0.315,\n                \"y\": 0.9111\n            }\n        }],\n        \"filter\": \"Walden\",\n        \"tags\": [],\n        \"comments\": {\n            \"data\": [{\n                \"created_time\": \"1279332030\",\n                \"text\": \"Love the sign here\",\n                \"from\": {\n                    \"username\": \"mikeyk\",\n                    \"full_name\": \"Mikey Krieger\",\n                    \"id\": \"4\",\n                    \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_1242695_75sq_1293915800.jpg\"\n                },\n                \"id\": \"8\"\n            }],\n            \"count\": 2\n        },\n        \"caption\": null,\n        \"likes\": {\n            \"count\": 1,\n            \"data\": [{\n                \"username\": \"mikeyk\",\n                \"full_name\": \"Mikeyk\",\n                \"id\": \"4\",\n                \"profile_picture\": \"...\"\n            }]\n        },\n        \"link\": \"http://instagr.am/p/D/\",\n        \"user\": {\n            \"username\": \"kevin\",\n            \"full_name\": \"Kevin S\",\n            \"profile_picture\": \"...\",\n            \"bio\": \"...\",\n            \"website\": \"...\",\n            \"id\": \"3\"\n        },\n        \"created_time\": \"1279340983\",\n        \"images\": {\n            \"low_resolution\": {\n                \"url\": \"http://distillery.s3.amazonaws.com/media/2010/07/16/4de37e03aa4b4372843a7eb33fa41cad_6.jpg\",\n                \"width\": 306,\n                \"height\": 306\n            },\n            \"thumbnail\": {\n                \"url\": \"http://distillery.s3.amazonaws.com/media/2010/07/16/4de37e03aa4b4372843a7eb33fa41cad_5.jpg\",\n                \"width\": 150,\n                \"height\": 150\n            },\n            \"standard_resolution\": {\n                \"url\": \"http://distillery.s3.amazonaws.com/media/2010/07/16/4de37e03aa4b4372843a7eb33fa41cad_7.jpg\",\n                \"width\": 612,\n                \"height\": 612\n            }\n        },\n        \"id\": \"3\",\n        \"location\": null\n    }\n}",
-                                    "schema": "undefined"
+                "methods": [
+                    {
+                        "responses": {
+                            "200": {
+                                "body": {
+                                    "application/json": {
+                                        "example": "{\n    \"data\": {\n        \"type\": \"image\",\n        \"users_in_photo\": [{\n            \"user\": {\n                \"username\": \"kevin\",\n                \"full_name\": \"Kevin S\",\n                \"id\": \"3\",\n                \"profile_picture\": \"...\"\n            },\n            \"position\": {\n                \"x\": 0.315,\n                \"y\": 0.9111\n            }\n        }],\n        \"filter\": \"Walden\",\n        \"tags\": [],\n        \"comments\": {\n            \"data\": [{\n                \"created_time\": \"1279332030\",\n                \"text\": \"Love the sign here\",\n                \"from\": {\n                    \"username\": \"mikeyk\",\n                    \"full_name\": \"Mikey Krieger\",\n                    \"id\": \"4\",\n                    \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_1242695_75sq_1293915800.jpg\"\n                },\n                \"id\": \"8\"\n            }],\n            \"count\": 2\n        },\n        \"caption\": null,\n        \"likes\": {\n            \"count\": 1,\n            \"data\": [{\n                \"username\": \"mikeyk\",\n                \"full_name\": \"Mikeyk\",\n                \"id\": \"4\",\n                \"profile_picture\": \"...\"\n            }]\n        },\n        \"link\": \"http://instagr.am/p/D/\",\n        \"user\": {\n            \"username\": \"kevin\",\n            \"full_name\": \"Kevin S\",\n            \"profile_picture\": \"...\",\n            \"bio\": \"...\",\n            \"website\": \"...\",\n            \"id\": \"3\"\n        },\n        \"created_time\": \"1279340983\",\n        \"images\": {\n            \"low_resolution\": {\n                \"url\": \"http://distillery.s3.amazonaws.com/media/2010/07/16/4de37e03aa4b4372843a7eb33fa41cad_6.jpg\",\n                \"width\": 306,\n                \"height\": 306\n            },\n            \"thumbnail\": {\n                \"url\": \"http://distillery.s3.amazonaws.com/media/2010/07/16/4de37e03aa4b4372843a7eb33fa41cad_5.jpg\",\n                \"width\": 150,\n                \"height\": 150\n            },\n            \"standard_resolution\": {\n                \"url\": \"http://distillery.s3.amazonaws.com/media/2010/07/16/4de37e03aa4b4372843a7eb33fa41cad_7.jpg\",\n                \"width\": 612,\n                \"height\": 612\n            }\n        },\n        \"id\": \"3\",\n        \"location\": null\n    }\n}",
+                                        "schema": "undefined"
+                                    }
                                 }
                             }
-                        }
+                        },
+                        "method": "get"
                     }
-                },
+                ],
                 "type": "base"
             }
         },
         {
             "secured": {
-                "delete?": {
-                    "securedBy": [
-                        "oauth_2_0"
-                    ],
-                    "responses": {
-                        "200": {
-                            "body": {
-                                "application/json": {
-                                    "type": "object",
-                                    "example": "{\n    \"meta\": {\n        \"code\": 200\n    }, \n    \"data\": null\n}",
-                                    "schema": "undefined"
+                "methods": [
+                    {
+                        "securedBy": [
+                            "oauth_2_0"
+                        ],
+                        "responses": {
+                            "200": {
+                                "body": {
+                                    "application/json": {
+                                        "example": "{\n    \"meta\": {\n        \"code\": 200\n    }, \n    \"data\": null\n}",
+                                        "schema": "undefined"
+                                    }
                                 }
                             }
-                        }
-                    }
-                },
-                "post?": {
-                    "securedBy": [
-                        "oauth_2_0"
-                    ],
-                    "responses": {
-                        "200": {
-                            "body": {
-                                "application/json": {
-                                    "type": "object",
-                                    "example": "{\n    \"meta\": {\n        \"code\": 200\n    }, \n    \"data\": null\n}",
-                                    "schema": "undefined"
+                        },
+                        "method": "delete"
+                    },
+                    {
+                        "securedBy": [
+                            "oauth_2_0"
+                        ],
+                        "responses": {
+                            "200": {
+                                "body": {
+                                    "application/json": {
+                                        "example": "{\n    \"meta\": {\n        \"code\": 200\n    }, \n    \"data\": null\n}",
+                                        "schema": "undefined"
+                                    }
                                 }
                             }
-                        }
+                        },
+                        "method": "post"
                     }
-                },
+                ],
                 "type": "base"
             }
         },
         {
             "base": {
-                "delete?": {
-                    "responses": {
-                        "503": {
-                            "description": "Server Unavailable. Check Your Rate Limits.\n"
-                        }
+                "methods": [
+                    {
+                        "responses": {
+                            "503": {
+                                "description": "Server Unavailable. Check Your Rate Limits.\n"
+                            }
+                        },
+                        "method": "delete"
+                    },
+                    {
+                        "responses": {
+                            "503": {
+                                "description": "Server Unavailable. Check Your Rate Limits.\n"
+                            }
+                        },
+                        "method": "post"
+                    },
+                    {
+                        "is": [
+                            "limitable",
+                            "acceptCallback"
+                        ],
+                        "responses": {
+                            "503": {
+                                "description": "Server Unavailable. Check Your Rate Limits.\n"
+                            }
+                        },
+                        "method": "get"
                     }
-                },
-                "post?": {
-                    "responses": {
-                        "503": {
-                            "description": "Server Unavailable. Check Your Rate Limits.\n"
-                        }
-                    }
-                },
-                "get?": {
-                    "is": [
-                        "limitable",
-                        "acceptCallback"
-                    ],
-                    "responses": {
-                        "503": {
-                            "description": "Server Unavailable. Check Your Rate Limits.\n"
-                        }
-                    }
-                }
+                ]
             }
         },
         {
             "feedsListing": {
-                "get": {
-                    "responses": {
-                        "200": {
-                            "body": {
-                                "application/json": {
-                                    "type": "object",
-                                    "example": "{\n    \"data\": [{\n        \"location\": {\n            \"id\": \"833\",\n            \"latitude\": 37.77956816727314,\n            \"longitude\": -122.41387367248539,\n            \"name\": \"Civic Center BART\"\n        },\n        \"comments\": {\n            \"count\": 16,\n            \"data\": [  ]\n        },\n        \"caption\": null,\n        \"link\": \"http://instagr.am/p/BXsFz/\",\n        \"likes\": {\n            \"count\": 190,\n            \"data\": [{\n                \"username\": \"shayne\",\n                \"full_name\": \"Shayne Sweeney\",\n                \"id\": \"20\",\n                \"profile_picture\": \"...\"\n            }, {}]\n        },\n        \"created_time\": \"1296748524\",\n        \"images\": {\n            \"low_resolution\": {\n                \"url\": \"http://distillery.s3.amazonaws.com/media/2011/02/03/efc502667a554329b52d9a6bab35b24a_6.jpg\",\n                \"width\": 306,\n                \"height\": 306\n            },\n            \"thumbnail\": {\n                \"url\": \"http://distillery.s3.amazonaws.com/media/2011/02/03/efc502667a554329b52d9a6bab35b24a_5.jpg\",\n                \"width\": 150,\n                \"height\": 150\n            },\n            \"standard_resolution\": {\n                \"url\": \"http://distillery.s3.amazonaws.com/media/2011/02/03/efc502667a554329b52d9a6bab35b24a_7.jpg\",\n                \"width\": 612,\n                \"height\": 612\n            }\n        },\n        \"type\": \"image\",\n        \"users_in_photo\": [],\n        \"filter\": \"Earlybird\",\n        \"tags\": [],\n        \"id\": \"22987123\",\n        \"user\": {\n            \"username\": \"kevin\",\n            \"full_name\": \"Kevin S\",\n            \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_3_75sq_1295574122.jpg\",\n            \"id\": \"3\"\n        }\n    },\n    {\n        \"videos\": {\n            \"low_resolution\": {\n                \"url\": \"http://distilleryvesper9-13.ak.instagram.com/090d06dad9cd11e2aa0912313817975d_102.mp4\",\n                \"width\": 480,\n                \"height\": 480\n            },\n            \"standard_resolution\": {\n                \"url\": \"http://distilleryvesper9-13.ak.instagram.com/090d06dad9cd11e2aa0912313817975d_101.mp4\",\n                \"width\": 640,\n                \"height\": 640\n            },\n        \"comments\": {\n            \"data\": [{\n                \"created_time\": \"1279332030\",\n                \"text\": \"Love the sign here\",\n                \"from\": {\n                    \"username\": \"mikeyk\",\n                    \"full_name\": \"Mikey Krieger\",\n                    \"id\": \"4\",\n                    \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_1242695_75sq_1293915800.jpg\"\n                },\n                \"id\": \"8\"\n            },\n            {\n                \"created_time\": \"1279341004\",\n                \"text\": \"Chilako taco\",\n                \"from\": {\n                    \"username\": \"kevin\",\n                    \"full_name\": \"Kevin S\",\n                    \"id\": \"3\",\n                    \"profile_picture\": \"...\"\n                },\n                \"id\": \"3\"\n            }],\n            \"count\": 2\n        },\n        \"caption\": null,\n        \"likes\": {\n            \"count\": 1,\n            \"data\": [{\n                \"username\": \"mikeyk\",\n                \"full_name\": \"Mikeyk\",\n                \"id\": \"4\",\n                \"profile_picture\": \"...\"\n            }]\n        },\n        \"link\": \"http://instagr.am/p/D/\",\n        \"created_time\": \"1279340983\",\n        \"images\": {\n            \"low_resolution\": {\n                \"url\": \"http://distilleryimage2.ak.instagram.com/11f75f1cd9cc11e2a0fd22000aa8039a_6.jpg\",\n                \"width\": 306,\n                \"height\": 306\n            },\n            \"thumbnail\": {\n                \"url\": \"http://distilleryimage2.ak.instagram.com/11f75f1cd9cc11e2a0fd22000aa8039a_5.jpg\",\n                \"width\": 150,\n                \"height\": 150\n            },\n            \"standard_resolution\": {\n                \"url\": \"http://distilleryimage2.ak.instagram.com/11f75f1cd9cc11e2a0fd22000aa8039a_7.jpg\",\n                \"width\": 612,\n                \"height\": 612\n            }\n        },\n        \"type\": \"video\",\n        \"users_in_photo\": null,\n        \"filter\": \"Vesper\",\n        \"tags\": [],\n        \"id\": \"363839373298\",\n        \"user\": {\n            \"username\": \"kevin\",\n            \"full_name\": \"Kevin S\",\n            \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_3_75sq_1295574122.jpg\",\n            \"id\": \"3\"\n        },\n        \"location\": null\n    }}]\n}",
-                                    "schema": "undefined"
+                "methods": [
+                    {
+                        "responses": {
+                            "200": {
+                                "body": {
+                                    "application/json": {
+                                        "example": "{\n    \"data\": [{\n        \"location\": {\n            \"id\": \"833\",\n            \"latitude\": 37.77956816727314,\n            \"longitude\": -122.41387367248539,\n            \"name\": \"Civic Center BART\"\n        },\n        \"comments\": {\n            \"count\": 16,\n            \"data\": [  ]\n        },\n        \"caption\": null,\n        \"link\": \"http://instagr.am/p/BXsFz/\",\n        \"likes\": {\n            \"count\": 190,\n            \"data\": [{\n                \"username\": \"shayne\",\n                \"full_name\": \"Shayne Sweeney\",\n                \"id\": \"20\",\n                \"profile_picture\": \"...\"\n            }, {}]\n        },\n        \"created_time\": \"1296748524\",\n        \"images\": {\n            \"low_resolution\": {\n                \"url\": \"http://distillery.s3.amazonaws.com/media/2011/02/03/efc502667a554329b52d9a6bab35b24a_6.jpg\",\n                \"width\": 306,\n                \"height\": 306\n            },\n            \"thumbnail\": {\n                \"url\": \"http://distillery.s3.amazonaws.com/media/2011/02/03/efc502667a554329b52d9a6bab35b24a_5.jpg\",\n                \"width\": 150,\n                \"height\": 150\n            },\n            \"standard_resolution\": {\n                \"url\": \"http://distillery.s3.amazonaws.com/media/2011/02/03/efc502667a554329b52d9a6bab35b24a_7.jpg\",\n                \"width\": 612,\n                \"height\": 612\n            }\n        },\n        \"type\": \"image\",\n        \"users_in_photo\": [],\n        \"filter\": \"Earlybird\",\n        \"tags\": [],\n        \"id\": \"22987123\",\n        \"user\": {\n            \"username\": \"kevin\",\n            \"full_name\": \"Kevin S\",\n            \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_3_75sq_1295574122.jpg\",\n            \"id\": \"3\"\n        }\n    },\n    {\n        \"videos\": {\n            \"low_resolution\": {\n                \"url\": \"http://distilleryvesper9-13.ak.instagram.com/090d06dad9cd11e2aa0912313817975d_102.mp4\",\n                \"width\": 480,\n                \"height\": 480\n            },\n            \"standard_resolution\": {\n                \"url\": \"http://distilleryvesper9-13.ak.instagram.com/090d06dad9cd11e2aa0912313817975d_101.mp4\",\n                \"width\": 640,\n                \"height\": 640\n            },\n        \"comments\": {\n            \"data\": [{\n                \"created_time\": \"1279332030\",\n                \"text\": \"Love the sign here\",\n                \"from\": {\n                    \"username\": \"mikeyk\",\n                    \"full_name\": \"Mikey Krieger\",\n                    \"id\": \"4\",\n                    \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_1242695_75sq_1293915800.jpg\"\n                },\n                \"id\": \"8\"\n            },\n            {\n                \"created_time\": \"1279341004\",\n                \"text\": \"Chilako taco\",\n                \"from\": {\n                    \"username\": \"kevin\",\n                    \"full_name\": \"Kevin S\",\n                    \"id\": \"3\",\n                    \"profile_picture\": \"...\"\n                },\n                \"id\": \"3\"\n            }],\n            \"count\": 2\n        },\n        \"caption\": null,\n        \"likes\": {\n            \"count\": 1,\n            \"data\": [{\n                \"username\": \"mikeyk\",\n                \"full_name\": \"Mikeyk\",\n                \"id\": \"4\",\n                \"profile_picture\": \"...\"\n            }]\n        },\n        \"link\": \"http://instagr.am/p/D/\",\n        \"created_time\": \"1279340983\",\n        \"images\": {\n            \"low_resolution\": {\n                \"url\": \"http://distilleryimage2.ak.instagram.com/11f75f1cd9cc11e2a0fd22000aa8039a_6.jpg\",\n                \"width\": 306,\n                \"height\": 306\n            },\n            \"thumbnail\": {\n                \"url\": \"http://distilleryimage2.ak.instagram.com/11f75f1cd9cc11e2a0fd22000aa8039a_5.jpg\",\n                \"width\": 150,\n                \"height\": 150\n            },\n            \"standard_resolution\": {\n                \"url\": \"http://distilleryimage2.ak.instagram.com/11f75f1cd9cc11e2a0fd22000aa8039a_7.jpg\",\n                \"width\": 612,\n                \"height\": 612\n            }\n        },\n        \"type\": \"video\",\n        \"users_in_photo\": null,\n        \"filter\": \"Vesper\",\n        \"tags\": [],\n        \"id\": \"363839373298\",\n        \"user\": {\n            \"username\": \"kevin\",\n            \"full_name\": \"Kevin S\",\n            \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_3_75sq_1295574122.jpg\",\n            \"id\": \"3\"\n        },\n        \"location\": null\n    }}]\n}",
+                                        "schema": "undefined"
+                                    }
                                 }
                             }
-                        }
+                        },
+                        "method": "get"
                     }
-                },
+                ],
                 "type": "base"
             }
         }
@@ -1078,9 +968,7 @@
                 "queryParameters": {
                     "callback": {
                         "description": "Callback function name. All output will be wrapper under this function name.\n",
-                        "type": "string",
-                        "example": "callbackFunction",
-                        "displayName": "callback"
+                        "example": "callbackFunction"
                     }
                 }
             }
@@ -1090,19 +978,16 @@
                 "queryParameters": {
                     "lat": {
                         "description": "Latitude of the center search coordinate. If used, lng is required.",
-                        "type": "number",
-                        "displayName": "lat"
+                        "type": "number"
                     },
                     "lng": {
                         "description": "Longitude of the center search coordinate. If used, lat is required.",
-                        "type": "number",
-                        "displayName": "lng"
+                        "type": "number"
                     },
                     "distance": {
                         "description": "Default is 1000m (distance=1000), max distance is 5000.",
                         "type": "integer",
-                        "default": 1000,
-                        "displayName": "distance"
+                        "default": 1000
                     }
                 }
             }
@@ -1113,8 +998,7 @@
                     "count": {
                         "description": "Number of items you would like to receive.",
                         "type": "integer",
-                        "example": "1",
-                        "displayName": "count"
+                        "example": "1"
                     }
                 }
             }
@@ -1124,13 +1008,11 @@
                 "queryParameters": {
                     "max_timestamp": {
                         "description": "Return media before this UNIX timestamp.",
-                        "type": "integer",
-                        "displayName": "max_timestamp"
+                        "type": "integer"
                     },
                     "min_timestamp": {
                         "description": "Return media after this UNIX timestamp.",
-                        "type": "integer",
-                        "displayName": "min_timestamp"
+                        "type": "integer"
                     }
                 }
             }
@@ -1140,13 +1022,11 @@
                 "queryParameters": {
                     "min_id": {
                         "description": "Return media later than this min_id.",
-                        "type": "integer",
-                        "displayName": "min_id"
+                        "type": "integer"
                     },
                     "max_id": {
                         "description": "Return media earlier than this max_id.",
-                        "type": "integer",
-                        "displayName": "max_id"
+                        "type": "integer"
                     }
                 }
             }
@@ -1157,13 +1037,28 @@
             "oauth_2_0": {
                 "description": "Instagram's API uses the OAuth 2.0 protocol for simple, but effective\nauthentication and authorization. The one thing to keep in mind is tha\nall requests to the API must be made over SSL (https:// not http://)\n",
                 "type": "OAuth 2.0",
-                "settings": {}
+                "settings": {},
+                "describedBy": {
+                    "queryParameters": {
+                        "access_token": {
+                            "description": "Used to send a valid OAuth 2 access token. Do not use together with\nthe \"Authorization\" header\n"
+                        }
+                    }
+                }
             }
         },
         {
             "clientId": {
                 "description": "in many situations, you may not need to authenticate users at all.\nFor instance, you may request popular photos without authenticating\n(i.e. you do not need to provide an access_token; just use your client ID with your request).\nWe only require authentication in cases where your application is making requests on behalf of a user\n(commenting, liking, browsing a user's feed, etc.).\n",
-                "type": "x-customHeader"
+                "type": "x-customHeader",
+                "describedBy": {
+                    "queryParameters": {
+                        "client_id": {
+                            "description": "Client_id is is identifier of  your server, script, or program with a specific application\nthis parameter is required if you are accessing APIs without authenticating\n",
+                            "example": "9e0dbc0a3b8d436ca65ae2df9825c893"
+                        }
+                    }
+                }
             }
         }
     ],
@@ -1185,9 +1080,6 @@
             "content": "Instagram is a popular image sharing mobile service. The first version of the Instagram API is an exciting step forward towards making it easier for users to have open access to their Instagram data."
         }
     ],
-    "protocols": [
-        "HTTPS"
-    ],
     "resources": [
         {
             "relativeUri": "/media",
@@ -1202,11 +1094,7 @@
                     ],
                     "type": "base",
                     "uriParameters": {
-                        "mediaId": {
-                            "type": "string",
-                            "displayName": "mediaId",
-                            "required": true
-                        }
+                        "mediaId": {}
                     },
                     "methods": [
                         {
@@ -1215,23 +1103,13 @@
                                 "count": {
                                     "description": "Number of items you would like to receive.",
                                     "type": "integer",
-                                    "example": "1",
-                                    "displayName": "count"
+                                    "example": "1"
                                 },
                                 "callback": {
                                     "description": "Callback function name. All output will be wrapper under this function name.\n",
-                                    "type": "string",
-                                    "example": "callbackFunction",
-                                    "displayName": "callback"
+                                    "example": "callbackFunction"
                                 }
                             },
-                            "protocols": [
-                                "HTTPS"
-                            ],
-                            "securedBy": [
-                                "oauth_2_0",
-                                "clientId"
-                            ],
                             "is": [
                                 "limitable",
                                 "acceptCallback"
@@ -1272,23 +1150,13 @@
                                         "count": {
                                             "description": "Number of items you would like to receive.",
                                             "type": "integer",
-                                            "example": "1",
-                                            "displayName": "count"
+                                            "example": "1"
                                         },
                                         "callback": {
                                             "description": "Callback function name. All output will be wrapper under this function name.\n",
-                                            "type": "string",
-                                            "example": "callbackFunction",
-                                            "displayName": "callback"
+                                            "example": "callbackFunction"
                                         }
                                     },
-                                    "protocols": [
-                                        "HTTPS"
-                                    ],
-                                    "securedBy": [
-                                        "oauth_2_0",
-                                        "clientId"
-                                    ],
                                     "is": [
                                         "limitable",
                                         "acceptCallback"
@@ -1309,19 +1177,14 @@
                                 },
                                 {
                                     "description": "Create a comment on a media. Please email apidevelopers[at]instagram.com for access.",
-                                    "protocols": [
-                                        "HTTPS"
-                                    ],
                                     "securedBy": [
                                         "oauth_2_0"
                                     ],
                                     "body": {
                                         "application/x-www-form-urlencoded": {
-                                            "type": "object",
                                             "properties": {
                                                 "text": {
                                                     "description": "Text to post as a comment on the media as specified in {mediaId}.",
-                                                    "type": "string",
                                                     "required": "true"
                                                 }
                                             }
@@ -1331,7 +1194,6 @@
                                         "200": {
                                             "body": {
                                                 "application/json": {
-                                                    "type": "object",
                                                     "example": "{\n    \"meta\": {\n        \"code\": 200\n    }, \n    \"data\": null\n}",
                                                     "schema": "undefined"
                                                 }
@@ -1361,17 +1223,12 @@
                                     "uriParameters": {
                                         "commentId": {
                                             "description": "Identifier of the comment",
-                                            "type": "integer",
-                                            "displayName": "commentId",
-                                            "required": true
+                                            "type": "integer"
                                         }
                                     },
                                     "methods": [
                                         {
                                             "description": "Remove a comment either on the authenticated user's media or authored by the authenticated user.\n",
-                                            "protocols": [
-                                                "HTTPS"
-                                            ],
                                             "securedBy": [
                                                 "oauth_2_0"
                                             ],
@@ -1380,7 +1237,6 @@
                                                     "description": "Comment removed.",
                                                     "body": {
                                                         "application/json": {
-                                                            "type": "object",
                                                             "example": "{\n    \"meta\": {\n        \"code\": 200\n    }, \n    \"data\": null\n}",
                                                             "schema": "undefined"
                                                         }
@@ -1416,23 +1272,13 @@
                                         "count": {
                                             "description": "Number of items you would like to receive.",
                                             "type": "integer",
-                                            "example": "1",
-                                            "displayName": "count"
+                                            "example": "1"
                                         },
                                         "callback": {
                                             "description": "Callback function name. All output will be wrapper under this function name.\n",
-                                            "type": "string",
-                                            "example": "callbackFunction",
-                                            "displayName": "callback"
+                                            "example": "callbackFunction"
                                         }
                                     },
-                                    "protocols": [
-                                        "HTTPS"
-                                    ],
-                                    "securedBy": [
-                                        "oauth_2_0",
-                                        "clientId"
-                                    ],
                                     "is": [
                                         "limitable",
                                         "acceptCallback"
@@ -1453,9 +1299,6 @@
                                 },
                                 {
                                     "description": "Set a like on this media by the currently authenticated user.",
-                                    "protocols": [
-                                        "HTTPS"
-                                    ],
                                     "securedBy": [
                                         "oauth_2_0"
                                     ],
@@ -1464,7 +1307,6 @@
                                             "description": "Successfully liked a media object\n",
                                             "body": {
                                                 "application/json": {
-                                                    "type": "object",
                                                     "example": "{\n    \"meta\": {\n        \"code\": 200\n    }, \n    \"data\": null\n}",
                                                     "schema": "undefined"
                                                 }
@@ -1478,9 +1320,6 @@
                                 },
                                 {
                                     "description": "Remove a like on this media by the currently authenticated user.",
-                                    "protocols": [
-                                        "HTTPS"
-                                    ],
                                     "securedBy": [
                                         "oauth_2_0"
                                     ],
@@ -1488,7 +1327,6 @@
                                         "200": {
                                             "body": {
                                                 "application/json": {
-                                                    "type": "object",
                                                     "example": "{\n    \"meta\": {\n        \"code\": 200\n    }, \n    \"data\": null\n}",
                                                     "schema": "undefined"
                                                 }
@@ -1519,50 +1357,35 @@
                             "queryParameters": {
                                 "max_timestamp": {
                                     "description": "Return media before this UNIX timestamp.",
-                                    "type": "integer",
-                                    "displayName": "max_timestamp"
+                                    "type": "integer"
                                 },
                                 "min_timestamp": {
                                     "description": "Return media after this UNIX timestamp.",
-                                    "type": "integer",
-                                    "displayName": "min_timestamp"
+                                    "type": "integer"
                                 },
                                 "lat": {
                                     "description": "Latitude of the center search coordinate. If used, lng is required.",
-                                    "type": "number",
-                                    "displayName": "lat"
+                                    "type": "number"
                                 },
                                 "lng": {
                                     "description": "Longitude of the center search coordinate. If used, lat is required.",
-                                    "type": "number",
-                                    "displayName": "lng"
+                                    "type": "number"
                                 },
                                 "distance": {
                                     "description": "Default is 1000m (distance=1000), max distance is 5000.",
                                     "type": "integer",
-                                    "default": 1000,
-                                    "displayName": "distance"
+                                    "default": 1000
                                 },
                                 "count": {
                                     "description": "Number of items you would like to receive.",
                                     "type": "integer",
-                                    "example": "1",
-                                    "displayName": "count"
+                                    "example": "1"
                                 },
                                 "callback": {
                                     "description": "Callback function name. All output will be wrapper under this function name.\n",
-                                    "type": "string",
-                                    "example": "callbackFunction",
-                                    "displayName": "callback"
+                                    "example": "callbackFunction"
                                 }
                             },
-                            "protocols": [
-                                "HTTPS"
-                            ],
-                            "securedBy": [
-                                "oauth_2_0",
-                                "clientId"
-                            ],
                             "is": [
                                 "limitableByTime",
                                 "limitableByGeoPoint",
@@ -1573,7 +1396,6 @@
                                 "200": {
                                     "body": {
                                         "application/json": {
-                                            "type": "object",
                                             "example": "{\n    \"data\": {\n        \"type\": \"image\",\n        \"users_in_photo\": [{\n            \"user\": {\n                \"username\": \"kevin\",\n                \"full_name\": \"Kevin S\",\n                \"id\": \"3\",\n                \"profile_picture\": \"...\"\n            },\n            \"position\": {\n                \"x\": 0.315,\n                \"y\": 0.9111\n            }\n        }],\n        \"filter\": \"Walden\",\n        \"tags\": [],\n        \"comments\": {\n            \"data\": [{\n                \"created_time\": \"1279332030\",\n                \"text\": \"Love the sign here\",\n                \"from\": {\n                    \"username\": \"mikeyk\",\n                    \"full_name\": \"Mikey Krieger\",\n                    \"id\": \"4\",\n                    \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_1242695_75sq_1293915800.jpg\"\n                },\n                \"id\": \"8\"\n            }],\n            \"count\": 2\n        },\n        \"caption\": null,\n        \"likes\": {\n            \"count\": 1,\n            \"data\": [{\n                \"username\": \"mikeyk\",\n                \"full_name\": \"Mikeyk\",\n                \"id\": \"4\",\n                \"profile_picture\": \"...\"\n            }]\n        },\n        \"link\": \"http://instagr.am/p/D/\",\n        \"user\": {\n            \"username\": \"kevin\",\n            \"full_name\": \"Kevin S\",\n            \"profile_picture\": \"...\",\n            \"bio\": \"...\",\n            \"website\": \"...\",\n            \"id\": \"3\"\n        },\n        \"created_time\": \"1279340983\",\n        \"images\": {\n            \"low_resolution\": {\n                \"url\": \"http://distillery.s3.amazonaws.com/media/2010/07/16/4de37e03aa4b4372843a7eb33fa41cad_6.jpg\",\n                \"width\": 306,\n                \"height\": 306\n            },\n            \"thumbnail\": {\n                \"url\": \"http://distillery.s3.amazonaws.com/media/2010/07/16/4de37e03aa4b4372843a7eb33fa41cad_5.jpg\",\n                \"width\": 150,\n                \"height\": 150\n            },\n            \"standard_resolution\": {\n                \"url\": \"http://distillery.s3.amazonaws.com/media/2010/07/16/4de37e03aa4b4372843a7eb33fa41cad_7.jpg\",\n                \"width\": 612,\n                \"height\": 612\n            }\n        },\n        \"id\": \"3\",\n        \"location\": null\n    }\n}",
                                             "schema": "undefined"
                                         }
@@ -1600,23 +1422,13 @@
                                 "count": {
                                     "description": "Number of items you would like to receive.",
                                     "type": "integer",
-                                    "example": "1",
-                                    "displayName": "count"
+                                    "example": "1"
                                 },
                                 "callback": {
                                     "description": "Callback function name. All output will be wrapper under this function name.\n",
-                                    "type": "string",
-                                    "example": "callbackFunction",
-                                    "displayName": "callback"
+                                    "example": "callbackFunction"
                                 }
                             },
-                            "protocols": [
-                                "HTTPS"
-                            ],
-                            "securedBy": [
-                                "oauth_2_0",
-                                "clientId"
-                            ],
                             "is": [
                                 "limitable",
                                 "acceptCallback"
@@ -1625,7 +1437,6 @@
                                 "200": {
                                     "body": {
                                         "application/json": {
-                                            "type": "object",
                                             "example": "{\n    \"data\": {\n        \"type\": \"image\",\n        \"users_in_photo\": [{\n            \"user\": {\n                \"username\": \"kevin\",\n                \"full_name\": \"Kevin S\",\n                \"id\": \"3\",\n                \"profile_picture\": \"...\"\n            },\n            \"position\": {\n                \"x\": 0.315,\n                \"y\": 0.9111\n            }\n        }],\n        \"filter\": \"Walden\",\n        \"tags\": [],\n        \"comments\": {\n            \"data\": [{\n                \"created_time\": \"1279332030\",\n                \"text\": \"Love the sign here\",\n                \"from\": {\n                    \"username\": \"mikeyk\",\n                    \"full_name\": \"Mikey Krieger\",\n                    \"id\": \"4\",\n                    \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_1242695_75sq_1293915800.jpg\"\n                },\n                \"id\": \"8\"\n            }],\n            \"count\": 2\n        },\n        \"caption\": null,\n        \"likes\": {\n            \"count\": 1,\n            \"data\": [{\n                \"username\": \"mikeyk\",\n                \"full_name\": \"Mikeyk\",\n                \"id\": \"4\",\n                \"profile_picture\": \"...\"\n            }]\n        },\n        \"link\": \"http://instagr.am/p/D/\",\n        \"user\": {\n            \"username\": \"kevin\",\n            \"full_name\": \"Kevin S\",\n            \"profile_picture\": \"...\",\n            \"bio\": \"...\",\n            \"website\": \"...\",\n            \"id\": \"3\"\n        },\n        \"created_time\": \"1279340983\",\n        \"images\": {\n            \"low_resolution\": {\n                \"url\": \"http://distillery.s3.amazonaws.com/media/2010/07/16/4de37e03aa4b4372843a7eb33fa41cad_6.jpg\",\n                \"width\": 306,\n                \"height\": 306\n            },\n            \"thumbnail\": {\n                \"url\": \"http://distillery.s3.amazonaws.com/media/2010/07/16/4de37e03aa4b4372843a7eb33fa41cad_5.jpg\",\n                \"width\": 150,\n                \"height\": 150\n            },\n            \"standard_resolution\": {\n                \"url\": \"http://distillery.s3.amazonaws.com/media/2010/07/16/4de37e03aa4b4372843a7eb33fa41cad_7.jpg\",\n                \"width\": 612,\n                \"height\": 612\n            }\n        },\n        \"id\": \"3\",\n        \"location\": null\n    }\n}",
                                             "schema": "undefined"
                                         }
@@ -1655,10 +1466,7 @@
                     "type": "base",
                     "uriParameters": {
                         "tagName": {
-                            "description": "Name of tag.",
-                            "type": "string",
-                            "displayName": "tagName",
-                            "required": true
+                            "description": "Name of tag."
                         }
                     },
                     "methods": [
@@ -1668,23 +1476,13 @@
                                 "count": {
                                     "description": "Number of items you would like to receive.",
                                     "type": "integer",
-                                    "example": "1",
-                                    "displayName": "count"
+                                    "example": "1"
                                 },
                                 "callback": {
                                     "description": "Callback function name. All output will be wrapper under this function name.\n",
-                                    "type": "string",
-                                    "example": "callbackFunction",
-                                    "displayName": "callback"
+                                    "example": "callbackFunction"
                                 }
                             },
-                            "protocols": [
-                                "HTTPS"
-                            ],
-                            "securedBy": [
-                                "oauth_2_0",
-                                "clientId"
-                            ],
                             "is": [
                                 "limitable",
                                 "acceptCallback"
@@ -1718,34 +1516,22 @@
                                     "queryParameters": {
                                         "min_id": {
                                             "description": "Return media later than this min_id.",
-                                            "type": "integer",
-                                            "displayName": "min_id"
+                                            "type": "integer"
                                         },
                                         "max_id": {
                                             "description": "Return media earlier than this max_id.",
-                                            "type": "integer",
-                                            "displayName": "max_id"
+                                            "type": "integer"
                                         },
                                         "count": {
                                             "description": "Number of items you would like to receive.",
                                             "type": "integer",
-                                            "example": "1",
-                                            "displayName": "count"
+                                            "example": "1"
                                         },
                                         "callback": {
                                             "description": "Callback function name. All output will be wrapper under this function name.\n",
-                                            "type": "string",
-                                            "example": "callbackFunction",
-                                            "displayName": "callback"
+                                            "example": "callbackFunction"
                                         }
                                     },
-                                    "protocols": [
-                                        "HTTPS"
-                                    ],
-                                    "securedBy": [
-                                        "oauth_2_0",
-                                        "clientId"
-                                    ],
                                     "is": [
                                         "limitableById",
                                         "limitable",
@@ -1781,31 +1567,19 @@
                             "queryParameters": {
                                 "q": {
                                     "description": "A valid tag name without a leading #.\n",
-                                    "type": "string",
                                     "example": "nofilter",
-                                    "required": "true",
-                                    "displayName": "q"
+                                    "required": "true"
                                 },
                                 "count": {
                                     "description": "Number of items you would like to receive.",
                                     "type": "integer",
-                                    "example": "1",
-                                    "displayName": "count"
+                                    "example": "1"
                                 },
                                 "callback": {
                                     "description": "Callback function name. All output will be wrapper under this function name.\n",
-                                    "type": "string",
-                                    "example": "callbackFunction",
-                                    "displayName": "callback"
+                                    "example": "callbackFunction"
                                 }
                             },
-                            "protocols": [
-                                "HTTPS"
-                            ],
-                            "securedBy": [
-                                "oauth_2_0",
-                                "clientId"
-                            ],
                             "is": [
                                 "limitable",
                                 "acceptCallback"
@@ -1841,11 +1615,7 @@
                     ],
                     "type": "base",
                     "uriParameters": {
-                        "userId": {
-                            "type": "string",
-                            "displayName": "userId",
-                            "required": true
-                        }
+                        "userId": {}
                     },
                     "methods": [
                         {
@@ -1854,23 +1624,13 @@
                                 "count": {
                                     "description": "Number of items you would like to receive.",
                                     "type": "integer",
-                                    "example": "1",
-                                    "displayName": "count"
+                                    "example": "1"
                                 },
                                 "callback": {
                                     "description": "Callback function name. All output will be wrapper under this function name.\n",
-                                    "type": "string",
-                                    "example": "callbackFunction",
-                                    "displayName": "callback"
+                                    "example": "callbackFunction"
                                 }
                             },
-                            "protocols": [
-                                "HTTPS"
-                            ],
-                            "securedBy": [
-                                "oauth_2_0",
-                                "clientId"
-                            ],
                             "is": [
                                 "limitable",
                                 "acceptCallback"
@@ -1907,23 +1667,13 @@
                                         "count": {
                                             "description": "Number of items you would like to receive.",
                                             "type": "integer",
-                                            "example": "1",
-                                            "displayName": "count"
+                                            "example": "1"
                                         },
                                         "callback": {
                                             "description": "Callback function name. All output will be wrapper under this function name.\n",
-                                            "type": "string",
-                                            "example": "callbackFunction",
-                                            "displayName": "callback"
+                                            "example": "callbackFunction"
                                         }
                                     },
-                                    "protocols": [
-                                        "HTTPS"
-                                    ],
-                                    "securedBy": [
-                                        "oauth_2_0",
-                                        "clientId"
-                                    ],
                                     "is": [
                                         "limitable",
                                         "acceptCallback"
@@ -1932,7 +1682,6 @@
                                         "200": {
                                             "body": {
                                                 "application/json": {
-                                                    "type": "object",
                                                     "example": "{\n    \"data\": [{\n        \"username\": \"jack\",\n        \"first_name\": \"Jack\",\n        \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_66_75sq.jpg\",\n        \"id\": \"66\",\n        \"last_name\": \"Dorsey\"\n    },\n    {\n        \"username\": \"sammyjack\",\n        \"first_name\": \"Sammy\",\n        \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_29648_75sq_1294520029.jpg\",\n        \"id\": \"29648\",\n        \"last_name\": \"Jack\"\n    },\n    {\n        \"username\": \"jacktiddy\",\n        \"first_name\": \"Jack\",\n        \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_13096_75sq_1286441317.jpg\",\n        \"id\": \"13096\",\n        \"last_name\": \"Tiddy\"\n    }]\n}",
                                                     "schema": "undefined"
                                                 }
@@ -1962,23 +1711,13 @@
                                         "count": {
                                             "description": "Number of items you would like to receive.",
                                             "type": "integer",
-                                            "example": "1",
-                                            "displayName": "count"
+                                            "example": "1"
                                         },
                                         "callback": {
                                             "description": "Callback function name. All output will be wrapper under this function name.\n",
-                                            "type": "string",
-                                            "example": "callbackFunction",
-                                            "displayName": "callback"
+                                            "example": "callbackFunction"
                                         }
                                     },
-                                    "protocols": [
-                                        "HTTPS"
-                                    ],
-                                    "securedBy": [
-                                        "oauth_2_0",
-                                        "clientId"
-                                    ],
                                     "is": [
                                         "limitable",
                                         "acceptCallback"
@@ -1987,7 +1726,6 @@
                                         "200": {
                                             "body": {
                                                 "application/json": {
-                                                    "type": "object",
                                                     "example": "{\n    \"data\": [{\n        \"username\": \"jack\",\n        \"first_name\": \"Jack\",\n        \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_66_75sq.jpg\",\n        \"id\": \"66\",\n        \"last_name\": \"Dorsey\"\n    },\n    {\n        \"username\": \"sammyjack\",\n        \"first_name\": \"Sammy\",\n        \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_29648_75sq_1294520029.jpg\",\n        \"id\": \"29648\",\n        \"last_name\": \"Jack\"\n    },\n    {\n        \"username\": \"jacktiddy\",\n        \"first_name\": \"Jack\",\n        \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_13096_75sq_1286441317.jpg\",\n        \"id\": \"13096\",\n        \"last_name\": \"Tiddy\"\n    }]\n}",
                                                     "schema": "undefined"
                                                 }
@@ -2014,44 +1752,30 @@
                                     "queryParameters": {
                                         "min_id": {
                                             "description": "Return media later than this min_id.",
-                                            "type": "integer",
-                                            "displayName": "min_id"
+                                            "type": "integer"
                                         },
                                         "max_id": {
                                             "description": "Return media earlier than this max_id.",
-                                            "type": "integer",
-                                            "displayName": "max_id"
+                                            "type": "integer"
                                         },
                                         "max_timestamp": {
                                             "description": "Return media before this UNIX timestamp.",
-                                            "type": "integer",
-                                            "displayName": "max_timestamp"
+                                            "type": "integer"
                                         },
                                         "min_timestamp": {
                                             "description": "Return media after this UNIX timestamp.",
-                                            "type": "integer",
-                                            "displayName": "min_timestamp"
+                                            "type": "integer"
                                         },
                                         "count": {
                                             "description": "Number of items you would like to receive.",
                                             "type": "integer",
-                                            "example": "1",
-                                            "displayName": "count"
+                                            "example": "1"
                                         },
                                         "callback": {
                                             "description": "Callback function name. All output will be wrapper under this function name.\n",
-                                            "type": "string",
-                                            "example": "callbackFunction",
-                                            "displayName": "callback"
+                                            "example": "callbackFunction"
                                         }
                                     },
-                                    "protocols": [
-                                        "HTTPS"
-                                    ],
-                                    "securedBy": [
-                                        "oauth_2_0",
-                                        "clientId"
-                                    ],
                                     "is": [
                                         "limitableById",
                                         "limitableByTime",
@@ -2062,7 +1786,6 @@
                                         "200": {
                                             "body": {
                                                 "application/json": {
-                                                    "type": "object",
                                                     "example": "{\n    \"data\": [{\n        \"location\": {\n            \"id\": \"833\",\n            \"latitude\": 37.77956816727314,\n            \"longitude\": -122.41387367248539,\n            \"name\": \"Civic Center BART\"\n        },\n        \"comments\": {\n            \"count\": 16,\n            \"data\": [  ]\n        },\n        \"caption\": null,\n        \"link\": \"http://instagr.am/p/BXsFz/\",\n        \"likes\": {\n            \"count\": 190,\n            \"data\": [{\n                \"username\": \"shayne\",\n                \"full_name\": \"Shayne Sweeney\",\n                \"id\": \"20\",\n                \"profile_picture\": \"...\"\n            }, {}]\n        },\n        \"created_time\": \"1296748524\",\n        \"images\": {\n            \"low_resolution\": {\n                \"url\": \"http://distillery.s3.amazonaws.com/media/2011/02/03/efc502667a554329b52d9a6bab35b24a_6.jpg\",\n                \"width\": 306,\n                \"height\": 306\n            },\n            \"thumbnail\": {\n                \"url\": \"http://distillery.s3.amazonaws.com/media/2011/02/03/efc502667a554329b52d9a6bab35b24a_5.jpg\",\n                \"width\": 150,\n                \"height\": 150\n            },\n            \"standard_resolution\": {\n                \"url\": \"http://distillery.s3.amazonaws.com/media/2011/02/03/efc502667a554329b52d9a6bab35b24a_7.jpg\",\n                \"width\": 612,\n                \"height\": 612\n            }\n        },\n        \"type\": \"image\",\n        \"users_in_photo\": [],\n        \"filter\": \"Earlybird\",\n        \"tags\": [],\n        \"id\": \"22987123\",\n        \"user\": {\n            \"username\": \"kevin\",\n            \"full_name\": \"Kevin S\",\n            \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_3_75sq_1295574122.jpg\",\n            \"id\": \"3\"\n        }\n    },\n    {\n        \"videos\": {\n            \"low_resolution\": {\n                \"url\": \"http://distilleryvesper9-13.ak.instagram.com/090d06dad9cd11e2aa0912313817975d_102.mp4\",\n                \"width\": 480,\n                \"height\": 480\n            },\n            \"standard_resolution\": {\n                \"url\": \"http://distilleryvesper9-13.ak.instagram.com/090d06dad9cd11e2aa0912313817975d_101.mp4\",\n                \"width\": 640,\n                \"height\": 640\n            },\n        \"comments\": {\n            \"data\": [{\n                \"created_time\": \"1279332030\",\n                \"text\": \"Love the sign here\",\n                \"from\": {\n                    \"username\": \"mikeyk\",\n                    \"full_name\": \"Mikey Krieger\",\n                    \"id\": \"4\",\n                    \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_1242695_75sq_1293915800.jpg\"\n                },\n                \"id\": \"8\"\n            },\n            {\n                \"created_time\": \"1279341004\",\n                \"text\": \"Chilako taco\",\n                \"from\": {\n                    \"username\": \"kevin\",\n                    \"full_name\": \"Kevin S\",\n                    \"id\": \"3\",\n                    \"profile_picture\": \"...\"\n                },\n                \"id\": \"3\"\n            }],\n            \"count\": 2\n        },\n        \"caption\": null,\n        \"likes\": {\n            \"count\": 1,\n            \"data\": [{\n                \"username\": \"mikeyk\",\n                \"full_name\": \"Mikeyk\",\n                \"id\": \"4\",\n                \"profile_picture\": \"...\"\n            }]\n        },\n        \"link\": \"http://instagr.am/p/D/\",\n        \"created_time\": \"1279340983\",\n        \"images\": {\n            \"low_resolution\": {\n                \"url\": \"http://distilleryimage2.ak.instagram.com/11f75f1cd9cc11e2a0fd22000aa8039a_6.jpg\",\n                \"width\": 306,\n                \"height\": 306\n            },\n            \"thumbnail\": {\n                \"url\": \"http://distilleryimage2.ak.instagram.com/11f75f1cd9cc11e2a0fd22000aa8039a_5.jpg\",\n                \"width\": 150,\n                \"height\": 150\n            },\n            \"standard_resolution\": {\n                \"url\": \"http://distilleryimage2.ak.instagram.com/11f75f1cd9cc11e2a0fd22000aa8039a_7.jpg\",\n                \"width\": 612,\n                \"height\": 612\n            }\n        },\n        \"type\": \"video\",\n        \"users_in_photo\": null,\n        \"filter\": \"Vesper\",\n        \"tags\": [],\n        \"id\": \"363839373298\",\n        \"user\": {\n            \"username\": \"kevin\",\n            \"full_name\": \"Kevin S\",\n            \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_3_75sq_1295574122.jpg\",\n            \"id\": \"3\"\n        },\n        \"location\": null\n    }}]\n}",
                                                     "schema": "undefined"
                                                 }
@@ -2096,23 +1819,13 @@
                                         "count": {
                                             "description": "Number of items you would like to receive.",
                                             "type": "integer",
-                                            "example": "1",
-                                            "displayName": "count"
+                                            "example": "1"
                                         },
                                         "callback": {
                                             "description": "Callback function name. All output will be wrapper under this function name.\n",
-                                            "type": "string",
-                                            "example": "callbackFunction",
-                                            "displayName": "callback"
+                                            "example": "callbackFunction"
                                         }
                                     },
-                                    "protocols": [
-                                        "HTTPS"
-                                    ],
-                                    "securedBy": [
-                                        "oauth_2_0",
-                                        "clientId"
-                                    ],
                                     "is": [
                                         "limitable",
                                         "acceptCallback"
@@ -2133,19 +1846,14 @@
                                 },
                                 {
                                     "description": "Modify the relationship between the current user and the target user.",
-                                    "protocols": [
-                                        "HTTPS"
-                                    ],
                                     "securedBy": [
                                         "oauth_2_0"
                                     ],
                                     "body": {
                                         "application/x-www-form-urlencoded": {
-                                            "type": "object",
                                             "properties": {
                                                 "action": {
                                                     "description": "One of follow/unfollow/block/unblock/approve/deny.",
-                                                    "type": "string",
                                                     "enum": [
                                                         "follow",
                                                         "unfollow",
@@ -2193,31 +1901,19 @@
                             "queryParameters": {
                                 "q": {
                                     "description": "A query string.",
-                                    "type": "string",
                                     "example": "some query",
-                                    "required": "true",
-                                    "displayName": "q"
+                                    "required": "true"
                                 },
                                 "count": {
                                     "description": "Number of users to return.",
                                     "type": "integer",
-                                    "example": "10",
-                                    "displayName": "count"
+                                    "example": "10"
                                 },
                                 "callback": {
                                     "description": "Callback function name. All output will be wrapper under this function name.\n",
-                                    "type": "string",
-                                    "example": "callbackFunction",
-                                    "displayName": "callback"
+                                    "example": "callbackFunction"
                                 }
                             },
-                            "protocols": [
-                                "HTTPS"
-                            ],
-                            "securedBy": [
-                                "oauth_2_0",
-                                "clientId"
-                            ],
                             "is": [
                                 "limitable",
                                 "acceptCallback"
@@ -2226,7 +1922,6 @@
                                 "200": {
                                     "body": {
                                         "application/json": {
-                                            "type": "object",
                                             "example": "{\n    \"data\": [{\n        \"username\": \"jack\",\n        \"first_name\": \"Jack\",\n        \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_66_75sq.jpg\",\n        \"id\": \"66\",\n        \"last_name\": \"Dorsey\"\n    },\n    {\n        \"username\": \"sammyjack\",\n        \"first_name\": \"Sammy\",\n        \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_29648_75sq_1294520029.jpg\",\n        \"id\": \"29648\",\n        \"last_name\": \"Jack\"\n    },\n    {\n        \"username\": \"jacktiddy\",\n        \"first_name\": \"Jack\",\n        \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_13096_75sq_1286441317.jpg\",\n        \"id\": \"13096\",\n        \"last_name\": \"Tiddy\"\n    }]\n}",
                                             "schema": "undefined"
                                         }
@@ -2260,23 +1955,13 @@
                                 "count": {
                                     "description": "Number of items you would like to receive.",
                                     "type": "integer",
-                                    "example": "1",
-                                    "displayName": "count"
+                                    "example": "1"
                                 },
                                 "callback": {
                                     "description": "Callback function name. All output will be wrapper under this function name.\n",
-                                    "type": "string",
-                                    "example": "callbackFunction",
-                                    "displayName": "callback"
+                                    "example": "callbackFunction"
                                 }
                             },
-                            "protocols": [
-                                "HTTPS"
-                            ],
-                            "securedBy": [
-                                "oauth_2_0",
-                                "clientId"
-                            ],
                             "is": [
                                 "limitable",
                                 "acceptCallback"
@@ -2309,34 +1994,22 @@
                                     "queryParameters": {
                                         "min_id": {
                                             "description": "Return media later than this min_id.",
-                                            "type": "integer",
-                                            "displayName": "min_id"
+                                            "type": "integer"
                                         },
                                         "max_id": {
                                             "description": "Return media earlier than this max_id.",
-                                            "type": "integer",
-                                            "displayName": "max_id"
+                                            "type": "integer"
                                         },
                                         "count": {
                                             "description": "Number of items you would like to receive.",
                                             "type": "integer",
-                                            "example": "1",
-                                            "displayName": "count"
+                                            "example": "1"
                                         },
                                         "callback": {
                                             "description": "Callback function name. All output will be wrapper under this function name.\n",
-                                            "type": "string",
-                                            "example": "callbackFunction",
-                                            "displayName": "callback"
+                                            "example": "callbackFunction"
                                         }
                                     },
-                                    "protocols": [
-                                        "HTTPS"
-                                    ],
-                                    "securedBy": [
-                                        "oauth_2_0",
-                                        "clientId"
-                                    ],
                                     "is": [
                                         "limitableById",
                                         "limitable",
@@ -2346,7 +2019,6 @@
                                         "200": {
                                             "body": {
                                                 "application/json": {
-                                                    "type": "object",
                                                     "example": "{\n    \"data\": [{\n        \"location\": {\n            \"id\": \"833\",\n            \"latitude\": 37.77956816727314,\n            \"longitude\": -122.41387367248539,\n            \"name\": \"Civic Center BART\"\n        },\n        \"comments\": {\n            \"count\": 16,\n            \"data\": [  ]\n        },\n        \"caption\": null,\n        \"link\": \"http://instagr.am/p/BXsFz/\",\n        \"likes\": {\n            \"count\": 190,\n            \"data\": [{\n                \"username\": \"shayne\",\n                \"full_name\": \"Shayne Sweeney\",\n                \"id\": \"20\",\n                \"profile_picture\": \"...\"\n            }, {}]\n        },\n        \"created_time\": \"1296748524\",\n        \"images\": {\n            \"low_resolution\": {\n                \"url\": \"http://distillery.s3.amazonaws.com/media/2011/02/03/efc502667a554329b52d9a6bab35b24a_6.jpg\",\n                \"width\": 306,\n                \"height\": 306\n            },\n            \"thumbnail\": {\n                \"url\": \"http://distillery.s3.amazonaws.com/media/2011/02/03/efc502667a554329b52d9a6bab35b24a_5.jpg\",\n                \"width\": 150,\n                \"height\": 150\n            },\n            \"standard_resolution\": {\n                \"url\": \"http://distillery.s3.amazonaws.com/media/2011/02/03/efc502667a554329b52d9a6bab35b24a_7.jpg\",\n                \"width\": 612,\n                \"height\": 612\n            }\n        },\n        \"type\": \"image\",\n        \"users_in_photo\": [],\n        \"filter\": \"Earlybird\",\n        \"tags\": [],\n        \"id\": \"22987123\",\n        \"user\": {\n            \"username\": \"kevin\",\n            \"full_name\": \"Kevin S\",\n            \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_3_75sq_1295574122.jpg\",\n            \"id\": \"3\"\n        }\n    },\n    {\n        \"videos\": {\n            \"low_resolution\": {\n                \"url\": \"http://distilleryvesper9-13.ak.instagram.com/090d06dad9cd11e2aa0912313817975d_102.mp4\",\n                \"width\": 480,\n                \"height\": 480\n            },\n            \"standard_resolution\": {\n                \"url\": \"http://distilleryvesper9-13.ak.instagram.com/090d06dad9cd11e2aa0912313817975d_101.mp4\",\n                \"width\": 640,\n                \"height\": 640\n            },\n        \"comments\": {\n            \"data\": [{\n                \"created_time\": \"1279332030\",\n                \"text\": \"Love the sign here\",\n                \"from\": {\n                    \"username\": \"mikeyk\",\n                    \"full_name\": \"Mikey Krieger\",\n                    \"id\": \"4\",\n                    \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_1242695_75sq_1293915800.jpg\"\n                },\n                \"id\": \"8\"\n            },\n            {\n                \"created_time\": \"1279341004\",\n                \"text\": \"Chilako taco\",\n                \"from\": {\n                    \"username\": \"kevin\",\n                    \"full_name\": \"Kevin S\",\n                    \"id\": \"3\",\n                    \"profile_picture\": \"...\"\n                },\n                \"id\": \"3\"\n            }],\n            \"count\": 2\n        },\n        \"caption\": null,\n        \"likes\": {\n            \"count\": 1,\n            \"data\": [{\n                \"username\": \"mikeyk\",\n                \"full_name\": \"Mikeyk\",\n                \"id\": \"4\",\n                \"profile_picture\": \"...\"\n            }]\n        },\n        \"link\": \"http://instagr.am/p/D/\",\n        \"created_time\": \"1279340983\",\n        \"images\": {\n            \"low_resolution\": {\n                \"url\": \"http://distilleryimage2.ak.instagram.com/11f75f1cd9cc11e2a0fd22000aa8039a_6.jpg\",\n                \"width\": 306,\n                \"height\": 306\n            },\n            \"thumbnail\": {\n                \"url\": \"http://distilleryimage2.ak.instagram.com/11f75f1cd9cc11e2a0fd22000aa8039a_5.jpg\",\n                \"width\": 150,\n                \"height\": 150\n            },\n            \"standard_resolution\": {\n                \"url\": \"http://distilleryimage2.ak.instagram.com/11f75f1cd9cc11e2a0fd22000aa8039a_7.jpg\",\n                \"width\": 612,\n                \"height\": 612\n            }\n        },\n        \"type\": \"video\",\n        \"users_in_photo\": null,\n        \"filter\": \"Vesper\",\n        \"tags\": [],\n        \"id\": \"363839373298\",\n        \"user\": {\n            \"username\": \"kevin\",\n            \"full_name\": \"Kevin S\",\n            \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_3_75sq_1295574122.jpg\",\n            \"id\": \"3\"\n        },\n        \"location\": null\n    }}]\n}",
                                                     "schema": "undefined"
                                                 }
@@ -2376,23 +2048,13 @@
                                         "count": {
                                             "description": "Number of items you would like to receive.",
                                             "type": "integer",
-                                            "example": "1",
-                                            "displayName": "count"
+                                            "example": "1"
                                         },
                                         "callback": {
                                             "description": "Callback function name. All output will be wrapper under this function name.\n",
-                                            "type": "string",
-                                            "example": "callbackFunction",
-                                            "displayName": "callback"
+                                            "example": "callbackFunction"
                                         }
                                     },
-                                    "protocols": [
-                                        "HTTPS"
-                                    ],
-                                    "securedBy": [
-                                        "oauth_2_0",
-                                        "clientId"
-                                    ],
                                     "is": [
                                         "limitable",
                                         "acceptCallback"
@@ -2401,7 +2063,6 @@
                                         "200": {
                                             "body": {
                                                 "application/json": {
-                                                    "type": "object",
                                                     "example": "{\n    \"data\": [{\n        \"username\": \"jack\",\n        \"first_name\": \"Jack\",\n        \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_66_75sq.jpg\",\n        \"id\": \"66\",\n        \"last_name\": \"Dorsey\"\n    },\n    {\n        \"username\": \"sammyjack\",\n        \"first_name\": \"Sammy\",\n        \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_29648_75sq_1294520029.jpg\",\n        \"id\": \"29648\",\n        \"last_name\": \"Jack\"\n    },\n    {\n        \"username\": \"jacktiddy\",\n        \"first_name\": \"Jack\",\n        \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_13096_75sq_1286441317.jpg\",\n        \"id\": \"13096\",\n        \"last_name\": \"Tiddy\"\n    }]\n}",
                                                     "schema": "undefined"
                                                 }
@@ -2429,29 +2090,18 @@
                                         "max_like_id": {
                                             "description": "Return media liked before this id.",
                                             "type": "integer",
-                                            "example": "100",
-                                            "displayName": "max_like_id"
+                                            "example": "100"
                                         },
                                         "count": {
                                             "description": "Number of items you would like to receive.",
                                             "type": "integer",
-                                            "example": "1",
-                                            "displayName": "count"
+                                            "example": "1"
                                         },
                                         "callback": {
                                             "description": "Callback function name. All output will be wrapper under this function name.\n",
-                                            "type": "string",
-                                            "example": "callbackFunction",
-                                            "displayName": "callback"
+                                            "example": "callbackFunction"
                                         }
                                     },
-                                    "protocols": [
-                                        "HTTPS"
-                                    ],
-                                    "securedBy": [
-                                        "oauth_2_0",
-                                        "clientId"
-                                    ],
                                     "is": [
                                         "limitable",
                                         "acceptCallback"
@@ -2460,7 +2110,6 @@
                                         "200": {
                                             "body": {
                                                 "application/json": {
-                                                    "type": "object",
                                                     "example": "{\n    \"data\": [{\n        \"location\": {\n            \"id\": \"833\",\n            \"latitude\": 37.77956816727314,\n            \"longitude\": -122.41387367248539,\n            \"name\": \"Civic Center BART\"\n        },\n        \"comments\": {\n            \"count\": 16,\n            \"data\": [  ]\n        },\n        \"caption\": null,\n        \"link\": \"http://instagr.am/p/BXsFz/\",\n        \"likes\": {\n            \"count\": 190,\n            \"data\": [{\n                \"username\": \"shayne\",\n                \"full_name\": \"Shayne Sweeney\",\n                \"id\": \"20\",\n                \"profile_picture\": \"...\"\n            }, {}]\n        },\n        \"created_time\": \"1296748524\",\n        \"images\": {\n            \"low_resolution\": {\n                \"url\": \"http://distillery.s3.amazonaws.com/media/2011/02/03/efc502667a554329b52d9a6bab35b24a_6.jpg\",\n                \"width\": 306,\n                \"height\": 306\n            },\n            \"thumbnail\": {\n                \"url\": \"http://distillery.s3.amazonaws.com/media/2011/02/03/efc502667a554329b52d9a6bab35b24a_5.jpg\",\n                \"width\": 150,\n                \"height\": 150\n            },\n            \"standard_resolution\": {\n                \"url\": \"http://distillery.s3.amazonaws.com/media/2011/02/03/efc502667a554329b52d9a6bab35b24a_7.jpg\",\n                \"width\": 612,\n                \"height\": 612\n            }\n        },\n        \"type\": \"image\",\n        \"users_in_photo\": [],\n        \"filter\": \"Earlybird\",\n        \"tags\": [],\n        \"id\": \"22987123\",\n        \"user\": {\n            \"username\": \"kevin\",\n            \"full_name\": \"Kevin S\",\n            \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_3_75sq_1295574122.jpg\",\n            \"id\": \"3\"\n        }\n    },\n    {\n        \"videos\": {\n            \"low_resolution\": {\n                \"url\": \"http://distilleryvesper9-13.ak.instagram.com/090d06dad9cd11e2aa0912313817975d_102.mp4\",\n                \"width\": 480,\n                \"height\": 480\n            },\n            \"standard_resolution\": {\n                \"url\": \"http://distilleryvesper9-13.ak.instagram.com/090d06dad9cd11e2aa0912313817975d_101.mp4\",\n                \"width\": 640,\n                \"height\": 640\n            },\n        \"comments\": {\n            \"data\": [{\n                \"created_time\": \"1279332030\",\n                \"text\": \"Love the sign here\",\n                \"from\": {\n                    \"username\": \"mikeyk\",\n                    \"full_name\": \"Mikey Krieger\",\n                    \"id\": \"4\",\n                    \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_1242695_75sq_1293915800.jpg\"\n                },\n                \"id\": \"8\"\n            },\n            {\n                \"created_time\": \"1279341004\",\n                \"text\": \"Chilako taco\",\n                \"from\": {\n                    \"username\": \"kevin\",\n                    \"full_name\": \"Kevin S\",\n                    \"id\": \"3\",\n                    \"profile_picture\": \"...\"\n                },\n                \"id\": \"3\"\n            }],\n            \"count\": 2\n        },\n        \"caption\": null,\n        \"likes\": {\n            \"count\": 1,\n            \"data\": [{\n                \"username\": \"mikeyk\",\n                \"full_name\": \"Mikeyk\",\n                \"id\": \"4\",\n                \"profile_picture\": \"...\"\n            }]\n        },\n        \"link\": \"http://instagr.am/p/D/\",\n        \"created_time\": \"1279340983\",\n        \"images\": {\n            \"low_resolution\": {\n                \"url\": \"http://distilleryimage2.ak.instagram.com/11f75f1cd9cc11e2a0fd22000aa8039a_6.jpg\",\n                \"width\": 306,\n                \"height\": 306\n            },\n            \"thumbnail\": {\n                \"url\": \"http://distilleryimage2.ak.instagram.com/11f75f1cd9cc11e2a0fd22000aa8039a_5.jpg\",\n                \"width\": 150,\n                \"height\": 150\n            },\n            \"standard_resolution\": {\n                \"url\": \"http://distilleryimage2.ak.instagram.com/11f75f1cd9cc11e2a0fd22000aa8039a_7.jpg\",\n                \"width\": 612,\n                \"height\": 612\n            }\n        },\n        \"type\": \"video\",\n        \"users_in_photo\": null,\n        \"filter\": \"Vesper\",\n        \"tags\": [],\n        \"id\": \"363839373298\",\n        \"user\": {\n            \"username\": \"kevin\",\n            \"full_name\": \"Kevin S\",\n            \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_3_75sq_1295574122.jpg\",\n            \"id\": \"3\"\n        },\n        \"location\": null\n    }}]\n}",
                                                     "schema": "undefined"
                                                 }
@@ -2492,9 +2141,7 @@
                     "type": "base",
                     "uriParameters": {
                         "locId": {
-                            "type": "integer",
-                            "displayName": "locId",
-                            "required": true
+                            "type": "integer"
                         }
                     },
                     "methods": [
@@ -2504,23 +2151,13 @@
                                 "count": {
                                     "description": "Number of items you would like to receive.",
                                     "type": "integer",
-                                    "example": "1",
-                                    "displayName": "count"
+                                    "example": "1"
                                 },
                                 "callback": {
                                     "description": "Callback function name. All output will be wrapper under this function name.\n",
-                                    "type": "string",
-                                    "example": "callbackFunction",
-                                    "displayName": "callback"
+                                    "example": "callbackFunction"
                                 }
                             },
-                            "protocols": [
-                                "HTTPS"
-                            ],
-                            "securedBy": [
-                                "oauth_2_0",
-                                "clientId"
-                            ],
                             "is": [
                                 "limitable",
                                 "acceptCallback"
@@ -2554,44 +2191,30 @@
                                     "queryParameters": {
                                         "min_id": {
                                             "description": "Return media later than this min_id.",
-                                            "type": "integer",
-                                            "displayName": "min_id"
+                                            "type": "integer"
                                         },
                                         "max_id": {
                                             "description": "Return media earlier than this max_id.",
-                                            "type": "integer",
-                                            "displayName": "max_id"
+                                            "type": "integer"
                                         },
                                         "max_timestamp": {
                                             "description": "Return media before this UNIX timestamp.",
-                                            "type": "integer",
-                                            "displayName": "max_timestamp"
+                                            "type": "integer"
                                         },
                                         "min_timestamp": {
                                             "description": "Return media after this UNIX timestamp.",
-                                            "type": "integer",
-                                            "displayName": "min_timestamp"
+                                            "type": "integer"
                                         },
                                         "count": {
                                             "description": "Number of items you would like to receive.",
                                             "type": "integer",
-                                            "example": "1",
-                                            "displayName": "count"
+                                            "example": "1"
                                         },
                                         "callback": {
                                             "description": "Callback function name. All output will be wrapper under this function name.\n",
-                                            "type": "string",
-                                            "example": "callbackFunction",
-                                            "displayName": "callback"
+                                            "example": "callbackFunction"
                                         }
                                     },
-                                    "protocols": [
-                                        "HTTPS"
-                                    ],
-                                    "securedBy": [
-                                        "oauth_2_0",
-                                        "clientId"
-                                    ],
                                     "is": [
                                         "limitableById",
                                         "limitableByTime",
@@ -2602,7 +2225,6 @@
                                         "200": {
                                             "body": {
                                                 "application/json": {
-                                                    "type": "object",
                                                     "example": "{\n    \"data\": [{\n        \"location\": {\n            \"id\": \"833\",\n            \"latitude\": 37.77956816727314,\n            \"longitude\": -122.41387367248539,\n            \"name\": \"Civic Center BART\"\n        },\n        \"comments\": {\n            \"count\": 16,\n            \"data\": [  ]\n        },\n        \"caption\": null,\n        \"link\": \"http://instagr.am/p/BXsFz/\",\n        \"likes\": {\n            \"count\": 190,\n            \"data\": [{\n                \"username\": \"shayne\",\n                \"full_name\": \"Shayne Sweeney\",\n                \"id\": \"20\",\n                \"profile_picture\": \"...\"\n            }, {}]\n        },\n        \"created_time\": \"1296748524\",\n        \"images\": {\n            \"low_resolution\": {\n                \"url\": \"http://distillery.s3.amazonaws.com/media/2011/02/03/efc502667a554329b52d9a6bab35b24a_6.jpg\",\n                \"width\": 306,\n                \"height\": 306\n            },\n            \"thumbnail\": {\n                \"url\": \"http://distillery.s3.amazonaws.com/media/2011/02/03/efc502667a554329b52d9a6bab35b24a_5.jpg\",\n                \"width\": 150,\n                \"height\": 150\n            },\n            \"standard_resolution\": {\n                \"url\": \"http://distillery.s3.amazonaws.com/media/2011/02/03/efc502667a554329b52d9a6bab35b24a_7.jpg\",\n                \"width\": 612,\n                \"height\": 612\n            }\n        },\n        \"type\": \"image\",\n        \"users_in_photo\": [],\n        \"filter\": \"Earlybird\",\n        \"tags\": [],\n        \"id\": \"22987123\",\n        \"user\": {\n            \"username\": \"kevin\",\n            \"full_name\": \"Kevin S\",\n            \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_3_75sq_1295574122.jpg\",\n            \"id\": \"3\"\n        }\n    },\n    {\n        \"videos\": {\n            \"low_resolution\": {\n                \"url\": \"http://distilleryvesper9-13.ak.instagram.com/090d06dad9cd11e2aa0912313817975d_102.mp4\",\n                \"width\": 480,\n                \"height\": 480\n            },\n            \"standard_resolution\": {\n                \"url\": \"http://distilleryvesper9-13.ak.instagram.com/090d06dad9cd11e2aa0912313817975d_101.mp4\",\n                \"width\": 640,\n                \"height\": 640\n            },\n        \"comments\": {\n            \"data\": [{\n                \"created_time\": \"1279332030\",\n                \"text\": \"Love the sign here\",\n                \"from\": {\n                    \"username\": \"mikeyk\",\n                    \"full_name\": \"Mikey Krieger\",\n                    \"id\": \"4\",\n                    \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_1242695_75sq_1293915800.jpg\"\n                },\n                \"id\": \"8\"\n            },\n            {\n                \"created_time\": \"1279341004\",\n                \"text\": \"Chilako taco\",\n                \"from\": {\n                    \"username\": \"kevin\",\n                    \"full_name\": \"Kevin S\",\n                    \"id\": \"3\",\n                    \"profile_picture\": \"...\"\n                },\n                \"id\": \"3\"\n            }],\n            \"count\": 2\n        },\n        \"caption\": null,\n        \"likes\": {\n            \"count\": 1,\n            \"data\": [{\n                \"username\": \"mikeyk\",\n                \"full_name\": \"Mikeyk\",\n                \"id\": \"4\",\n                \"profile_picture\": \"...\"\n            }]\n        },\n        \"link\": \"http://instagr.am/p/D/\",\n        \"created_time\": \"1279340983\",\n        \"images\": {\n            \"low_resolution\": {\n                \"url\": \"http://distilleryimage2.ak.instagram.com/11f75f1cd9cc11e2a0fd22000aa8039a_6.jpg\",\n                \"width\": 306,\n                \"height\": 306\n            },\n            \"thumbnail\": {\n                \"url\": \"http://distilleryimage2.ak.instagram.com/11f75f1cd9cc11e2a0fd22000aa8039a_5.jpg\",\n                \"width\": 150,\n                \"height\": 150\n            },\n            \"standard_resolution\": {\n                \"url\": \"http://distilleryimage2.ak.instagram.com/11f75f1cd9cc11e2a0fd22000aa8039a_7.jpg\",\n                \"width\": 612,\n                \"height\": 612\n            }\n        },\n        \"type\": \"video\",\n        \"users_in_photo\": null,\n        \"filter\": \"Vesper\",\n        \"tags\": [],\n        \"id\": \"363839373298\",\n        \"user\": {\n            \"username\": \"kevin\",\n            \"full_name\": \"Kevin S\",\n            \"profile_picture\": \"http://distillery.s3.amazonaws.com/profiles/profile_3_75sq_1295574122.jpg\",\n            \"id\": \"3\"\n        },\n        \"location\": null\n    }}]\n}",
                                                     "schema": "undefined"
                                                 }
@@ -2629,51 +2251,34 @@
                             "description": "Search for a location by geographic coordinate.",
                             "queryParameters": {
                                 "foursquare_v2_id": {
-                                    "description": "Returns a location mapped off of a foursquare v2 api location id. If\nused, you are not required to use lat and lng.\n",
-                                    "type": "string",
-                                    "displayName": "foursquare_v2_id"
+                                    "description": "Returns a location mapped off of a foursquare v2 api location id. If\nused, you are not required to use lat and lng.\n"
                                 },
                                 "foursquare_id": {
-                                    "description": "Returns a location mapped off of a foursquare v1 api location id. If used,\nyou are not required to use lat and lng. Note that this method is deprecated;\nyou should use the new foursquare IDs with V2 of their API.\n",
-                                    "type": "string",
-                                    "displayName": "foursquare_id"
+                                    "description": "Returns a location mapped off of a foursquare v1 api location id. If used,\nyou are not required to use lat and lng. Note that this method is deprecated;\nyou should use the new foursquare IDs with V2 of their API.\n"
                                 },
                                 "lat": {
                                     "description": "Latitude of the center search coordinate. If used, lng is required.",
-                                    "type": "number",
-                                    "displayName": "lat"
+                                    "type": "number"
                                 },
                                 "lng": {
                                     "description": "Longitude of the center search coordinate. If used, lat is required.",
-                                    "type": "number",
-                                    "displayName": "lng"
+                                    "type": "number"
                                 },
                                 "distance": {
                                     "description": "Default is 1000m (distance=1000), max distance is 5000.",
                                     "type": "integer",
-                                    "default": 1000,
-                                    "displayName": "distance"
+                                    "default": 1000
                                 },
                                 "count": {
                                     "description": "Number of items you would like to receive.",
                                     "type": "integer",
-                                    "example": "1",
-                                    "displayName": "count"
+                                    "example": "1"
                                 },
                                 "callback": {
                                     "description": "Callback function name. All output will be wrapper under this function name.\n",
-                                    "type": "string",
-                                    "example": "callbackFunction",
-                                    "displayName": "callback"
+                                    "example": "callbackFunction"
                                 }
                             },
-                            "protocols": [
-                                "HTTPS"
-                            ],
-                            "securedBy": [
-                                "oauth_2_0",
-                                "clientId"
-                            ],
                             "is": [
                                 "limitableByGeoPoint",
                                 "limitable",
@@ -2707,11 +2312,7 @@
             ],
             "type": "base",
             "uriParameters": {
-                "geoId": {
-                    "type": "string",
-                    "displayName": "geoId",
-                    "required": true
-                }
+                "geoId": {}
             },
             "methods": [
                 {
@@ -2720,29 +2321,18 @@
                         "min_id": {
                             "description": "Return media before this min_id.",
                             "type": "integer",
-                            "example": "0",
-                            "displayName": "min_id"
+                            "example": "0"
                         },
                         "count": {
                             "description": "Number of items you would like to receive.",
                             "type": "integer",
-                            "example": "1",
-                            "displayName": "count"
+                            "example": "1"
                         },
                         "callback": {
                             "description": "Callback function name. All output will be wrapper under this function name.\n",
-                            "type": "string",
-                            "example": "callbackFunction",
-                            "displayName": "callback"
+                            "example": "callbackFunction"
                         }
                     },
-                    "protocols": [
-                        "HTTPS"
-                    ],
-                    "securedBy": [
-                        "oauth_2_0",
-                        "clientId"
-                    ],
                     "is": [
                         "limitable",
                         "acceptCallback"
@@ -2769,32 +2359,22 @@
                     "queryParameters": {
                         "client_id": {
                             "description": "Application's client id",
-                            "type": "string",
-                            "required": "true",
-                            "displayName": "client_id"
+                            "required": "true"
                         },
                         "client_secret": {
                             "description": "Application's client secret",
-                            "type": "string",
-                            "required": "true",
-                            "displayName": "client_secret"
+                            "required": "true"
                         },
                         "count": {
                             "description": "Number of items you would like to receive.",
                             "type": "integer",
-                            "example": "1",
-                            "displayName": "count"
+                            "example": "1"
                         },
                         "callback": {
                             "description": "Callback function name. All output will be wrapper under this function name.\n",
-                            "type": "string",
-                            "example": "callbackFunction",
-                            "displayName": "callback"
+                            "example": "callbackFunction"
                         }
                     },
-                    "protocols": [
-                        "HTTPS"
-                    ],
                     "securedBy": [
                         "oauth_2_0"
                     ],
@@ -2818,30 +2398,19 @@
                 },
                 {
                     "description": "Create a subscription",
-                    "protocols": [
-                        "HTTPS"
-                    ],
-                    "securedBy": [
-                        "oauth_2_0",
-                        "clientId"
-                    ],
                     "body": {
                         "application/x-www-form-urlencoded": {
-                            "type": "object",
                             "properties": {
                                 "client_id": {
                                     "description": "Application's client id",
-                                    "type": "string",
                                     "required": "true"
                                 },
                                 "client_secret": {
                                     "description": "Application's client secret",
-                                    "type": "string",
                                     "required": "true"
                                 },
                                 "object": {
                                     "description": "The object you'd like to subscribe to.",
-                                    "type": "string",
                                     "enum": [
                                         "location",
                                         "user",
@@ -2850,16 +2419,13 @@
                                     ]
                                 },
                                 "object_id": {
-                                    "description": "Used for user, location and tag subscriptions only. Required. In case of user and location represents 'id' of the desired object. In case of tag represents 'name' of the desired tag.",
-                                    "type": "string"
+                                    "description": "Used for user, location and tag subscriptions only. Required. In case of user and location represents 'id' of the desired object. In case of tag represents 'name' of the desired tag."
                                 },
                                 "aspect": {
-                                    "description": "The aspect of the object you'd like to subscribe to. Note that we only support \"media\" at this time, but we might support other types of subscriptions in the future.\n",
-                                    "type": "string"
+                                    "description": "The aspect of the object you'd like to subscribe to. Note that we only support \"media\" at this time, but we might support other types of subscriptions in the future.\n"
                                 },
                                 "callback_url": {
                                     "description": "When we have new updates to send your server, we do a simple POST with a payload containing updates to a URL on your server. This callback URL must support GET and POST methods.\n\nWhen you add a subscription, we will send a GET request to your callback URL to verify the existence of the URL and that want to create the subscription. When we have new data, we'll POST this data to your callback URL. We'll explain more about what this URL needs to do later on this page.\n",
-                                    "type": "string",
                                     "required": "true"
                                 },
                                 "lat": {
@@ -2896,37 +2462,26 @@
                     "queryParameters": {
                         "client_id": {
                             "description": "Application's client id",
-                            "type": "string",
-                            "required": "true",
-                            "displayName": "client_id"
+                            "required": "true"
                         },
                         "client_secret": {
                             "description": "Application's client secret",
-                            "type": "string",
-                            "required": "true",
-                            "displayName": "client_secret"
+                            "required": "true"
                         },
                         "id": {
-                            "description": "Id of subscription to be removed.",
-                            "type": "string",
-                            "displayName": "id"
+                            "description": "Id of subscription to be removed."
                         },
                         "object": {
                             "description": "If you'd like to remove all subscriptions of a certain object type, you may include the object type. Also you can clear all your current subscriptions by setting 'object' to 'all'.",
-                            "type": "string",
                             "enum": [
                                 "geography",
                                 "location",
                                 "tag",
                                 "user",
                                 "all"
-                            ],
-                            "displayName": "object"
+                            ]
                         }
                     },
-                    "protocols": [
-                        "HTTPS"
-                    ],
                     "securedBy": [
                         "oauth_2_0"
                     ],
@@ -2946,15 +2501,5 @@
                 }
             ]
         }
-    ],
-    "baseUriParameters": {
-        "version": {
-            "type": "string",
-            "displayName": "version",
-            "required": true,
-            "enum": [
-                "v1"
-            ]
-        }
-    }
+    ]
 }

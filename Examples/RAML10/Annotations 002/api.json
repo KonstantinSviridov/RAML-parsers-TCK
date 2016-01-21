@@ -1,24 +1,16 @@
 {
     "types": {
         "baseAnnotation": {
-            "type": "object",
             "properties": {
                 "baseProperty1": {
-                    "type": "object",
                     "properties": {
-                        "field1": {
-                            "type": "string",
-                            "required": false
-                        },
+                        "field1": {},
                         "field2": {
                             "type": "number"
                         }
                     }
                 },
-                "baseProperty2": {
-                    "type": "string",
-                    "required": false
-                }
+                "baseProperty2": {}
             }
         },
         "MyType": {
@@ -32,8 +24,7 @@
                         "field2": "15"
                     }
                 }
-            },
-            "type": "string"
+            }
         }
     },
     "annotationTypes": {
@@ -41,7 +32,6 @@
             "type": "baseAnnotation",
             "properties": {
                 "childProperty1": {
-                    "type": "string",
                     "default": "enum_defaultValue",
                     "enum": [
                         "enum_defaultValue",
@@ -51,7 +41,6 @@
                 },
                 "childProperty2": {
                     "type": "number",
-                    "required": false,
                     "default": 22
                 }
             },
@@ -61,9 +50,6 @@
     "title": "TCK Sample. RAML 1.0 Annotations 002.",
     "version": "v1",
     "baseUri": "http://api.samplehost.com/{version}",
-    "protocols": [
-        "HTTP"
-    ],
     "resources": [
         {
             "relativeUri": "/helloWorld",
@@ -80,22 +66,9 @@
                             }
                         }
                     },
-                    "protocols": [
-                        "HTTP"
-                    ],
                     "method": "get"
                 }
             ]
         }
-    ],
-    "baseUriParameters": {
-        "version": {
-            "type": "string",
-            "displayName": "version",
-            "required": true,
-            "enum": [
-                "v1"
-            ]
-        }
-    }
+    ]
 }

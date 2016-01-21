@@ -1,11 +1,9 @@
 {
     "types": {
         "Address": {
-            "type": "object",
             "example": "{\n  \"country\": \"US\",\n  \"city\": \"SF\",\n  \"street\": \"Geary Street\",\n  \"house\": \"77, Suite 400\",\n  \"zip\": 94108\n}\n",
             "properties": {
                 "country": {
-                    "type": "string",
                     "enum": [
                         "US",
                         "ARG",
@@ -13,32 +11,23 @@
                         "GB"
                     ]
                 },
-                "city": {
-                    "type": "string"
-                },
-                "street": {
-                    "type": "string"
-                },
-                "house": {
-                    "type": "string"
-                },
+                "city": {},
+                "street": {},
+                "house": {},
                 "zip": {
                     "type": "number"
                 }
             }
         },
         "Email": {
-            "type": "string",
             "example": "press@mulesoft.com",
             "minLength": 15,
             "maxLength": 64,
             "pattern": "[a-zA-Z0-9\\.]{1-32}@[a-zA-Z0-9]+\\.com"
         },
         "User": {
-            "type": "object",
             "facets": {
                 "role": {
-                    "type": "string",
                     "default": "user",
                     "enum": [
                         "user",
@@ -52,21 +41,16 @@
                 "id": {
                     "type": "number"
                 },
-                "name": {
-                    "type": "string"
-                },
+                "name": {},
                 "email": {
                     "type": "Email"
                 },
                 "phone": {
-                    "type": "string",
-                    "required": false,
                     "minLength": 14,
                     "maxLength": 14
                 },
                 "address": {
-                    "type": "Address",
-                    "required": false
+                    "type": "Address"
                 }
             }
         },
@@ -86,13 +70,11 @@
             "type": "Admin"
         },
         "Team": {
-            "type": "object",
             "properties": {
                 "id": {
                     "type": "number"
                 },
                 "title": {
-                    "type": "string",
                     "pattern": "[A-Z][a-z]*"
                 },
                 "manager": {
@@ -105,7 +87,6 @@
                     "type": "User[]"
                 },
                 "info": {
-                    "type": "object",
                     "properties": {
                         "address": {
                             "type": "Address"
@@ -124,9 +105,6 @@
     "title": "TCK Sample. RAML 1.0 Types 001.",
     "version": "v1",
     "baseUri": "http://api.samplehost.com/{version}",
-    "protocols": [
-        "HTTP"
-    ],
     "resources": [
         {
             "relativeUri": "/teams",
@@ -135,9 +113,6 @@
             ],
             "methods": [
                 {
-                    "protocols": [
-                        "HTTP"
-                    ],
                     "responses": {
                         "200": {
                             "body": {
@@ -151,15 +126,10 @@
                 },
                 {
                     "description": "create new team with desired title",
-                    "protocols": [
-                        "HTTP"
-                    ],
                     "body": {
                         "applciation/json": {
-                            "type": "object",
                             "properties": {
                                 "title": {
-                                    "type": "string",
                                     "pattern": "[A-Z][a-z]*"
                                 }
                             }
@@ -184,17 +154,10 @@
                         "{id}"
                     ],
                     "uriParameters": {
-                        "id": {
-                            "type": "string",
-                            "displayName": "id",
-                            "required": true
-                        }
+                        "id": {}
                     },
                     "methods": [
                         {
-                            "protocols": [
-                                "HTTP"
-                            ],
                             "responses": {
                                 "200": {
                                     "body": {
@@ -205,9 +168,7 @@
                                 },
                                 "404": {
                                     "body": {
-                                        "text/plain": {
-                                            "type": "object"
-                                        }
+                                        "text/plain": null
                                     }
                                 }
                             },
@@ -224,9 +185,6 @@
             ],
             "methods": [
                 {
-                    "protocols": [
-                        "HTTP"
-                    ],
                     "responses": {
                         "200": {
                             "body": {
@@ -247,17 +205,10 @@
                 "{id}"
             ],
             "uriParameters": {
-                "id": {
-                    "type": "string",
-                    "displayName": "id",
-                    "required": true
-                }
+                "id": {}
             },
             "methods": [
                 {
-                    "protocols": [
-                        "HTTP"
-                    ],
                     "responses": {
                         "200": {
                             "body": {
@@ -271,15 +222,5 @@
                 }
             ]
         }
-    ],
-    "baseUriParameters": {
-        "version": {
-            "type": "string",
-            "displayName": "version",
-            "required": true,
-            "enum": [
-                "v1"
-            ]
-        }
-    }
+    ]
 }

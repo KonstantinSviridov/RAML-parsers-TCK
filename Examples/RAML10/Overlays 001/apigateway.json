@@ -4,7 +4,6 @@
             "usage": "Data types and annotation types for AWS API Gateway",
             "types": {
                 "amazon-apigateway-method": {
-                    "type": "string",
                     "example": "POST",
                     "enum": [
                         "GET",
@@ -15,28 +14,21 @@
                     ]
                 },
                 "amazon-apigateway-status": {
-                    "type": "string",
                     "pattern": "^[12345]\\d\\d$"
                 },
                 "amazon-apigateway-templates": {
-                    "type": "object",
                     "properties": {
-                        "[\\w+/\\w+]": {
-                            "type": "string"
-                        }
+                        "[\\w+/\\w+]": {}
                     }
                 },
                 "amazon-apigateway-auth-type": {
-                    "type": "string",
                     "enum": [
                         "aws_iam"
                     ]
                 },
                 "amazon-apigateway-integration-lambda": {
-                    "type": "object",
                     "properties": {
                         "type": {
-                            "type": "string",
                             "enum": [
                                 "lambda"
                             ]
@@ -44,10 +36,8 @@
                     }
                 },
                 "amazon-apigateway-integration-HTTP": {
-                    "type": "object",
                     "properties": {
                         "type": {
-                            "type": "string",
                             "enum": [
                                 "HTTP"
                             ]
@@ -55,10 +45,8 @@
                     }
                 },
                 "amazon-apigateway-integration-mock": {
-                    "type": "object",
                     "properties": {
                         "type": {
-                            "type": "string",
                             "enum": [
                                 "mock"
                             ]
@@ -66,41 +54,31 @@
                     }
                 },
                 "amazon-apigateway-integration-aws": {
-                    "type": "object",
                     "example": "[object Object]",
                     "properties": {
                         "type": {
-                            "type": "string",
                             "enum": [
                                 "aws"
                             ]
                         },
-                        "uri": {
-                            "type": "string"
-                        },
+                        "uri": {},
                         "httpMethod": {
                             "type": "amazon-apigateway-method"
                         },
-                        "credentials": {
-                            "type": "string"
-                        },
+                        "credentials": {},
                         "requestTemplates": {
                             "type": "amazon-apigateway-templates"
                         },
                         "requestParameters": {
                             "type": "object"
                         },
-                        "cacheNamespace": {
-                            "type": "string"
-                        },
+                        "cacheNamespace": {},
                         "cacheKeyParameters": {
                             "type": "string[]"
                         },
                         "responses": {
-                            "type": "object",
                             "properties": {
                                 "[]": {
-                                    "type": "object",
                                     "properties": {
                                         "statusCode": {
                                             "type": "amazon-apigateway-status"
@@ -136,10 +114,7 @@
                 "type": "Pass Through",
                 "describedBy": {
                     "headers": {
-                        "x-api-key": {
-                            "type": "string",
-                            "displayName": "x-api-key"
-                        }
+                        "x-api-key": {}
                     }
                 }
             }
@@ -149,9 +124,6 @@
     "version": "1.0.0",
     "baseUri": "https://api.uber.com",
     "mediaType": "application/json",
-    "protocols": [
-        "HTTPS"
-    ],
     "resources": [
         {
             "description": "The Products endpoint returns information about the *Uber* products\noffered at a given location. The response includes the display name\nand other details about each product, and lists the products in the\nproper display order.\n",
@@ -197,19 +169,14 @@
                         "latitude": {
                             "description": "Latitude component of location",
                             "type": "number",
-                            "required": "true",
-                            "displayName": "latitude"
+                            "required": "true"
                         },
                         "longitude": {
                             "description": "Longitude component of location",
                             "type": "number",
-                            "required": "true",
-                            "displayName": "longitude"
+                            "required": "true"
                         }
                     },
-                    "protocols": [
-                        "HTTPS"
-                    ],
                     "method": "get"
                 }
             ]
