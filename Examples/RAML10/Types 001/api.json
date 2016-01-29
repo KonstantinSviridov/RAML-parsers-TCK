@@ -1,7 +1,13 @@
 {
     "types": {
         "Address": {
-            "example": "{\n  \"country\": \"US\",\n  \"city\": \"SF\",\n  \"street\": \"Geary Street\",\n  \"house\": \"77, Suite 400\",\n  \"zip\": 94108\n}\n",
+            "example": {
+                "country": "US",
+                "city": "SF",
+                "street": "Geary Street",
+                "house": "77, Suite 400",
+                "zip": 94108
+            },
             "properties": {
                 "country": {
                     "enum": [
@@ -23,9 +29,33 @@
             "example": "press@mulesoft.com",
             "minLength": 15,
             "maxLength": 64,
-            "pattern": "[a-zA-Z0-9\\.]{1-32}@[a-zA-Z0-9]+\\.com"
+            "pattern": "/[a-zA-Z0-9\\.]{1-32}@[a-zA-Z0-9]+\\.com/"
         },
         "User": {
+            "examples": [
+                {
+                    "id": "11",
+                    "name": "John Johnson",
+                    "email": "press@mulesoft.com",
+                    "phone": "+7-913-111-1111",
+                    "address": {
+                        "country": "RUS",
+                        "city": "Novosibirsk",
+                        "zip": "630090"
+                    }
+                },
+                {
+                    "id": "12",
+                    "name": "John Johnson",
+                    "email": "press1@mulesoft.com",
+                    "phone": "+1-222-222-2222",
+                    "address": {
+                        "country": "US",
+                        "city": "SF",
+                        "zip": "123456"
+                    }
+                }
+            ],
             "facets": {
                 "role": {
                     "default": "user",
@@ -46,8 +76,9 @@
                     "type": "Email"
                 },
                 "phone": {
-                    "minLength": 14,
-                    "maxLength": 14
+                    "minLength": 15,
+                    "maxLength": 15,
+                    "pattern": "/+\\d{1}-\\d{3}-\\d{3}-\\d{4}/"
                 },
                 "address": {
                     "type": "Address"
@@ -56,6 +87,30 @@
         },
         "Manager": {
             "type": "User",
+            "examples": {
+                "manager1": {
+                    "id": "11",
+                    "name": "John Johnson",
+                    "email": "press@mulesoft.com",
+                    "phone": "+7-913-111-1111",
+                    "address": {
+                        "country": "RUS",
+                        "city": "Novosibirsk",
+                        "zip": "630090"
+                    }
+                },
+                "manager2": {
+                    "id": "12",
+                    "name": "John Johnson",
+                    "email": "press1@mulesoft.com",
+                    "phone": "+1-222-222-2222",
+                    "address": {
+                        "country": "US",
+                        "city": "SF",
+                        "zip": "123456"
+                    }
+                }
+            },
             "fixedFacets": {
                 "role": "manager"
             }
@@ -75,7 +130,7 @@
                     "type": "number"
                 },
                 "title": {
-                    "pattern": "[A-Z][a-z]*"
+                    "pattern": "/[A-Z][a-z]*/"
                 },
                 "manager": {
                     "type": "Manager"
@@ -105,6 +160,9 @@
     "title": "TCK Sample. RAML 1.0 Types 001.",
     "version": "v1",
     "baseUri": "http://api.samplehost.com/{version}",
+    "protocols": [
+        "HTTP"
+    ],
     "resources": [
         {
             "relativeUri": "/teams",
@@ -222,5 +280,8 @@
                 }
             ]
         }
-    ]
+    ],
+    "baseUriParameters": {
+        "version": {}
+    }
 }

@@ -54,7 +54,44 @@
                     }
                 },
                 "amazon-apigateway-integration-aws": {
-                    "example": "[object Object]",
+                    "example": {
+                        "type": "aws",
+                        "uri": "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:ACCOUNT_ID:function:myFunction/invocations",
+                        "httpMethod": "POST",
+                        "credentials": "arn:aws:iam::ACCOUNT_ID:role/lambda_exec_role",
+                        "requestTemplates": {
+                            "application/json": "json request template 2",
+                            "application/xml": "xml request template 2"
+                        },
+                        "requestParameters": {
+                            "integration.request.path.integrationPathParam": "method.request.querystring.latitude",
+                            "integration.request.querystring.integrationQueryParam": "method.request.querystring.longitude"
+                        },
+                        "cacheNamespace": "cache namespace",
+                        "cacheKeyParameters": [],
+                        "responses": {
+                            "2\\d{2}": {
+                                "statusCode": "200",
+                                "responseParameters": {
+                                    "method.response.header.test-method-response-header": "integration.response.header.integrationResponseHeaderParam1"
+                                },
+                                "responseTemplates": {
+                                    "application/json": "json 200 response template",
+                                    "application/xml": "xml 200 response template"
+                                }
+                            },
+                            "default": {
+                                "statusCode": "400",
+                                "responseParameters": {
+                                    "method.response.header.test-method-response-header": "'static value'"
+                                },
+                                "responseTemplates": {
+                                    "application/json": "json 400 response template",
+                                    "application/xml": "xml 400 response template"
+                                }
+                            }
+                        }
+                    },
                     "properties": {
                         "type": {
                             "enum": [
@@ -124,6 +161,9 @@
     "version": "1.0.0",
     "baseUri": "https://api.uber.com",
     "mediaType": "application/json",
+    "protocols": [
+        "HTTPS"
+    ],
     "resources": [
         {
             "description": "The Products endpoint returns information about the *Uber* products\noffered at a given location. The response includes the display name\nand other details about each product, and lists the products in the\nproper display order.\n",
@@ -141,25 +181,35 @@
                             "uri": "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:ACCOUNT_ID:function:myFunction/invocations",
                             "httpMethod": "POST",
                             "credentials": "arn:aws:iam::ACCOUNT_ID:role/lambda_exec_role",
-                            "cacheNamespace": "cache namespace",
-                            "cacheKeyParameters": null,
                             "requestTemplates": {
-                                "[\\w+/\\w+]": "xml request template 2"
+                                "application/json": "json request template 2",
+                                "application/xml": "xml request template 2"
                             },
-                            "requestParameters": {},
+                            "requestParameters": {
+                                "integration.request.path.integrationPathParam": "method.request.querystring.latitude",
+                                "integration.request.querystring.integrationQueryParam": "method.request.querystring.longitude"
+                            },
+                            "cacheNamespace": "cache namespace",
+                            "cacheKeyParameters": [],
                             "responses": {
                                 "2\\d{2}": {
                                     "statusCode": "200",
-                                    "responseParameters": {},
+                                    "responseParameters": {
+                                        "method.response.header.test-method-response-header": "integration.response.header.integrationResponseHeaderParam1"
+                                    },
                                     "responseTemplates": {
-                                        "[\\w+/\\w+]": "xml 200 response template"
+                                        "application/json": "json 200 response template",
+                                        "application/xml": "xml 200 response template"
                                     }
                                 },
                                 "default": {
                                     "statusCode": "400",
-                                    "responseParameters": {},
+                                    "responseParameters": {
+                                        "method.response.header.test-method-response-header": "'static value'"
+                                    },
                                     "responseTemplates": {
-                                        "[\\w+/\\w+]": "xml 400 response template"
+                                        "application/json": "json 400 response template",
+                                        "application/xml": "xml 400 response template"
                                     }
                                 }
                             }

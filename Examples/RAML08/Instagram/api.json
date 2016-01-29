@@ -7,6 +7,10 @@
         {
             "usersListing": {
                 "get": {
+                    "securedBy": [
+                        "oauth_2_0",
+                        "clientId"
+                    ],
                     "responses": {
                         "200": {
                             "body": {
@@ -24,6 +28,10 @@
         {
             "mediaSearch": {
                 "get": {
+                    "securedBy": [
+                        "oauth_2_0",
+                        "clientId"
+                    ],
                     "responses": {
                         "200": {
                             "body": {
@@ -76,6 +84,10 @@
         {
             "base": {
                 "delete?": {
+                    "securedBy": [
+                        "oauth_2_0",
+                        "clientId"
+                    ],
                     "responses": {
                         "503": {
                             "description": "Server Unavailable. Check Your Rate Limits.\n"
@@ -83,6 +95,10 @@
                     }
                 },
                 "post?": {
+                    "securedBy": [
+                        "oauth_2_0",
+                        "clientId"
+                    ],
                     "responses": {
                         "503": {
                             "description": "Server Unavailable. Check Your Rate Limits.\n"
@@ -90,6 +106,10 @@
                     }
                 },
                 "get?": {
+                    "securedBy": [
+                        "oauth_2_0",
+                        "clientId"
+                    ],
                     "is": [
                         "limitable",
                         "acceptCallback"
@@ -105,6 +125,10 @@
         {
             "feedsListing": {
                 "get": {
+                    "securedBy": [
+                        "oauth_2_0",
+                        "clientId"
+                    ],
                     "responses": {
                         "200": {
                             "body": {
@@ -296,6 +320,10 @@
             "relativeUriPathSegments": [
                 "media"
             ],
+            "securedBy": [
+                "oauth_2_0",
+                "clientId"
+            ],
             "resources": [
                 {
                     "relativeUri": "/{mediaId}",
@@ -303,6 +331,10 @@
                         "{mediaId}"
                     ],
                     "type": "base",
+                    "securedBy": [
+                        "oauth_2_0",
+                        "clientId"
+                    ],
                     "uriParameters": {
                         "mediaId": {
                             "displayName": "mediaId",
@@ -376,8 +408,7 @@
                                         "HTTPS"
                                     ],
                                     "securedBy": [
-                                        "oauth_2_0",
-                                        "clientId"
+                                        "oauth_2_0"
                                     ],
                                     "queryParameters": {
                                         "count": {
@@ -519,8 +550,7 @@
                                         "HTTPS"
                                     ],
                                     "securedBy": [
-                                        "oauth_2_0",
-                                        "clientId"
+                                        "oauth_2_0"
                                     ],
                                     "queryParameters": {
                                         "count": {
@@ -614,6 +644,10 @@
                         "search"
                     ],
                     "type": "mediaSearch",
+                    "securedBy": [
+                        "oauth_2_0",
+                        "clientId"
+                    ],
                     "methods": [
                         {
                             "method": "get",
@@ -693,6 +727,10 @@
                         "popular"
                     ],
                     "type": "mediaSearch",
+                    "securedBy": [
+                        "oauth_2_0",
+                        "clientId"
+                    ],
                     "methods": [
                         {
                             "method": "get",
@@ -745,6 +783,10 @@
             "relativeUriPathSegments": [
                 "tags"
             ],
+            "securedBy": [
+                "oauth_2_0",
+                "clientId"
+            ],
             "resources": [
                 {
                     "relativeUri": "/{tagName}",
@@ -752,6 +794,10 @@
                         "{tagName}"
                     ],
                     "type": "base",
+                    "securedBy": [
+                        "oauth_2_0",
+                        "clientId"
+                    ],
                     "uriParameters": {
                         "tagName": {
                             "description": "Name of tag.",
@@ -812,6 +858,10 @@
                                 "recent"
                             ],
                             "type": "base",
+                            "securedBy": [
+                                "oauth_2_0",
+                                "clientId"
+                            ],
                             "methods": [
                                 {
                                     "method": "get",
@@ -876,6 +926,10 @@
                         "search"
                     ],
                     "type": "base",
+                    "securedBy": [
+                        "oauth_2_0",
+                        "clientId"
+                    ],
                     "methods": [
                         {
                             "method": "get",
@@ -935,6 +989,10 @@
             "relativeUriPathSegments": [
                 "users"
             ],
+            "securedBy": [
+                "oauth_2_0",
+                "clientId"
+            ],
             "resources": [
                 {
                     "relativeUri": "/{userId}",
@@ -942,6 +1000,10 @@
                         "{userId}"
                     ],
                     "type": "base",
+                    "securedBy": [
+                        "oauth_2_0",
+                        "clientId"
+                    ],
                     "uriParameters": {
                         "userId": {
                             "displayName": "userId",
@@ -1011,8 +1073,7 @@
                                         "HTTPS"
                                     ],
                                     "securedBy": [
-                                        "oauth_2_0",
-                                        "clientId"
+                                        "oauth_2_0"
                                     ],
                                     "queryParameters": {
                                         "count": {
@@ -1065,8 +1126,7 @@
                                         "HTTPS"
                                     ],
                                     "securedBy": [
-                                        "oauth_2_0",
-                                        "clientId"
+                                        "oauth_2_0"
                                     ],
                                     "queryParameters": {
                                         "count": {
@@ -1109,6 +1169,10 @@
                                 "recent"
                             ],
                             "type": "feedsListing",
+                            "securedBy": [
+                                "oauth_2_0",
+                                "clientId"
+                            ],
                             "methods": [
                                 {
                                     "method": "get",
@@ -1197,8 +1261,7 @@
                                         "HTTPS"
                                     ],
                                     "securedBy": [
-                                        "oauth_2_0",
-                                        "clientId"
+                                        "oauth_2_0"
                                     ],
                                     "queryParameters": {
                                         "count": {
@@ -1295,8 +1358,7 @@
                                 "HTTPS"
                             ],
                             "securedBy": [
-                                "oauth_2_0",
-                                "clientId"
+                                "oauth_2_0"
                             ],
                             "queryParameters": {
                                 "q": {
@@ -1360,8 +1422,7 @@
                                 "HTTPS"
                             ],
                             "securedBy": [
-                                "oauth_2_0",
-                                "clientId"
+                                "oauth_2_0"
                             ],
                             "queryParameters": {
                                 "count": {
@@ -1403,6 +1464,10 @@
                                 "feed"
                             ],
                             "type": "feedsListing",
+                            "securedBy": [
+                                "oauth_2_0",
+                                "clientId"
+                            ],
                             "methods": [
                                 {
                                     "method": "get",
@@ -1478,7 +1543,7 @@
                                     ],
                                     "securedBy": [
                                         "oauth_2_0",
-                                        "clientId"
+                                        "oauth_2_0"
                                     ],
                                     "queryParameters": {
                                         "count": {
@@ -1521,6 +1586,10 @@
                                 "liked"
                             ],
                             "type": "feedsListing",
+                            "securedBy": [
+                                "oauth_2_0",
+                                "clientId"
+                            ],
                             "methods": [
                                 {
                                     "method": "get",
@@ -1581,6 +1650,10 @@
             "relativeUriPathSegments": [
                 "locations"
             ],
+            "securedBy": [
+                "oauth_2_0",
+                "clientId"
+            ],
             "resources": [
                 {
                     "relativeUri": "/{locId}",
@@ -1588,6 +1661,10 @@
                         "{locId}"
                     ],
                     "type": "base",
+                    "securedBy": [
+                        "oauth_2_0",
+                        "clientId"
+                    ],
                     "uriParameters": {
                         "locId": {
                             "displayName": "locId",
@@ -1647,6 +1724,10 @@
                                 "recent"
                             ],
                             "type": "feedsListing",
+                            "securedBy": [
+                                "oauth_2_0",
+                                "clientId"
+                            ],
                             "methods": [
                                 {
                                     "method": "get",
@@ -1722,6 +1803,10 @@
                         "search"
                     ],
                     "type": "base",
+                    "securedBy": [
+                        "oauth_2_0",
+                        "clientId"
+                    ],
                     "methods": [
                         {
                             "method": "get",
@@ -1805,6 +1890,10 @@
                 "recent"
             ],
             "type": "base",
+            "securedBy": [
+                "oauth_2_0",
+                "clientId"
+            ],
             "uriParameters": {
                 "geoId": {
                     "displayName": "geoId",
@@ -1862,6 +1951,10 @@
                 "subscriptions"
             ],
             "type": "base",
+            "securedBy": [
+                "oauth_2_0",
+                "clientId"
+            ],
             "methods": [
                 {
                     "method": "get",

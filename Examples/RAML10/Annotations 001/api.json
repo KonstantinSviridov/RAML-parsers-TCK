@@ -4,11 +4,11 @@
             "annotations": {
                 "simpleAnnotation": "simpleAnnotation_value_on_type",
                 "objectAnnotation": {
-                    "property2": "baseProperty2_value",
                     "property1": {
                         "field1": "field1_value",
                         "field2": "15"
-                    }
+                    },
+                    "property2": "baseProperty2_value"
                 }
             }
         }

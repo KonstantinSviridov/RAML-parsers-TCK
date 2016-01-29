@@ -16,13 +16,13 @@
         "MyType": {
             "annotations": {
                 "childAnnotation": {
-                    "baseProperty2": "baseProperty2_value",
-                    "childProperty1": "enum_value1",
-                    "childProperty2": "17",
                     "baseProperty1": {
                         "field1": "field1_value",
                         "field2": "15"
-                    }
+                    },
+                    "baseProperty2": "baseProperty2_value",
+                    "childProperty1": "enum_value1",
+                    "childProperty2": "17"
                 }
             }
         }
@@ -60,10 +60,10 @@
                 {
                     "annotations": {
                         "childAnnotation": {
-                            "childProperty1": "enum_value2",
                             "baseProperty1": {
                                 "field2": "19"
-                            }
+                            },
+                            "childProperty1": "enum_value2"
                         }
                     },
                     "method": "get"

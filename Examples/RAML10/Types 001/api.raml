@@ -12,14 +12,14 @@ types:
           - RUS
           - GB
       city:
-      street:
-      house:
+      street?:
+      house?:
       zip: number
 
     example: !include examples/address.json
 
   Email:
-    pattern: "[a-zA-Z0-9\\.]{1-32}@[a-zA-Z0-9]+\\.com"
+    pattern: /[a-zA-Z0-9\.]{1-32}@[a-zA-Z0-9]+\.com/
     minLength: 15
     maxLength: 64
 
@@ -35,9 +35,9 @@ types:
       email: Email
 
       phone?:
-        pattern: "\d{1}-\d{3}-\d{3}-\d{4}"
-        minLength: 14
-        maxLength: 14
+        pattern: /+\d{1}-\d{3}-\d{3}-\d{4}/
+        minLength: 15
+        maxLength: 15
 
       address?: Address
 
@@ -46,11 +46,54 @@ types:
         enum: [ user, manager, admin, super-admin ]
         default: user
 
+    examples:
+      - content: 
+          id: 11
+          name: John Johnson
+          email: press@mulesoft.com
+          phone: +7-913-111-1111
+          address:
+            country: RUS
+            city: Novosibirsk
+            zip: 630090
+          
+      - content:
+          id: 12
+          name: John Johnson
+          email: press1@mulesoft.com
+          phone: +1-222-222-2222
+          address:
+            country: US
+            city: SF
+            zip: 123456
+
   Manager:
     type: User
     role: manager
     properties:
       managerId: number
+    examples:
+      manager1:
+        content: 
+          id: 11
+          name: John Johnson
+          email: press@mulesoft.com
+          phone: +7-913-111-1111
+          address:
+            country: RUS
+            city: Novosibirsk
+            zip: 630090
+      
+      manager2:    
+        content:
+          id: 12
+          name: John Johnson
+          email: press1@mulesoft.com
+          phone: +1-222-222-2222
+          address:
+            country: US
+            city: SF
+            zip: 123456
 
   Admin:
     type: User
@@ -66,7 +109,7 @@ types:
     properties:
       id: number
       title:
-        pattern: "[A-Z][a-z]*"
+        pattern: /[A-Z][a-z]*/
       manager: Manager
       admin: Admin|SuperAdmin
       members: User[]
