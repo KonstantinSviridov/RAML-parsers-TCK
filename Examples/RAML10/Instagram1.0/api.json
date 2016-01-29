@@ -12,16 +12,28 @@
                     },
                     "properties": {
                         "id": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "name": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "latitude": {
-                            "type": "number"
+                            "type": "number",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "longtitude": {
-                            "type": "number"
+                            "type": "number",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         }
                     }
                 },
@@ -53,10 +65,16 @@
                     },
                     "properties": {
                         "meta": {
-                            "type": "Meta"
+                            "type": "Meta",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "data": {
-                            "type": "Location[]"
+                            "type": "Location[]",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         }
                     }
                 },
@@ -69,13 +87,22 @@
                     },
                     "properties": {
                         "media": {
-                            "type": "integer"
+                            "type": "integer",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "follows": {
-                            "type": "integer"
+                            "type": "integer",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "followed_by": {
-                            "type": "integer"
+                            "type": "integer",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         }
                     }
                 },
@@ -100,25 +127,46 @@
                             "type": "object",
                             "properties": {
                                 "id": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "__METADATA__": {
+                                        "optional": true
+                                    }
                                 },
                                 "username": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "__METADATA__": {
+                                        "optional": true
+                                    }
                                 },
                                 "full_name": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "__METADATA__": {
+                                        "optional": true
+                                    }
                                 },
                                 "profile_picture": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "__METADATA__": {
+                                        "optional": true
+                                    }
                                 },
                                 "bio": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "__METADATA__": {
+                                        "optional": true
+                                    }
                                 },
                                 "website": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "__METADATA__": {
+                                        "optional": true
+                                    }
                                 },
                                 "count": {
-                                    "type": "Counts"
+                                    "type": "Counts",
+                                    "__METADATA__": {
+                                        "optional": true
+                                    }
                                 }
                             }
                         }
@@ -140,25 +188,46 @@
                     },
                     "properties": {
                         "id": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "username": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "full_name": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "profile_picture": {
-                            "type": null
+                            "type": null,
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "bio": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "website": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "count": {
-                            "type": "Counts"
+                            "type": "Counts",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         }
                     }
                 },
@@ -179,38 +248,71 @@
                     },
                     "properties": {
                         "meta": {
-                            "type": "Meta"
+                            "type": "Meta",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "data": {
                             "type": "object",
                             "properties": {
                                 "object": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "__METADATA__": {
+                                        "optional": true
+                                    }
                                 },
                                 "object_id": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "__METADATA__": {
+                                        "optional": true
+                                    }
                                 },
                                 "aspect": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "__METADATA__": {
+                                        "optional": true
+                                    }
                                 },
                                 "callback_url": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "__METADATA__": {
+                                        "optional": true
+                                    }
                                 },
                                 "type": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "__METADATA__": {
+                                        "optional": true
+                                    }
                                 },
                                 "id": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "__METADATA__": {
+                                        "optional": true
+                                    }
                                 },
                                 "lat": {
-                                    "type": "number"
+                                    "type": "number",
+                                    "__METADATA__": {
+                                        "optional": true
+                                    }
                                 },
                                 "lng": {
-                                    "type": "number"
+                                    "type": "number",
+                                    "__METADATA__": {
+                                        "optional": true
+                                    }
                                 },
                                 "radius": {
-                                    "type": "number"
+                                    "type": "number",
+                                    "__METADATA__": {
+                                        "optional": true
+                                    }
                                 }
+                            },
+                            "__METADATA__": {
+                                "optional": true
                             }
                         }
                     }
@@ -224,22 +326,40 @@
                     },
                     "properties": {
                         "id": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "type": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "object": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "aspect": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "callback_url": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "object_id": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         }
                     }
                 },
@@ -259,10 +379,16 @@
                     },
                     "properties": {
                         "meta": {
-                            "type": "Meta"
+                            "type": "Meta",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "data": {
-                            "type": "SubscriptionData[]"
+                            "type": "SubscriptionData[]",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         }
                     }
                 },
@@ -280,10 +406,16 @@
                     },
                     "properties": {
                         "meta": {
-                            "type": "Meta"
+                            "type": "Meta",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "data": {
-                            "type": "SubscriptionData"
+                            "type": "SubscriptionData",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         }
                     }
                 },
@@ -300,11 +432,20 @@
                             "type": "object",
                             "properties": {
                                 "media_count": {
-                                    "type": "integer"
+                                    "type": "integer",
+                                    "__METADATA__": {
+                                        "optional": true
+                                    }
                                 },
                                 "name": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "__METADATA__": {
+                                        "optional": true
+                                    }
                                 }
+                            },
+                            "__METADATA__": {
+                                "optional": true
                             }
                         }
                     }
@@ -317,10 +458,16 @@
                     },
                     "properties": {
                         "media_count": {
-                            "type": "integer"
+                            "type": "integer",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "name": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         }
                     }
                 },
@@ -339,10 +486,16 @@
                     },
                     "properties": {
                         "meta": {
-                            "type": "Meta"
+                            "type": "Meta",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "data": {
-                            "type": "SerachTagItem[]"
+                            "type": "SerachTagItem[]",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         }
                     }
                 },
@@ -356,16 +509,28 @@
                     },
                     "properties": {
                         "first_name": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "last_name": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "id": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "type": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         }
                     }
                 },
@@ -383,7 +548,10 @@
                     },
                     "properties": {
                         "data": {
-                            "type": "MediaLike[]"
+                            "type": "MediaLike[]",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         }
                     }
                 },
@@ -401,30 +569,54 @@
                     },
                     "properties": {
                         "created_time": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "text": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "from": {
                             "type": "object",
                             "properties": {
                                 "username": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "__METADATA__": {
+                                        "optional": true
+                                    }
                                 },
                                 "profile_pictures": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "__METADATA__": {
+                                        "optional": true
+                                    }
                                 },
                                 "id": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "__METADATA__": {
+                                        "optional": true
+                                    }
                                 },
                                 "full_name": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "__METADATA__": {
+                                        "optional": true
+                                    }
                                 }
+                            },
+                            "__METADATA__": {
+                                "optional": true
                             }
                         },
                         "id": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         }
                     }
                 },
@@ -474,40 +666,76 @@
                     },
                     "properties": {
                         "author_id": {
-                            "type": "integer"
+                            "type": "integer",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "author_name": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "author_url": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "heght": {
-                            "type": "integer"
+                            "type": "integer",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "media_id": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "provider_name": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "provider_url": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "title": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "type": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "url": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "version": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "width": {
-                            "type": "integer"
+                            "type": "integer",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         }
                     }
                 },
@@ -523,14 +751,23 @@
                     },
                     "properties": {
                         "meta": {
-                            "type": "Meta"
+                            "type": "Meta",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "data": {
                             "type": "object",
                             "properties": {
                                 "outgoing_status": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "__METADATA__": {
+                                        "optional": true
+                                    }
                                 }
+                            },
+                            "__METADATA__": {
+                                "optional": true
                             }
                         }
                     }
@@ -548,17 +785,29 @@
                     },
                     "properties": {
                         "meta": {
-                            "type": "Meta"
+                            "type": "Meta",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "data": {
                             "type": "object",
                             "properties": {
                                 "outgoing_status": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "__METADATA__": {
+                                        "optional": true
+                                    }
                                 },
                                 "incoming_status": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "__METADATA__": {
+                                        "optional": true
+                                    }
                                 }
+                            },
+                            "__METADATA__": {
+                                "optional": true
                             }
                         }
                     }
@@ -686,24 +935,42 @@
                     },
                     "properties": {
                         "created_time": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "text": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "from": {
                             "type": "object",
                             "properties": {
                                 "username": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "__METADATA__": {
+                                        "optional": true
+                                    }
                                 },
                                 "id": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "__METADATA__": {
+                                        "optional": true
+                                    }
                                 }
+                            },
+                            "__METADATA__": {
+                                "optional": true
                             }
                         },
                         "id": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         }
                     }
                 },
@@ -728,10 +995,16 @@
                     },
                     "properties": {
                         "count": {
-                            "type": "number"
+                            "type": "number",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "data": {
-                            "type": "User[]"
+                            "type": "User[]",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         }
                     }
                 },
@@ -744,13 +1017,22 @@
                     },
                     "properties": {
                         "url": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "width": {
-                            "type": "number"
+                            "type": "number",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "height": {
-                            "type": "number"
+                            "type": "number",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         }
                     }
                 },
@@ -775,13 +1057,22 @@
                     },
                     "properties": {
                         "low_resolution": {
-                            "type": "Resolution"
+                            "type": "Resolution",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "thumbnail": {
-                            "type": "Resolution"
+                            "type": "Resolution",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "standard_resolution": {
-                            "type": "Resolution"
+                            "type": "Resolution",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         }
                     }
                 },
@@ -845,7 +1136,10 @@
                     },
                     "properties": {
                         "data": {
-                            "type": "TagsRecentMediaItem []"
+                            "type": "TagsRecentMediaItem []",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         }
                     }
                 },
@@ -905,48 +1199,90 @@
                     },
                     "properties": {
                         "type": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "users_in_photo": {
-                            "type": "string[]"
+                            "type": "string[]",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "filter": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "tags": {
-                            "type": "string[]"
+                            "type": "string[]",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "comments": {
                             "type": "object",
                             "properties": {
                                 "data": {
-                                    "type": "Comment[]"
+                                    "type": "Comment[]",
+                                    "__METADATA__": {
+                                        "optional": true
+                                    }
                                 },
                                 "count": {
-                                    "type": "number"
+                                    "type": "number",
+                                    "__METADATA__": {
+                                        "optional": true
+                                    }
                                 }
+                            },
+                            "__METADATA__": {
+                                "optional": true
                             }
                         },
                         "caption": {
-                            "type": "Caption"
+                            "type": "Caption",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "likes": {
-                            "type": "Likes"
+                            "type": "Likes",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "link": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "created_time": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "images": {
-                            "type": "Image"
+                            "type": "Image",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "id": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "location": {
-                            "type": "string"
+                            "type": "string",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         }
                     }
                 },
@@ -1078,16 +1414,25 @@
                                     "type": "string"
                                 },
                                 "tags": {
-                                    "type": "string []"
+                                    "type": "string []",
+                                    "__METADATA__": {
+                                        "optional": true
+                                    }
                                 },
                                 "comments": {
                                     "type": "object",
                                     "properties": {
                                         "data": {
-                                            "type": "Comment[]"
+                                            "type": "Comment[]",
+                                            "__METADATA__": {
+                                                "optional": true
+                                            }
                                         },
                                         "count": {
-                                            "type": "number"
+                                            "type": "number",
+                                            "__METADATA__": {
+                                                "optional": true
+                                            }
                                         }
                                     }
                                 },
@@ -1215,10 +1560,16 @@
                             "type": "object",
                             "properties": {
                                 "data": {
-                                    "type": "Comment[]"
+                                    "type": "Comment[]",
+                                    "__METADATA__": {
+                                        "optional": true
+                                    }
                                 },
                                 "count": {
-                                    "type": "number"
+                                    "type": "number",
+                                    "__METADATA__": {
+                                        "optional": true
+                                    }
                                 }
                             }
                         },
@@ -1372,6 +1723,9 @@
                                         "height": {
                                             "type": "integer"
                                         }
+                                    },
+                                    "__METADATA__": {
+                                        "optional": true
                                     }
                                 },
                                 "users_in_photo": {
@@ -1387,10 +1741,16 @@
                                     "type": "object",
                                     "properties": {
                                         "data": {
-                                            "type": "Comment[]"
+                                            "type": "Comment[]",
+                                            "__METADATA__": {
+                                                "optional": true
+                                            }
                                         },
                                         "count": {
-                                            "type": "number"
+                                            "type": "number",
+                                            "__METADATA__": {
+                                                "optional": true
+                                            }
                                         }
                                     }
                                 },
@@ -1426,7 +1786,10 @@
                     "type": "object",
                     "properties": {
                         "meta": {
-                            "type": "Meta"
+                            "type": "Meta",
+                            "__METADATA__": {
+                                "optional": true
+                            }
                         },
                         "data": {
                             "type": "MediaSearchFirstType | MediaSearchSecondType"
@@ -1593,6 +1956,9 @@
             "secured": {
                 "methods": [
                     {
+                        "__METADATA__": {
+                            "optional": true
+                        },
                         "securedBy": [
                             "oauth_2_0"
                         ],
@@ -1615,6 +1981,9 @@
                         "method": "delete"
                     },
                     {
+                        "__METADATA__": {
+                            "optional": true
+                        },
                         "securedBy": [
                             "oauth_2_0"
                         ],
@@ -1644,6 +2013,9 @@
             "base": {
                 "methods": [
                     {
+                        "__METADATA__": {
+                            "optional": true
+                        },
                         "securedBy": [
                             "oauth_2_0",
                             "clientId"
@@ -1656,6 +2028,9 @@
                         "method": "delete"
                     },
                     {
+                        "__METADATA__": {
+                            "optional": true
+                        },
                         "securedBy": [
                             "oauth_2_0",
                             "clientId"
@@ -1668,6 +2043,9 @@
                         "method": "post"
                     },
                     {
+                        "__METADATA__": {
+                            "optional": true
+                        },
                         "securedBy": [
                             "oauth_2_0",
                             "clientId"

@@ -27,7 +27,7 @@
                     "__METADATA__": {
                         "primitiveValuesMeta": {
                             "displayName": {
-                                "insertedAsDefault": true
+                                "calculated": true
                             },
                             "type": {
                                 "insertedAsDefault": true
@@ -49,7 +49,7 @@
                     "__METADATA__": {
                         "primitiveValuesMeta": {
                             "displayName": {
-                                "insertedAsDefault": true
+                                "calculated": true
                             },
                             "type": {
                                 "insertedAsDefault": true
@@ -69,9 +69,10 @@
                     "repeat": "false",
                     "required": "true",
                     "__METADATA__": {
+                        "optional": true,
                         "primitiveValuesMeta": {
                             "displayName": {
-                                "insertedAsDefault": true
+                                "calculated": true
                             },
                             "type": {
                                 "insertedAsDefault": true
@@ -91,9 +92,10 @@
                     "repeat": "false",
                     "required": "true",
                     "__METADATA__": {
+                        "optional": true,
                         "primitiveValuesMeta": {
                             "displayName": {
-                                "insertedAsDefault": true
+                                "calculated": true
                             },
                             "type": {
                                 "insertedAsDefault": true
@@ -115,7 +117,7 @@
                     "__METADATA__": {
                         "primitiveValuesMeta": {
                             "displayName": {
-                                "insertedAsDefault": true
+                                "calculated": true
                             },
                             "repeat": {
                                 "insertedAsDefault": true
@@ -130,7 +132,7 @@
             "__METADATA__": {
                 "primitiveValuesMeta": {
                     "displayName": {
-                        "insertedAsDefault": true
+                        "calculated": true
                     },
                     "type": {
                         "insertedAsDefault": true
@@ -156,7 +158,7 @@
             "__METADATA__": {
                 "primitiveValuesMeta": {
                     "displayName": {
-                        "insertedAsDefault": true
+                        "calculated": true
                     },
                     "type": {
                         "insertedAsDefault": true
@@ -215,7 +217,7 @@
                     "__METADATA__": {
                         "primitiveValuesMeta": {
                             "displayName": {
-                                "insertedAsDefault": true
+                                "calculated": true
                             },
                             "type": {
                                 "insertedAsDefault": true
@@ -239,7 +241,7 @@
                     "__METADATA__": {
                         "primitiveValuesMeta": {
                             "displayName": {
-                                "insertedAsDefault": true
+                                "calculated": true
                             },
                             "repeat": {
                                 "insertedAsDefault": true
@@ -258,7 +260,7 @@
                     "__METADATA__": {
                         "primitiveValuesMeta": {
                             "displayName": {
-                                "insertedAsDefault": true
+                                "calculated": true
                             },
                             "type": {
                                 "insertedAsDefault": true
@@ -280,7 +282,7 @@
                     "__METADATA__": {
                         "primitiveValuesMeta": {
                             "displayName": {
-                                "insertedAsDefault": true
+                                "calculated": true
                             },
                             "repeat": {
                                 "insertedAsDefault": true
@@ -300,9 +302,10 @@
                     "maxLength": 15,
                     "pattern": "/+\\d{1}-\\d{3}-\\d{3}-\\d{4}/",
                     "__METADATA__": {
+                        "optional": true,
                         "primitiveValuesMeta": {
                             "displayName": {
-                                "insertedAsDefault": true
+                                "calculated": true
                             },
                             "type": {
                                 "insertedAsDefault": true
@@ -322,9 +325,10 @@
                     "repeat": "false",
                     "required": "true",
                     "__METADATA__": {
+                        "optional": true,
                         "primitiveValuesMeta": {
                             "displayName": {
-                                "insertedAsDefault": true
+                                "calculated": true
                             },
                             "repeat": {
                                 "insertedAsDefault": true
@@ -339,7 +343,7 @@
             "__METADATA__": {
                 "primitiveValuesMeta": {
                     "displayName": {
-                        "insertedAsDefault": true
+                        "calculated": true
                     },
                     "type": {
                         "insertedAsDefault": true
@@ -388,7 +392,7 @@
             "__METADATA__": {
                 "primitiveValuesMeta": {
                     "displayName": {
-                        "insertedAsDefault": true
+                        "calculated": true
                     },
                     "repeat": {
                         "insertedAsDefault": true
@@ -410,7 +414,7 @@
             "__METADATA__": {
                 "primitiveValuesMeta": {
                     "displayName": {
-                        "insertedAsDefault": true
+                        "calculated": true
                     },
                     "repeat": {
                         "insertedAsDefault": true
@@ -429,7 +433,7 @@
             "__METADATA__": {
                 "primitiveValuesMeta": {
                     "displayName": {
-                        "insertedAsDefault": true
+                        "calculated": true
                     },
                     "repeat": {
                         "insertedAsDefault": true
@@ -454,7 +458,7 @@
                     "__METADATA__": {
                         "primitiveValuesMeta": {
                             "displayName": {
-                                "insertedAsDefault": true
+                                "calculated": true
                             },
                             "repeat": {
                                 "insertedAsDefault": true
@@ -474,7 +478,7 @@
                     "__METADATA__": {
                         "primitiveValuesMeta": {
                             "displayName": {
-                                "insertedAsDefault": true
+                                "calculated": true
                             },
                             "type": {
                                 "insertedAsDefault": true
@@ -496,7 +500,7 @@
                     "__METADATA__": {
                         "primitiveValuesMeta": {
                             "displayName": {
-                                "insertedAsDefault": true
+                                "calculated": true
                             },
                             "repeat": {
                                 "insertedAsDefault": true
@@ -515,7 +519,7 @@
                     "__METADATA__": {
                         "primitiveValuesMeta": {
                             "displayName": {
-                                "insertedAsDefault": true
+                                "calculated": true
                             },
                             "repeat": {
                                 "insertedAsDefault": true
@@ -534,7 +538,7 @@
                     "__METADATA__": {
                         "primitiveValuesMeta": {
                             "displayName": {
-                                "insertedAsDefault": true
+                                "calculated": true
                             },
                             "repeat": {
                                 "insertedAsDefault": true
@@ -559,7 +563,7 @@
                             "__METADATA__": {
                                 "primitiveValuesMeta": {
                                     "displayName": {
-                                        "insertedAsDefault": true
+                                        "calculated": true
                                     },
                                     "repeat": {
                                         "insertedAsDefault": true
@@ -578,7 +582,7 @@
                             "__METADATA__": {
                                 "primitiveValuesMeta": {
                                     "displayName": {
-                                        "insertedAsDefault": true
+                                        "calculated": true
                                     },
                                     "repeat": {
                                         "insertedAsDefault": true
@@ -597,7 +601,7 @@
                             "__METADATA__": {
                                 "primitiveValuesMeta": {
                                     "displayName": {
-                                        "insertedAsDefault": true
+                                        "calculated": true
                                     },
                                     "repeat": {
                                         "insertedAsDefault": true
@@ -612,7 +616,7 @@
                     "__METADATA__": {
                         "primitiveValuesMeta": {
                             "displayName": {
-                                "insertedAsDefault": true
+                                "calculated": true
                             },
                             "type": {
                                 "insertedAsDefault": true
@@ -630,7 +634,7 @@
             "__METADATA__": {
                 "primitiveValuesMeta": {
                     "displayName": {
-                        "insertedAsDefault": true
+                        "calculated": true
                     },
                     "type": {
                         "insertedAsDefault": true
@@ -671,7 +675,7 @@
                     "__METADATA__": {
                         "primitiveValuesMeta": {
                             "displayName": {
-                                "insertedAsDefault": true
+                                "calculated": true
                             }
                         }
                     },
@@ -686,7 +690,7 @@
                                     "__METADATA__": {
                                         "primitiveValuesMeta": {
                                             "displayName": {
-                                                "insertedAsDefault": true
+                                                "calculated": true
                                             },
                                             "repeat": {
                                                 "insertedAsDefault": true
@@ -701,7 +705,7 @@
                             "__METADATA__": {
                                 "primitiveValuesMeta": {
                                     "displayName": {
-                                        "insertedAsDefault": true
+                                        "calculated": true
                                     }
                                 }
                             }
@@ -715,7 +719,7 @@
                     "__METADATA__": {
                         "primitiveValuesMeta": {
                             "displayName": {
-                                "insertedAsDefault": true
+                                "calculated": true
                             }
                         }
                     },
@@ -735,7 +739,7 @@
                                     "__METADATA__": {
                                         "primitiveValuesMeta": {
                                             "displayName": {
-                                                "insertedAsDefault": true
+                                                "calculated": true
                                             },
                                             "type": {
                                                 "insertedAsDefault": true
@@ -753,7 +757,7 @@
                             "__METADATA__": {
                                 "primitiveValuesMeta": {
                                     "displayName": {
-                                        "insertedAsDefault": true
+                                        "calculated": true
                                     },
                                     "type": {
                                         "insertedAsDefault": true
@@ -779,7 +783,7 @@
                                     "__METADATA__": {
                                         "primitiveValuesMeta": {
                                             "displayName": {
-                                                "insertedAsDefault": true
+                                                "calculated": true
                                             },
                                             "repeat": {
                                                 "insertedAsDefault": true
@@ -794,7 +798,7 @@
                             "__METADATA__": {
                                 "primitiveValuesMeta": {
                                     "displayName": {
-                                        "insertedAsDefault": true
+                                        "calculated": true
                                     }
                                 }
                             }
@@ -820,7 +824,7 @@
                                 "calculated": true,
                                 "primitiveValuesMeta": {
                                     "displayName": {
-                                        "insertedAsDefault": true
+                                        "calculated": true
                                     },
                                     "type": {
                                         "insertedAsDefault": true
@@ -841,7 +845,7 @@
                             "__METADATA__": {
                                 "primitiveValuesMeta": {
                                     "displayName": {
-                                        "insertedAsDefault": true
+                                        "calculated": true
                                     }
                                 }
                             },
@@ -856,7 +860,7 @@
                                             "__METADATA__": {
                                                 "primitiveValuesMeta": {
                                                     "displayName": {
-                                                        "insertedAsDefault": true
+                                                        "calculated": true
                                                     },
                                                     "repeat": {
                                                         "insertedAsDefault": true
@@ -871,7 +875,7 @@
                                     "__METADATA__": {
                                         "primitiveValuesMeta": {
                                             "displayName": {
-                                                "insertedAsDefault": true
+                                                "calculated": true
                                             }
                                         }
                                     }
@@ -886,7 +890,7 @@
                                             "__METADATA__": {
                                                 "primitiveValuesMeta": {
                                                     "displayName": {
-                                                        "insertedAsDefault": true
+                                                        "calculated": true
                                                     },
                                                     "type": {
                                                         "insertedAsDefault": true
@@ -904,7 +908,7 @@
                                     "__METADATA__": {
                                         "primitiveValuesMeta": {
                                             "displayName": {
-                                                "insertedAsDefault": true
+                                                "calculated": true
                                             }
                                         }
                                     }
@@ -916,7 +920,7 @@
                     "__METADATA__": {
                         "primitiveValuesMeta": {
                             "displayName": {
-                                "insertedAsDefault": true
+                                "calculated": true
                             }
                         }
                     }
@@ -925,7 +929,7 @@
             "__METADATA__": {
                 "primitiveValuesMeta": {
                     "displayName": {
-                        "insertedAsDefault": true
+                        "calculated": true
                     }
                 }
             }
@@ -942,7 +946,7 @@
                     "__METADATA__": {
                         "primitiveValuesMeta": {
                             "displayName": {
-                                "insertedAsDefault": true
+                                "calculated": true
                             }
                         }
                     },
@@ -957,7 +961,7 @@
                                     "__METADATA__": {
                                         "primitiveValuesMeta": {
                                             "displayName": {
-                                                "insertedAsDefault": true
+                                                "calculated": true
                                             },
                                             "repeat": {
                                                 "insertedAsDefault": true
@@ -972,7 +976,7 @@
                             "__METADATA__": {
                                 "primitiveValuesMeta": {
                                     "displayName": {
-                                        "insertedAsDefault": true
+                                        "calculated": true
                                     }
                                 }
                             }
@@ -984,7 +988,7 @@
             "__METADATA__": {
                 "primitiveValuesMeta": {
                     "displayName": {
-                        "insertedAsDefault": true
+                        "calculated": true
                     }
                 }
             }
@@ -1006,7 +1010,7 @@
                         "calculated": true,
                         "primitiveValuesMeta": {
                             "displayName": {
-                                "insertedAsDefault": true
+                                "calculated": true
                             },
                             "type": {
                                 "insertedAsDefault": true
@@ -1027,7 +1031,7 @@
                     "__METADATA__": {
                         "primitiveValuesMeta": {
                             "displayName": {
-                                "insertedAsDefault": true
+                                "calculated": true
                             }
                         }
                     },
@@ -1042,7 +1046,7 @@
                                     "__METADATA__": {
                                         "primitiveValuesMeta": {
                                             "displayName": {
-                                                "insertedAsDefault": true
+                                                "calculated": true
                                             },
                                             "repeat": {
                                                 "insertedAsDefault": true
@@ -1057,7 +1061,7 @@
                             "__METADATA__": {
                                 "primitiveValuesMeta": {
                                     "displayName": {
-                                        "insertedAsDefault": true
+                                        "calculated": true
                                     }
                                 }
                             }
@@ -1069,7 +1073,7 @@
             "__METADATA__": {
                 "primitiveValuesMeta": {
                     "displayName": {
-                        "insertedAsDefault": true
+                        "calculated": true
                     }
                 }
             }
@@ -1085,7 +1089,7 @@
                 "calculated": true,
                 "primitiveValuesMeta": {
                     "displayName": {
-                        "insertedAsDefault": true
+                        "calculated": true
                     },
                     "type": {
                         "insertedAsDefault": true
