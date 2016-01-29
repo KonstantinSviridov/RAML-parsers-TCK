@@ -48,7 +48,7 @@
         },
         {
             "secured": {
-                "delete?": {
+                "delete": {
                     "securedBy": [
                         "oauth_2_0"
                     ],
@@ -61,9 +61,12 @@
                                 }
                             }
                         }
+                    },
+                    "__METADATA__": {
+                        "optional": true
                     }
                 },
-                "post?": {
+                "post": {
                     "securedBy": [
                         "oauth_2_0"
                     ],
@@ -76,6 +79,9 @@
                                 }
                             }
                         }
+                    },
+                    "__METADATA__": {
+                        "optional": true
                     }
                 },
                 "type": "base"
@@ -83,7 +89,7 @@
         },
         {
             "base": {
-                "delete?": {
+                "delete": {
                     "securedBy": [
                         "oauth_2_0",
                         "clientId"
@@ -92,9 +98,12 @@
                         "503": {
                             "description": "Server Unavailable. Check Your Rate Limits.\n"
                         }
+                    },
+                    "__METADATA__": {
+                        "optional": true
                     }
                 },
-                "post?": {
+                "post": {
                     "securedBy": [
                         "oauth_2_0",
                         "clientId"
@@ -103,9 +112,12 @@
                         "503": {
                             "description": "Server Unavailable. Check Your Rate Limits.\n"
                         }
+                    },
+                    "__METADATA__": {
+                        "optional": true
                     }
                 },
-                "get?": {
+                "get": {
                     "securedBy": [
                         "oauth_2_0",
                         "clientId"
@@ -118,6 +130,9 @@
                         "503": {
                             "description": "Server Unavailable. Check Your Rate Limits.\n"
                         }
+                    },
+                    "__METADATA__": {
+                        "optional": true
                     }
                 }
             }
