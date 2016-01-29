@@ -2,7 +2,7 @@
     "types": {
         "Address": {
             "displayName": "Address",
-            "type": "string",
+            "type": "object",
             "example": {
                 "country": "US",
                 "city": "SF",
@@ -174,7 +174,7 @@
         },
         "User": {
             "displayName": "User",
-            "type": "string",
+            "type": "object",
             "examples": [
                 {
                     "id": "11",
@@ -446,7 +446,7 @@
         },
         "Team": {
             "displayName": "Team",
-            "type": "string",
+            "type": "object",
             "repeat": "false",
             "required": "true",
             "properties": {
@@ -551,7 +551,7 @@
                 },
                 "info": {
                     "displayName": "info",
-                    "type": "string",
+                    "type": "object",
                     "repeat": "false",
                     "required": "true",
                     "properties": {
@@ -726,7 +726,7 @@
                     "body": {
                         "applciation/json": {
                             "displayName": "applciation/json",
-                            "type": "string",
+                            "type": "object",
                             "repeat": "false",
                             "required": "true",
                             "properties": {
@@ -884,7 +884,7 @@
                                     "body": {
                                         "text/plain": {
                                             "displayName": "text/plain",
-                                            "type": "string",
+                                            "type": "object",
                                             "repeat": "false",
                                             "required": "true",
                                             "__METADATA__": {

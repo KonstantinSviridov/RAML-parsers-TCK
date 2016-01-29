@@ -58,7 +58,7 @@
                 },
                 "amazon-apigateway-templates": {
                     "displayName": "amazon-apigateway-templates",
-                    "type": "string",
+                    "type": "object",
                     "repeat": "false",
                     "required": "true",
                     "properties": {
@@ -129,7 +129,7 @@
                 },
                 "amazon-apigateway-integration-lambda": {
                     "displayName": "amazon-apigateway-integration-lambda",
-                    "type": "string",
+                    "type": "object",
                     "repeat": "false",
                     "required": "true",
                     "properties": {
@@ -178,7 +178,7 @@
                 },
                 "amazon-apigateway-integration-HTTP": {
                     "displayName": "amazon-apigateway-integration-HTTP",
-                    "type": "string",
+                    "type": "object",
                     "repeat": "false",
                     "required": "true",
                     "properties": {
@@ -227,7 +227,7 @@
                 },
                 "amazon-apigateway-integration-mock": {
                     "displayName": "amazon-apigateway-integration-mock",
-                    "type": "string",
+                    "type": "object",
                     "repeat": "false",
                     "required": "true",
                     "properties": {
@@ -276,7 +276,7 @@
                 },
                 "amazon-apigateway-integration-aws": {
                     "displayName": "amazon-apigateway-integration-aws",
-                    "type": "string",
+                    "type": "object",
                     "example": {
                         "type": "aws",
                         "uri": "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:ACCOUNT_ID:function:myFunction/invocations",
@@ -487,13 +487,13 @@
                         },
                         "responses": {
                             "displayName": "responses",
-                            "type": "string",
+                            "type": "object",
                             "repeat": "false",
                             "required": "true",
                             "properties": {
                                 "[]": {
                                     "displayName": "[]",
-                                    "type": "string",
+                                    "type": "object",
                                     "repeat": "false",
                                     "required": "true",
                                     "properties": {

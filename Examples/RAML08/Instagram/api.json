@@ -6,7 +6,9 @@
     "resourceTypes": [
         {
             "usersListing": {
+                "displayName": "usersListing",
                 "get": {
+                    "displayName": "get",
                     "securedBy": [
                         "oauth_2_0",
                         "clientId"
@@ -20,14 +22,30 @@
                                 }
                             }
                         }
+                    },
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "calculated": true
+                            }
+                        }
                     }
                 },
                 "type": "base"
+            },
+            "__METADATA__": {
+                "primitiveValuesMeta": {
+                    "displayName": {
+                        "calculated": true
+                    }
+                }
             }
         },
         {
             "mediaSearch": {
+                "displayName": "mediaSearch",
                 "get": {
+                    "displayName": "get",
                     "securedBy": [
                         "oauth_2_0",
                         "clientId"
@@ -41,14 +59,30 @@
                                 }
                             }
                         }
+                    },
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "calculated": true
+                            }
+                        }
                     }
                 },
                 "type": "base"
+            },
+            "__METADATA__": {
+                "primitiveValuesMeta": {
+                    "displayName": {
+                        "calculated": true
+                    }
+                }
             }
         },
         {
             "secured": {
+                "displayName": "secured",
                 "delete": {
+                    "displayName": "delete",
                     "securedBy": [
                         "oauth_2_0"
                     ],
@@ -63,10 +97,16 @@
                         }
                     },
                     "__METADATA__": {
-                        "optional": true
+                        "optional": true,
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "calculated": true
+                            }
+                        }
                     }
                 },
                 "post": {
+                    "displayName": "post",
                     "securedBy": [
                         "oauth_2_0"
                     ],
@@ -81,15 +121,29 @@
                         }
                     },
                     "__METADATA__": {
-                        "optional": true
+                        "optional": true,
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "calculated": true
+                            }
+                        }
                     }
                 },
                 "type": "base"
+            },
+            "__METADATA__": {
+                "primitiveValuesMeta": {
+                    "displayName": {
+                        "calculated": true
+                    }
+                }
             }
         },
         {
             "base": {
+                "displayName": "base",
                 "delete": {
+                    "displayName": "delete",
                     "securedBy": [
                         "oauth_2_0",
                         "clientId"
@@ -100,10 +154,16 @@
                         }
                     },
                     "__METADATA__": {
-                        "optional": true
+                        "optional": true,
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "calculated": true
+                            }
+                        }
                     }
                 },
                 "post": {
+                    "displayName": "post",
                     "securedBy": [
                         "oauth_2_0",
                         "clientId"
@@ -114,10 +174,16 @@
                         }
                     },
                     "__METADATA__": {
-                        "optional": true
+                        "optional": true,
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "calculated": true
+                            }
+                        }
                     }
                 },
                 "get": {
+                    "displayName": "get",
                     "securedBy": [
                         "oauth_2_0",
                         "clientId"
@@ -132,14 +198,28 @@
                         }
                     },
                     "__METADATA__": {
-                        "optional": true
+                        "optional": true,
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "calculated": true
+                            }
+                        }
+                    }
+                }
+            },
+            "__METADATA__": {
+                "primitiveValuesMeta": {
+                    "displayName": {
+                        "calculated": true
                     }
                 }
             }
         },
         {
             "feedsListing": {
+                "displayName": "feedsListing",
                 "get": {
+                    "displayName": "get",
                     "securedBy": [
                         "oauth_2_0",
                         "clientId"
@@ -153,9 +233,23 @@
                                 }
                             }
                         }
+                    },
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "calculated": true
+                            }
+                        }
                     }
                 },
                 "type": "base"
+            },
+            "__METADATA__": {
+                "primitiveValuesMeta": {
+                    "displayName": {
+                        "calculated": true
+                    }
+                }
             }
         }
     ],
@@ -243,7 +337,33 @@
                         "description": "Callback function name. All output will be wrapper under this function name.\n",
                         "displayName": "callback",
                         "type": "string",
-                        "example": "callbackFunction"
+                        "example": "callbackFunction",
+                        "repeat": "false",
+                        "required": "true",
+                        "__METADATA__": {
+                            "primitiveValuesMeta": {
+                                "displayName": {
+                                    "calculated": true
+                                },
+                                "type": {
+                                    "insertedAsDefault": true
+                                },
+                                "required": {
+                                    "insertedAsDefault": true
+                                },
+                                "repeat": {
+                                    "insertedAsDefault": true
+                                }
+                            }
+                        }
+                    }
+                },
+                "displayName": "acceptCallback",
+                "__METADATA__": {
+                    "primitiveValuesMeta": {
+                        "displayName": {
+                            "calculated": true
+                        }
                     }
                 }
             }
@@ -254,18 +374,71 @@
                     "lat": {
                         "description": "Latitude of the center search coordinate. If used, lng is required.",
                         "displayName": "lat",
-                        "type": "number"
+                        "type": "number",
+                        "repeat": "false",
+                        "required": "true",
+                        "__METADATA__": {
+                            "primitiveValuesMeta": {
+                                "displayName": {
+                                    "calculated": true
+                                },
+                                "required": {
+                                    "insertedAsDefault": true
+                                },
+                                "repeat": {
+                                    "insertedAsDefault": true
+                                }
+                            }
+                        }
                     },
                     "lng": {
                         "description": "Longitude of the center search coordinate. If used, lat is required.",
                         "displayName": "lng",
-                        "type": "number"
+                        "type": "number",
+                        "repeat": "false",
+                        "required": "true",
+                        "__METADATA__": {
+                            "primitiveValuesMeta": {
+                                "displayName": {
+                                    "calculated": true
+                                },
+                                "required": {
+                                    "insertedAsDefault": true
+                                },
+                                "repeat": {
+                                    "insertedAsDefault": true
+                                }
+                            }
+                        }
                     },
                     "distance": {
                         "description": "Default is 1000m (distance=1000), max distance is 5000.",
                         "displayName": "distance",
                         "type": "integer",
-                        "default": 1000
+                        "repeat": "false",
+                        "required": "true",
+                        "default": 1000,
+                        "__METADATA__": {
+                            "primitiveValuesMeta": {
+                                "displayName": {
+                                    "calculated": true
+                                },
+                                "required": {
+                                    "insertedAsDefault": true
+                                },
+                                "repeat": {
+                                    "insertedAsDefault": true
+                                }
+                            }
+                        }
+                    }
+                },
+                "displayName": "limitableByGeoPoint",
+                "__METADATA__": {
+                    "primitiveValuesMeta": {
+                        "displayName": {
+                            "calculated": true
+                        }
                     }
                 }
             }
@@ -277,7 +450,30 @@
                         "description": "Number of items you would like to receive.",
                         "displayName": "count",
                         "type": "integer",
-                        "example": "1"
+                        "example": "1",
+                        "repeat": "false",
+                        "required": "true",
+                        "__METADATA__": {
+                            "primitiveValuesMeta": {
+                                "displayName": {
+                                    "calculated": true
+                                },
+                                "required": {
+                                    "insertedAsDefault": true
+                                },
+                                "repeat": {
+                                    "insertedAsDefault": true
+                                }
+                            }
+                        }
+                    }
+                },
+                "displayName": "limitable",
+                "__METADATA__": {
+                    "primitiveValuesMeta": {
+                        "displayName": {
+                            "calculated": true
+                        }
                     }
                 }
             }
@@ -288,12 +484,50 @@
                     "max_timestamp": {
                         "description": "Return media before this UNIX timestamp.",
                         "displayName": "max_timestamp",
-                        "type": "integer"
+                        "type": "integer",
+                        "repeat": "false",
+                        "required": "true",
+                        "__METADATA__": {
+                            "primitiveValuesMeta": {
+                                "displayName": {
+                                    "calculated": true
+                                },
+                                "required": {
+                                    "insertedAsDefault": true
+                                },
+                                "repeat": {
+                                    "insertedAsDefault": true
+                                }
+                            }
+                        }
                     },
                     "min_timestamp": {
                         "description": "Return media after this UNIX timestamp.",
                         "displayName": "min_timestamp",
-                        "type": "integer"
+                        "type": "integer",
+                        "repeat": "false",
+                        "required": "true",
+                        "__METADATA__": {
+                            "primitiveValuesMeta": {
+                                "displayName": {
+                                    "calculated": true
+                                },
+                                "required": {
+                                    "insertedAsDefault": true
+                                },
+                                "repeat": {
+                                    "insertedAsDefault": true
+                                }
+                            }
+                        }
+                    }
+                },
+                "displayName": "limitableByTime",
+                "__METADATA__": {
+                    "primitiveValuesMeta": {
+                        "displayName": {
+                            "calculated": true
+                        }
                     }
                 }
             }
@@ -304,12 +538,50 @@
                     "min_id": {
                         "description": "Return media later than this min_id.",
                         "displayName": "min_id",
-                        "type": "integer"
+                        "type": "integer",
+                        "repeat": "false",
+                        "required": "true",
+                        "__METADATA__": {
+                            "primitiveValuesMeta": {
+                                "displayName": {
+                                    "calculated": true
+                                },
+                                "required": {
+                                    "insertedAsDefault": true
+                                },
+                                "repeat": {
+                                    "insertedAsDefault": true
+                                }
+                            }
+                        }
                     },
                     "max_id": {
                         "description": "Return media earlier than this max_id.",
                         "displayName": "max_id",
-                        "type": "integer"
+                        "type": "integer",
+                        "repeat": "false",
+                        "required": "true",
+                        "__METADATA__": {
+                            "primitiveValuesMeta": {
+                                "displayName": {
+                                    "calculated": true
+                                },
+                                "required": {
+                                    "insertedAsDefault": true
+                                },
+                                "repeat": {
+                                    "insertedAsDefault": true
+                                }
+                            }
+                        }
+                    }
+                },
+                "displayName": "limitableById",
+                "__METADATA__": {
+                    "primitiveValuesMeta": {
+                        "displayName": {
+                            "calculated": true
+                        }
                     }
                 }
             }
@@ -2169,7 +2441,24 @@
         "version": {
             "displayName": "version",
             "type": "string",
-            "required": true,
+            "repeat": "false",
+            "required": "true",
+            "__METADATA__": {
+                "primitiveValuesMeta": {
+                    "displayName": {
+                        "calculated": true
+                    },
+                    "type": {
+                        "insertedAsDefault": true
+                    },
+                    "required": {
+                        "insertedAsDefault": true
+                    },
+                    "repeat": {
+                        "insertedAsDefault": true
+                    }
+                }
+            },
             "enum": [
                 "v1"
             ]

@@ -2,13 +2,13 @@
     "types": {
         "baseAnnotation": {
             "displayName": "baseAnnotation",
-            "type": "string",
+            "type": "object",
             "repeat": "false",
             "required": "true",
             "properties": {
                 "baseProperty1": {
                     "displayName": "baseProperty1",
-                    "type": "string",
+                    "type": "object",
                     "repeat": "false",
                     "required": "true",
                     "properties": {

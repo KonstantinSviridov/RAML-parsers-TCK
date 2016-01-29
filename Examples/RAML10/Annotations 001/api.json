@@ -61,13 +61,13 @@
         },
         "objectAnnotation": {
             "displayName": "objectAnnotation",
-            "type": "string",
+            "type": "object",
             "repeat": "false",
             "required": "true",
             "properties": {
                 "property1": {
                     "displayName": "property1",
-                    "type": "string",
+                    "type": "object",
                     "repeat": "false",
                     "required": "true",
                     "properties": {
