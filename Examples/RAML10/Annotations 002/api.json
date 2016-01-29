@@ -1,16 +1,33 @@
 {
     "types": {
         "baseAnnotation": {
+            "displayName": "baseAnnotation",
+            "repeat": "false",
+            "required": "true",
             "properties": {
                 "baseProperty1": {
+                    "displayName": "baseProperty1",
+                    "repeat": "false",
+                    "required": "true",
                     "properties": {
-                        "field1": {},
+                        "field1": {
+                            "displayName": "field1",
+                            "repeat": "false",
+                            "required": "true"
+                        },
                         "field2": {
-                            "type": "number"
+                            "displayName": "field2",
+                            "type": "number",
+                            "repeat": "false",
+                            "required": "true"
                         }
                     }
                 },
-                "baseProperty2": {}
+                "baseProperty2": {
+                    "displayName": "baseProperty2",
+                    "repeat": "false",
+                    "required": "true"
+                }
             }
         },
         "MyType": {
@@ -24,14 +41,23 @@
                     "childProperty1": "enum_value1",
                     "childProperty2": "17"
                 }
-            }
+            },
+            "displayName": "MyType",
+            "repeat": "false",
+            "required": "true"
         }
     },
     "annotationTypes": {
         "childAnnotation": {
+            "displayName": "childAnnotation",
             "type": "baseAnnotation",
+            "repeat": "false",
+            "required": "true",
             "properties": {
                 "childProperty1": {
+                    "displayName": "childProperty1",
+                    "repeat": "false",
+                    "required": "true",
                     "default": "enum_defaultValue",
                     "enum": [
                         "enum_defaultValue",
@@ -40,7 +66,10 @@
                     ]
                 },
                 "childProperty2": {
+                    "displayName": "childProperty2",
                     "type": "number",
+                    "repeat": "false",
+                    "required": "true",
                     "default": 22
                 }
             },
@@ -50,12 +79,16 @@
     "title": "TCK Sample. RAML 1.0 Annotations 002.",
     "version": "v1",
     "baseUri": "http://api.samplehost.com/{version}",
+    "protocols": [
+        "HTTP"
+    ],
     "resources": [
         {
             "relativeUri": "/helloWorld",
             "relativeUriPathSegments": [
                 "helloWorld"
             ],
+            "displayName": "/helloWorld",
             "methods": [
                 {
                     "annotations": {
@@ -66,9 +99,17 @@
                             "childProperty1": "enum_value2"
                         }
                     },
+                    "displayName": "get",
                     "method": "get"
                 }
             ]
         }
-    ]
+    ],
+    "baseUriParameters": {
+        "version": {
+            "displayName": "version",
+            "repeat": "false",
+            "required": "true"
+        }
+    }
 }

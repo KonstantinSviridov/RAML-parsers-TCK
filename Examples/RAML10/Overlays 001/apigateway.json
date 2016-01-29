@@ -4,7 +4,10 @@
             "usage": "Data types and annotation types for AWS API Gateway",
             "types": {
                 "amazon-apigateway-method": {
+                    "displayName": "amazon-apigateway-method",
                     "example": "POST",
+                    "repeat": "false",
+                    "required": "true",
                     "enum": [
                         "GET",
                         "PATCH",
@@ -14,21 +17,40 @@
                     ]
                 },
                 "amazon-apigateway-status": {
+                    "displayName": "amazon-apigateway-status",
+                    "repeat": "false",
+                    "required": "true",
                     "pattern": "^[12345]\\d\\d$"
                 },
                 "amazon-apigateway-templates": {
+                    "displayName": "amazon-apigateway-templates",
+                    "repeat": "false",
+                    "required": "true",
                     "properties": {
-                        "[\\w+/\\w+]": {}
+                        "[\\w+/\\w+]": {
+                            "displayName": "[\\w+/\\w+]",
+                            "repeat": "false",
+                            "required": "true"
+                        }
                     }
                 },
                 "amazon-apigateway-auth-type": {
+                    "displayName": "amazon-apigateway-auth-type",
+                    "repeat": "false",
+                    "required": "true",
                     "enum": [
                         "aws_iam"
                     ]
                 },
                 "amazon-apigateway-integration-lambda": {
+                    "displayName": "amazon-apigateway-integration-lambda",
+                    "repeat": "false",
+                    "required": "true",
                     "properties": {
                         "type": {
+                            "displayName": "type",
+                            "repeat": "false",
+                            "required": "true",
                             "enum": [
                                 "lambda"
                             ]
@@ -36,8 +58,14 @@
                     }
                 },
                 "amazon-apigateway-integration-HTTP": {
+                    "displayName": "amazon-apigateway-integration-HTTP",
+                    "repeat": "false",
+                    "required": "true",
                     "properties": {
                         "type": {
+                            "displayName": "type",
+                            "repeat": "false",
+                            "required": "true",
                             "enum": [
                                 "HTTP"
                             ]
@@ -45,8 +73,14 @@
                     }
                 },
                 "amazon-apigateway-integration-mock": {
+                    "displayName": "amazon-apigateway-integration-mock",
+                    "repeat": "false",
+                    "required": "true",
                     "properties": {
                         "type": {
+                            "displayName": "type",
+                            "repeat": "false",
+                            "required": "true",
                             "enum": [
                                 "mock"
                             ]
@@ -54,6 +88,7 @@
                     }
                 },
                 "amazon-apigateway-integration-aws": {
+                    "displayName": "amazon-apigateway-integration-aws",
                     "example": {
                         "type": "aws",
                         "uri": "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:ACCOUNT_ID:function:myFunction/invocations",
@@ -92,39 +127,83 @@
                             }
                         }
                     },
+                    "repeat": "false",
+                    "required": "true",
                     "properties": {
                         "type": {
+                            "displayName": "type",
+                            "repeat": "false",
+                            "required": "true",
                             "enum": [
                                 "aws"
                             ]
                         },
-                        "uri": {},
-                        "httpMethod": {
-                            "type": "amazon-apigateway-method"
+                        "uri": {
+                            "displayName": "uri",
+                            "repeat": "false",
+                            "required": "true"
                         },
-                        "credentials": {},
+                        "httpMethod": {
+                            "displayName": "httpMethod",
+                            "type": "amazon-apigateway-method",
+                            "repeat": "false",
+                            "required": "true"
+                        },
+                        "credentials": {
+                            "displayName": "credentials",
+                            "repeat": "false",
+                            "required": "true"
+                        },
                         "requestTemplates": {
-                            "type": "amazon-apigateway-templates"
+                            "displayName": "requestTemplates",
+                            "type": "amazon-apigateway-templates",
+                            "repeat": "false",
+                            "required": "true"
                         },
                         "requestParameters": {
-                            "type": "object"
+                            "displayName": "requestParameters",
+                            "type": "object",
+                            "repeat": "false",
+                            "required": "true"
                         },
-                        "cacheNamespace": {},
+                        "cacheNamespace": {
+                            "displayName": "cacheNamespace",
+                            "repeat": "false",
+                            "required": "true"
+                        },
                         "cacheKeyParameters": {
-                            "type": "string[]"
+                            "displayName": "cacheKeyParameters",
+                            "type": "string[]",
+                            "repeat": "false",
+                            "required": "true"
                         },
                         "responses": {
+                            "displayName": "responses",
+                            "repeat": "false",
+                            "required": "true",
                             "properties": {
                                 "[]": {
+                                    "displayName": "[]",
+                                    "repeat": "false",
+                                    "required": "true",
                                     "properties": {
                                         "statusCode": {
-                                            "type": "amazon-apigateway-status"
+                                            "displayName": "statusCode",
+                                            "type": "amazon-apigateway-status",
+                                            "repeat": "false",
+                                            "required": "true"
                                         },
                                         "responseParameters": {
-                                            "type": "object"
+                                            "displayName": "responseParameters",
+                                            "type": "object",
+                                            "repeat": "false",
+                                            "required": "true"
                                         },
                                         "responseTemplates": {
-                                            "type": "amazon-apigateway-templates"
+                                            "displayName": "responseTemplates",
+                                            "type": "amazon-apigateway-templates",
+                                            "repeat": "false",
+                                            "required": "true"
                                         }
                                     }
                                 }
@@ -133,12 +212,18 @@
                     }
                 },
                 "amazon-apigateway-integration": {
-                    "type": "amazon-apigateway-integration-lambda | amazon-apigateway-integration-HTTP | amazon-apigateway-integration-mock | amazon-apigateway-integration-aws"
+                    "displayName": "amazon-apigateway-integration",
+                    "type": "amazon-apigateway-integration-lambda | amazon-apigateway-integration-HTTP | amazon-apigateway-integration-mock | amazon-apigateway-integration-aws",
+                    "repeat": "false",
+                    "required": "true"
                 }
             },
             "annotationTypes": {
                 "amazon-apigateway-auth": {
-                    "type": "amazon-apigateway-auth-type"
+                    "displayName": "amazon-apigateway-auth",
+                    "type": "amazon-apigateway-auth-type",
+                    "repeat": "false",
+                    "required": "true"
                 },
                 "amazon-apigateway-integration": {}
             },
@@ -215,6 +300,7 @@
                             }
                         }
                     },
+                    "displayName": "get",
                     "queryParameters": {
                         "latitude": {
                             "description": "Latitude component of location",

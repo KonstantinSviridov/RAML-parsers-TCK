@@ -10,26 +10,49 @@
                     },
                     "property2": "baseProperty2_value"
                 }
-            }
+            },
+            "displayName": "MyType",
+            "repeat": "false",
+            "required": "true"
         }
     },
     "annotationTypes": {
         "simpleAnnotation": {
+            "displayName": "simpleAnnotation",
+            "repeat": "false",
+            "required": "true",
             "minLength": 8,
             "maxLength": 64,
             "pattern": "[a-zA-Z0-9]{8,32}"
         },
         "objectAnnotation": {
+            "displayName": "objectAnnotation",
+            "repeat": "false",
+            "required": "true",
             "properties": {
                 "property1": {
+                    "displayName": "property1",
+                    "repeat": "false",
+                    "required": "true",
                     "properties": {
-                        "field1": {},
+                        "field1": {
+                            "displayName": "field1",
+                            "repeat": "false",
+                            "required": "true"
+                        },
                         "field2": {
-                            "type": "number"
+                            "displayName": "field2",
+                            "type": "number",
+                            "repeat": "false",
+                            "required": "true"
                         }
                     }
                 },
-                "property2": {}
+                "property2": {
+                    "displayName": "property2",
+                    "repeat": "false",
+                    "required": "true"
+                }
             },
             "allowMultiple": true
         }
@@ -37,12 +60,16 @@
     "title": "TCK Sample. RAML 1.0 Annotations 001.",
     "version": "v1",
     "baseUri": "http://api.samplehost.com/{version}",
+    "protocols": [
+        "HTTP"
+    ],
     "resources": [
         {
             "relativeUri": "/helloWorld",
             "relativeUriPathSegments": [
                 "helloWorld"
             ],
+            "displayName": "/helloWorld",
             "methods": [
                 {
                     "annotations": {
@@ -53,9 +80,17 @@
                             }
                         }
                     },
+                    "displayName": "get",
                     "method": "get"
                 }
             ]
         }
-    ]
+    ],
+    "baseUriParameters": {
+        "version": {
+            "displayName": "version",
+            "repeat": "false",
+            "required": "true"
+        }
+    }
 }
