@@ -13,7 +13,23 @@
             },
             "displayName": "MyType",
             "repeat": "false",
-            "required": "true"
+            "required": "true",
+            "__METADATA__": {
+                "primitiveValuesMeta": {
+                    "displayName": {
+                        "insertedAsDefault": true
+                    },
+                    "type": {
+                        "insertedAsDefault": true
+                    },
+                    "repeat": {
+                        "insertedAsDefault": true
+                    },
+                    "required": {
+                        "insertedAsDefault": true
+                    }
+                }
+            }
         }
     },
     "annotationTypes": {
@@ -23,7 +39,23 @@
             "required": "true",
             "minLength": 8,
             "maxLength": 64,
-            "pattern": "[a-zA-Z0-9]{8,32}"
+            "pattern": "[a-zA-Z0-9]{8,32}",
+            "__METADATA__": {
+                "primitiveValuesMeta": {
+                    "displayName": {
+                        "insertedAsDefault": true
+                    },
+                    "type": {
+                        "insertedAsDefault": true
+                    },
+                    "repeat": {
+                        "insertedAsDefault": true
+                    },
+                    "required": {
+                        "insertedAsDefault": true
+                    }
+                }
+            }
         },
         "objectAnnotation": {
             "displayName": "objectAnnotation",
@@ -38,23 +70,107 @@
                         "field1": {
                             "displayName": "field1",
                             "repeat": "false",
-                            "required": "true"
+                            "required": "true",
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "type": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "required": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
                         },
                         "field2": {
                             "displayName": "field2",
                             "type": "number",
                             "repeat": "false",
-                            "required": "true"
+                            "required": "true",
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "required": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            },
+                            "type": {
+                                "insertedAsDefault": true
+                            },
+                            "repeat": {
+                                "insertedAsDefault": true
+                            },
+                            "required": {
+                                "insertedAsDefault": true
+                            }
                         }
                     }
                 },
                 "property2": {
                     "displayName": "property2",
                     "repeat": "false",
-                    "required": "true"
+                    "required": "true",
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            },
+                            "type": {
+                                "insertedAsDefault": true
+                            },
+                            "repeat": {
+                                "insertedAsDefault": true
+                            },
+                            "required": {
+                                "insertedAsDefault": true
+                            }
+                        }
+                    }
+                }
+            },
+            "__METADATA__": {
+                "primitiveValuesMeta": {
+                    "displayName": {
+                        "insertedAsDefault": true
+                    },
+                    "type": {
+                        "insertedAsDefault": true
+                    },
+                    "repeat": {
+                        "insertedAsDefault": true
+                    },
+                    "required": {
+                        "insertedAsDefault": true
+                    }
                 }
             },
             "allowMultiple": true
+        }
+    },
+    "__METADATA__": {
+        "primitiveValuesMeta": {
+            "protocols": {
+                "calculated": true
+            }
         }
     },
     "title": "TCK Sample. RAML 1.0 Annotations 001.",
@@ -81,16 +197,47 @@
                         }
                     },
                     "displayName": "get",
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            }
+                        }
+                    },
                     "method": "get"
                 }
-            ]
+            ],
+            "__METADATA__": {
+                "primitiveValuesMeta": {
+                    "displayName": {
+                        "insertedAsDefault": true
+                    }
+                }
+            }
         }
     ],
     "baseUriParameters": {
         "version": {
             "displayName": "version",
             "repeat": "false",
-            "required": "true"
+            "required": "true",
+            "__METADATA__": {
+                "calculated": true,
+                "primitiveValuesMeta": {
+                    "displayName": {
+                        "insertedAsDefault": true
+                    },
+                    "type": {
+                        "insertedAsDefault": true
+                    },
+                    "repeat": {
+                        "insertedAsDefault": true
+                    },
+                    "required": {
+                        "insertedAsDefault": true
+                    }
+                }
+            }
         }
     }
 }

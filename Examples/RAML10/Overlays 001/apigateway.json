@@ -14,13 +14,45 @@
                         "PUT",
                         "POST",
                         "DELETE"
-                    ]
+                    ],
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            },
+                            "type": {
+                                "insertedAsDefault": true
+                            },
+                            "repeat": {
+                                "insertedAsDefault": true
+                            },
+                            "required": {
+                                "insertedAsDefault": true
+                            }
+                        }
+                    }
                 },
                 "amazon-apigateway-status": {
                     "displayName": "amazon-apigateway-status",
                     "repeat": "false",
                     "required": "true",
-                    "pattern": "^[12345]\\d\\d$"
+                    "pattern": "^[12345]\\d\\d$",
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            },
+                            "type": {
+                                "insertedAsDefault": true
+                            },
+                            "repeat": {
+                                "insertedAsDefault": true
+                            },
+                            "required": {
+                                "insertedAsDefault": true
+                            }
+                        }
+                    }
                 },
                 "amazon-apigateway-templates": {
                     "displayName": "amazon-apigateway-templates",
@@ -30,7 +62,39 @@
                         "[\\w+/\\w+]": {
                             "displayName": "[\\w+/\\w+]",
                             "repeat": "false",
-                            "required": "true"
+                            "required": "true",
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "type": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "required": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            },
+                            "type": {
+                                "insertedAsDefault": true
+                            },
+                            "repeat": {
+                                "insertedAsDefault": true
+                            },
+                            "required": {
+                                "insertedAsDefault": true
+                            }
                         }
                     }
                 },
@@ -40,7 +104,23 @@
                     "required": "true",
                     "enum": [
                         "aws_iam"
-                    ]
+                    ],
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            },
+                            "type": {
+                                "insertedAsDefault": true
+                            },
+                            "repeat": {
+                                "insertedAsDefault": true
+                            },
+                            "required": {
+                                "insertedAsDefault": true
+                            }
+                        }
+                    }
                 },
                 "amazon-apigateway-integration-lambda": {
                     "displayName": "amazon-apigateway-integration-lambda",
@@ -53,7 +133,39 @@
                             "required": "true",
                             "enum": [
                                 "lambda"
-                            ]
+                            ],
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "type": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "required": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            },
+                            "type": {
+                                "insertedAsDefault": true
+                            },
+                            "repeat": {
+                                "insertedAsDefault": true
+                            },
+                            "required": {
+                                "insertedAsDefault": true
+                            }
                         }
                     }
                 },
@@ -68,7 +180,39 @@
                             "required": "true",
                             "enum": [
                                 "HTTP"
-                            ]
+                            ],
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "type": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "required": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            },
+                            "type": {
+                                "insertedAsDefault": true
+                            },
+                            "repeat": {
+                                "insertedAsDefault": true
+                            },
+                            "required": {
+                                "insertedAsDefault": true
+                            }
                         }
                     }
                 },
@@ -83,7 +227,39 @@
                             "required": "true",
                             "enum": [
                                 "mock"
-                            ]
+                            ],
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "type": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "required": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            },
+                            "type": {
+                                "insertedAsDefault": true
+                            },
+                            "repeat": {
+                                "insertedAsDefault": true
+                            },
+                            "required": {
+                                "insertedAsDefault": true
+                            }
                         }
                     }
                 },
@@ -136,46 +312,162 @@
                             "required": "true",
                             "enum": [
                                 "aws"
-                            ]
+                            ],
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "type": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "required": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
                         },
                         "uri": {
                             "displayName": "uri",
                             "repeat": "false",
-                            "required": "true"
+                            "required": "true",
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "type": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "required": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
                         },
                         "httpMethod": {
                             "displayName": "httpMethod",
                             "type": "amazon-apigateway-method",
                             "repeat": "false",
-                            "required": "true"
+                            "required": "true",
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "required": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
                         },
                         "credentials": {
                             "displayName": "credentials",
                             "repeat": "false",
-                            "required": "true"
+                            "required": "true",
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "type": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "required": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
                         },
                         "requestTemplates": {
                             "displayName": "requestTemplates",
                             "type": "amazon-apigateway-templates",
                             "repeat": "false",
-                            "required": "true"
+                            "required": "true",
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "required": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
                         },
                         "requestParameters": {
                             "displayName": "requestParameters",
                             "type": "object",
                             "repeat": "false",
-                            "required": "true"
+                            "required": "true",
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "required": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
                         },
                         "cacheNamespace": {
                             "displayName": "cacheNamespace",
                             "repeat": "false",
-                            "required": "true"
+                            "required": "true",
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "type": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "required": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
                         },
                         "cacheKeyParameters": {
                             "displayName": "cacheKeyParameters",
                             "type": "string[]",
                             "repeat": "false",
-                            "required": "true"
+                            "required": "true",
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "required": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
                         },
                         "responses": {
                             "displayName": "responses",
@@ -191,22 +483,109 @@
                                             "displayName": "statusCode",
                                             "type": "amazon-apigateway-status",
                                             "repeat": "false",
-                                            "required": "true"
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         },
                                         "responseParameters": {
                                             "displayName": "responseParameters",
                                             "type": "object",
                                             "repeat": "false",
-                                            "required": "true"
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         },
                                         "responseTemplates": {
                                             "displayName": "responseTemplates",
                                             "type": "amazon-apigateway-templates",
                                             "repeat": "false",
-                                            "required": "true"
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "type": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            }
                                         }
                                     }
                                 }
+                            },
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "type": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "required": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            },
+                            "type": {
+                                "insertedAsDefault": true
+                            },
+                            "repeat": {
+                                "insertedAsDefault": true
+                            },
+                            "required": {
+                                "insertedAsDefault": true
                             }
                         }
                     }
@@ -215,7 +594,20 @@
                     "displayName": "amazon-apigateway-integration",
                     "type": "amazon-apigateway-integration-lambda | amazon-apigateway-integration-HTTP | amazon-apigateway-integration-mock | amazon-apigateway-integration-aws",
                     "repeat": "false",
-                    "required": "true"
+                    "required": "true",
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            },
+                            "repeat": {
+                                "insertedAsDefault": true
+                            },
+                            "required": {
+                                "insertedAsDefault": true
+                            }
+                        }
+                    }
                 }
             },
             "annotationTypes": {
@@ -223,9 +615,29 @@
                     "displayName": "amazon-apigateway-auth",
                     "type": "amazon-apigateway-auth-type",
                     "repeat": "false",
-                    "required": "true"
+                    "required": "true",
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            },
+                            "repeat": {
+                                "insertedAsDefault": true
+                            },
+                            "required": {
+                                "insertedAsDefault": true
+                            }
+                        }
+                    }
                 },
                 "amazon-apigateway-integration": {}
+            },
+            "__METADATA__": {
+                "primitiveValuesMeta": {
+                    "displayName": {
+                        "insertedAsDefault": true
+                    }
+                }
             },
             "name": "AWS"
         }
@@ -242,6 +654,13 @@
             }
         }
     ],
+    "__METADATA__": {
+        "primitiveValuesMeta": {
+            "protocols": {
+                "calculated": true
+            }
+        }
+    },
     "title": "API Gateway Test API",
     "version": "1.0.0",
     "baseUri": "https://api.uber.com",
@@ -311,6 +730,13 @@
                             "description": "Longitude component of location",
                             "type": "number",
                             "required": "true"
+                        }
+                    },
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            }
                         }
                     },
                     "method": "get"

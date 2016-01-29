@@ -1947,6 +1947,13 @@
             }
         }
     ],
+    "__METADATA__": {
+        "primitiveValuesMeta": {
+            "protocols": {
+                "calculated": true
+            }
+        }
+    },
     "title": "Instagram",
     "version": "v1",
     "baseUri": "https://api.instagram.com/{version}/",
@@ -1990,7 +1997,11 @@
                         "clientId"
                     ],
                     "uriParameters": {
-                        "mediaId": {}
+                        "mediaId": {
+                            "__METADATA__": {
+                                "calculated": true
+                            }
+                        }
                     },
                     "methods": [
                         {
@@ -2747,7 +2758,11 @@
                         "clientId"
                     ],
                     "uriParameters": {
-                        "userId": {}
+                        "userId": {
+                            "__METADATA__": {
+                                "calculated": true
+                            }
+                        }
                     },
                     "methods": [
                         {
@@ -4191,7 +4206,11 @@
                 "clientId"
             ],
             "uriParameters": {
-                "geoId": {}
+                "geoId": {
+                    "__METADATA__": {
+                        "calculated": true
+                    }
+                }
             },
             "methods": [
                 {
@@ -4394,6 +4413,10 @@
         }
     ],
     "baseUriParameters": {
-        "version": {}
+        "version": {
+            "__METADATA__": {
+                "calculated": true
+            }
+        }
     }
 }

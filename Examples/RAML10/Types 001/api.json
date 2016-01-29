@@ -21,28 +21,121 @@
                         "ARG",
                         "RUS",
                         "GB"
-                    ]
+                    ],
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            },
+                            "type": {
+                                "insertedAsDefault": true
+                            },
+                            "repeat": {
+                                "insertedAsDefault": true
+                            },
+                            "required": {
+                                "insertedAsDefault": true
+                            }
+                        }
+                    }
                 },
                 "city": {
                     "displayName": "city",
                     "repeat": "false",
-                    "required": "true"
+                    "required": "true",
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            },
+                            "type": {
+                                "insertedAsDefault": true
+                            },
+                            "repeat": {
+                                "insertedAsDefault": true
+                            },
+                            "required": {
+                                "insertedAsDefault": true
+                            }
+                        }
+                    }
                 },
                 "street": {
                     "displayName": "street",
                     "repeat": "false",
-                    "required": "true"
+                    "required": "true",
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            },
+                            "type": {
+                                "insertedAsDefault": true
+                            },
+                            "repeat": {
+                                "insertedAsDefault": true
+                            },
+                            "required": {
+                                "insertedAsDefault": true
+                            }
+                        }
+                    }
                 },
                 "house": {
                     "displayName": "house",
                     "repeat": "false",
-                    "required": "true"
+                    "required": "true",
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            },
+                            "type": {
+                                "insertedAsDefault": true
+                            },
+                            "repeat": {
+                                "insertedAsDefault": true
+                            },
+                            "required": {
+                                "insertedAsDefault": true
+                            }
+                        }
+                    }
                 },
                 "zip": {
                     "displayName": "zip",
                     "type": "number",
                     "repeat": "false",
-                    "required": "true"
+                    "required": "true",
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            },
+                            "repeat": {
+                                "insertedAsDefault": true
+                            },
+                            "required": {
+                                "insertedAsDefault": true
+                            }
+                        }
+                    }
+                }
+            },
+            "__METADATA__": {
+                "primitiveValuesMeta": {
+                    "displayName": {
+                        "insertedAsDefault": true
+                    },
+                    "type": {
+                        "insertedAsDefault": true
+                    },
+                    "repeat": {
+                        "insertedAsDefault": true
+                    },
+                    "required": {
+                        "insertedAsDefault": true
+                    }
                 }
             }
         },
@@ -53,7 +146,23 @@
             "required": "true",
             "minLength": 15,
             "maxLength": 64,
-            "pattern": "/[a-zA-Z0-9\\.]{1-32}@[a-zA-Z0-9]+\\.com/"
+            "pattern": "/[a-zA-Z0-9\\.]{1-32}@[a-zA-Z0-9]+\\.com/",
+            "__METADATA__": {
+                "primitiveValuesMeta": {
+                    "displayName": {
+                        "insertedAsDefault": true
+                    },
+                    "type": {
+                        "insertedAsDefault": true
+                    },
+                    "repeat": {
+                        "insertedAsDefault": true
+                    },
+                    "required": {
+                        "insertedAsDefault": true
+                    }
+                }
+            }
         },
         "User": {
             "displayName": "User",
@@ -94,7 +203,23 @@
                         "manager",
                         "admin",
                         "super-admin"
-                    ]
+                    ],
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            },
+                            "type": {
+                                "insertedAsDefault": true
+                            },
+                            "repeat": {
+                                "insertedAsDefault": true
+                            },
+                            "required": {
+                                "insertedAsDefault": true
+                            }
+                        }
+                    }
                 }
             },
             "properties": {
@@ -102,18 +227,60 @@
                     "displayName": "id",
                     "type": "number",
                     "repeat": "false",
-                    "required": "true"
+                    "required": "true",
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            },
+                            "repeat": {
+                                "insertedAsDefault": true
+                            },
+                            "required": {
+                                "insertedAsDefault": true
+                            }
+                        }
+                    }
                 },
                 "name": {
                     "displayName": "name",
                     "repeat": "false",
-                    "required": "true"
+                    "required": "true",
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            },
+                            "type": {
+                                "insertedAsDefault": true
+                            },
+                            "repeat": {
+                                "insertedAsDefault": true
+                            },
+                            "required": {
+                                "insertedAsDefault": true
+                            }
+                        }
+                    }
                 },
                 "email": {
                     "displayName": "email",
                     "type": "Email",
                     "repeat": "false",
-                    "required": "true"
+                    "required": "true",
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            },
+                            "repeat": {
+                                "insertedAsDefault": true
+                            },
+                            "required": {
+                                "insertedAsDefault": true
+                            }
+                        }
+                    }
                 },
                 "phone": {
                     "displayName": "phone",
@@ -121,13 +288,58 @@
                     "required": "true",
                     "minLength": 15,
                     "maxLength": 15,
-                    "pattern": "/+\\d{1}-\\d{3}-\\d{3}-\\d{4}/"
+                    "pattern": "/+\\d{1}-\\d{3}-\\d{3}-\\d{4}/",
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            },
+                            "type": {
+                                "insertedAsDefault": true
+                            },
+                            "repeat": {
+                                "insertedAsDefault": true
+                            },
+                            "required": {
+                                "insertedAsDefault": true
+                            }
+                        }
+                    }
                 },
                 "address": {
                     "displayName": "address",
                     "type": "Address",
                     "repeat": "false",
-                    "required": "true"
+                    "required": "true",
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            },
+                            "repeat": {
+                                "insertedAsDefault": true
+                            },
+                            "required": {
+                                "insertedAsDefault": true
+                            }
+                        }
+                    }
+                }
+            },
+            "__METADATA__": {
+                "primitiveValuesMeta": {
+                    "displayName": {
+                        "insertedAsDefault": true
+                    },
+                    "type": {
+                        "insertedAsDefault": true
+                    },
+                    "repeat": {
+                        "insertedAsDefault": true
+                    },
+                    "required": {
+                        "insertedAsDefault": true
+                    }
                 }
             }
         },
@@ -162,6 +374,19 @@
             "required": "true",
             "fixedFacets": {
                 "role": "manager"
+            },
+            "__METADATA__": {
+                "primitiveValuesMeta": {
+                    "displayName": {
+                        "insertedAsDefault": true
+                    },
+                    "repeat": {
+                        "insertedAsDefault": true
+                    },
+                    "required": {
+                        "insertedAsDefault": true
+                    }
+                }
             }
         },
         "Admin": {
@@ -171,13 +396,39 @@
             "required": "true",
             "fixedFacets": {
                 "role": "admin"
+            },
+            "__METADATA__": {
+                "primitiveValuesMeta": {
+                    "displayName": {
+                        "insertedAsDefault": true
+                    },
+                    "repeat": {
+                        "insertedAsDefault": true
+                    },
+                    "required": {
+                        "insertedAsDefault": true
+                    }
+                }
             }
         },
         "SuperAdmin": {
             "displayName": "SuperAdmin",
             "type": "Admin",
             "repeat": "false",
-            "required": "true"
+            "required": "true",
+            "__METADATA__": {
+                "primitiveValuesMeta": {
+                    "displayName": {
+                        "insertedAsDefault": true
+                    },
+                    "repeat": {
+                        "insertedAsDefault": true
+                    },
+                    "required": {
+                        "insertedAsDefault": true
+                    }
+                }
+            }
         },
         "Team": {
             "displayName": "Team",
@@ -188,31 +439,99 @@
                     "displayName": "id",
                     "type": "number",
                     "repeat": "false",
-                    "required": "true"
+                    "required": "true",
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            },
+                            "repeat": {
+                                "insertedAsDefault": true
+                            },
+                            "required": {
+                                "insertedAsDefault": true
+                            }
+                        }
+                    }
                 },
                 "title": {
                     "displayName": "title",
                     "repeat": "false",
                     "required": "true",
-                    "pattern": "/[A-Z][a-z]*/"
+                    "pattern": "/[A-Z][a-z]*/",
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            },
+                            "type": {
+                                "insertedAsDefault": true
+                            },
+                            "repeat": {
+                                "insertedAsDefault": true
+                            },
+                            "required": {
+                                "insertedAsDefault": true
+                            }
+                        }
+                    }
                 },
                 "manager": {
                     "displayName": "manager",
                     "type": "Manager",
                     "repeat": "false",
-                    "required": "true"
+                    "required": "true",
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            },
+                            "repeat": {
+                                "insertedAsDefault": true
+                            },
+                            "required": {
+                                "insertedAsDefault": true
+                            }
+                        }
+                    }
                 },
                 "admin": {
                     "displayName": "admin",
                     "type": "Admin|SuperAdmin",
                     "repeat": "false",
-                    "required": "true"
+                    "required": "true",
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            },
+                            "repeat": {
+                                "insertedAsDefault": true
+                            },
+                            "required": {
+                                "insertedAsDefault": true
+                            }
+                        }
+                    }
                 },
                 "members": {
                     "displayName": "members",
                     "type": "User[]",
                     "repeat": "false",
-                    "required": "true"
+                    "required": "true",
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            },
+                            "repeat": {
+                                "insertedAsDefault": true
+                            },
+                            "required": {
+                                "insertedAsDefault": true
+                            }
+                        }
+                    }
                 },
                 "info": {
                     "displayName": "info",
@@ -223,22 +542,100 @@
                             "displayName": "address",
                             "type": "Address",
                             "repeat": "false",
-                            "required": "true"
+                            "required": "true",
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "required": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
                         },
                         "email": {
                             "displayName": "email",
                             "type": "Email",
                             "repeat": "false",
-                            "required": "true"
+                            "required": "true",
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "required": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
                         },
                         "size": {
                             "displayName": "size",
                             "type": "number",
                             "repeat": "false",
-                            "required": "true"
+                            "required": "true",
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "required": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            },
+                            "type": {
+                                "insertedAsDefault": true
+                            },
+                            "repeat": {
+                                "insertedAsDefault": true
+                            },
+                            "required": {
+                                "insertedAsDefault": true
+                            }
                         }
                     }
                 }
+            },
+            "__METADATA__": {
+                "primitiveValuesMeta": {
+                    "displayName": {
+                        "insertedAsDefault": true
+                    },
+                    "type": {
+                        "insertedAsDefault": true
+                    },
+                    "repeat": {
+                        "insertedAsDefault": true
+                    },
+                    "required": {
+                        "insertedAsDefault": true
+                    }
+                }
+            }
+        }
+    },
+    "__METADATA__": {
+        "primitiveValuesMeta": {
+            "protocols": {
+                "calculated": true
             }
         }
     },
@@ -258,6 +655,13 @@
             "methods": [
                 {
                     "displayName": "get",
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            }
+                        }
+                    },
                     "responses": {
                         "200": {
                             "body": {
@@ -265,7 +669,27 @@
                                     "displayName": "application/xml",
                                     "type": "Team[]",
                                     "repeat": "false",
-                                    "required": "true"
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "insertedAsDefault": true
+                                    }
                                 }
                             }
                         }
@@ -275,6 +699,13 @@
                 {
                     "description": "create new team with desired title",
                     "displayName": "post",
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            }
+                        }
+                    },
                     "body": {
                         "applciation/json": {
                             "displayName": "applciation/json",
@@ -285,7 +716,39 @@
                                     "displayName": "title",
                                     "repeat": "false",
                                     "required": "true",
-                                    "pattern": "[A-Z][a-z]*"
+                                    "pattern": "[A-Z][a-z]*",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "type": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "type": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "required": {
+                                        "insertedAsDefault": true
+                                    }
                                 }
                             }
                         }
@@ -297,7 +760,27 @@
                                     "displayName": "application/json",
                                     "type": "User",
                                     "repeat": "false",
-                                    "required": "true"
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "insertedAsDefault": true
+                                    }
                                 }
                             }
                         }
@@ -316,12 +799,36 @@
                         "id": {
                             "displayName": "id",
                             "repeat": "false",
-                            "required": "true"
+                            "required": "true",
+                            "__METADATA__": {
+                                "calculated": true,
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "type": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "required": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
                         }
                     },
                     "methods": [
                         {
                             "displayName": "get",
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            },
                             "responses": {
                                 "200": {
                                     "body": {
@@ -329,7 +836,27 @@
                                             "displayName": "application/json",
                                             "type": "Team",
                                             "repeat": "false",
-                                            "required": "true"
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "insertedAsDefault": true
+                                            }
                                         }
                                     }
                                 },
@@ -338,16 +865,53 @@
                                         "text/plain": {
                                             "displayName": "text/plain",
                                             "repeat": "false",
-                                            "required": "true"
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "type": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "insertedAsDefault": true
+                                            }
                                         }
                                     }
                                 }
                             },
                             "method": "get"
                         }
-                    ]
+                    ],
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            }
+                        }
+                    }
                 }
-            ]
+            ],
+            "__METADATA__": {
+                "primitiveValuesMeta": {
+                    "displayName": {
+                        "insertedAsDefault": true
+                    }
+                }
+            }
         },
         {
             "relativeUri": "/users",
@@ -358,6 +922,13 @@
             "methods": [
                 {
                     "displayName": "get",
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            }
+                        }
+                    },
                     "responses": {
                         "200": {
                             "body": {
@@ -365,14 +936,41 @@
                                     "displayName": "application/json",
                                     "type": "User[]",
                                     "repeat": "false",
-                                    "required": "true"
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "insertedAsDefault": true
+                                    }
                                 }
                             }
                         }
                     },
                     "method": "get"
                 }
-            ]
+            ],
+            "__METADATA__": {
+                "primitiveValuesMeta": {
+                    "displayName": {
+                        "insertedAsDefault": true
+                    }
+                }
+            }
         },
         {
             "relativeUri": "/users/{id}",
@@ -385,12 +983,36 @@
                 "id": {
                     "displayName": "id",
                     "repeat": "false",
-                    "required": "true"
+                    "required": "true",
+                    "__METADATA__": {
+                        "calculated": true,
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            },
+                            "type": {
+                                "insertedAsDefault": true
+                            },
+                            "repeat": {
+                                "insertedAsDefault": true
+                            },
+                            "required": {
+                                "insertedAsDefault": true
+                            }
+                        }
+                    }
                 }
             },
             "methods": [
                 {
                     "displayName": "get",
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "insertedAsDefault": true
+                            }
+                        }
+                    },
                     "responses": {
                         "200": {
                             "body": {
@@ -398,21 +1020,65 @@
                                     "displayName": "application/json",
                                     "type": "User",
                                     "repeat": "false",
-                                    "required": "true"
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "insertedAsDefault": true
+                                    }
                                 }
                             }
                         }
                     },
                     "method": "get"
                 }
-            ]
+            ],
+            "__METADATA__": {
+                "primitiveValuesMeta": {
+                    "displayName": {
+                        "insertedAsDefault": true
+                    }
+                }
+            }
         }
     ],
     "baseUriParameters": {
         "version": {
             "displayName": "version",
             "repeat": "false",
-            "required": "true"
+            "required": "true",
+            "__METADATA__": {
+                "calculated": true,
+                "primitiveValuesMeta": {
+                    "displayName": {
+                        "insertedAsDefault": true
+                    },
+                    "type": {
+                        "insertedAsDefault": true
+                    },
+                    "repeat": {
+                        "insertedAsDefault": true
+                    },
+                    "required": {
+                        "insertedAsDefault": true
+                    }
+                }
+            }
         }
     }
 }
