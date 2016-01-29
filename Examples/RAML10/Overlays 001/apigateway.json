@@ -5,6 +5,7 @@
             "types": {
                 "amazon-apigateway-method": {
                     "displayName": "amazon-apigateway-method",
+                    "type": "string",
                     "example": "POST",
                     "repeat": "false",
                     "required": "true",
@@ -34,6 +35,7 @@
                 },
                 "amazon-apigateway-status": {
                     "displayName": "amazon-apigateway-status",
+                    "type": "string",
                     "repeat": "false",
                     "required": "true",
                     "pattern": "^[12345]\\d\\d$",
@@ -56,11 +58,13 @@
                 },
                 "amazon-apigateway-templates": {
                     "displayName": "amazon-apigateway-templates",
+                    "type": "string",
                     "repeat": "false",
                     "required": "true",
                     "properties": {
                         "[\\w+/\\w+]": {
                             "displayName": "[\\w+/\\w+]",
+                            "type": "string",
                             "repeat": "false",
                             "required": "true",
                             "__METADATA__": {
@@ -100,6 +104,7 @@
                 },
                 "amazon-apigateway-auth-type": {
                     "displayName": "amazon-apigateway-auth-type",
+                    "type": "string",
                     "repeat": "false",
                     "required": "true",
                     "enum": [
@@ -124,11 +129,13 @@
                 },
                 "amazon-apigateway-integration-lambda": {
                     "displayName": "amazon-apigateway-integration-lambda",
+                    "type": "string",
                     "repeat": "false",
                     "required": "true",
                     "properties": {
                         "type": {
                             "displayName": "type",
+                            "type": "string",
                             "repeat": "false",
                             "required": "true",
                             "enum": [
@@ -171,11 +178,13 @@
                 },
                 "amazon-apigateway-integration-HTTP": {
                     "displayName": "amazon-apigateway-integration-HTTP",
+                    "type": "string",
                     "repeat": "false",
                     "required": "true",
                     "properties": {
                         "type": {
                             "displayName": "type",
+                            "type": "string",
                             "repeat": "false",
                             "required": "true",
                             "enum": [
@@ -218,11 +227,13 @@
                 },
                 "amazon-apigateway-integration-mock": {
                     "displayName": "amazon-apigateway-integration-mock",
+                    "type": "string",
                     "repeat": "false",
                     "required": "true",
                     "properties": {
                         "type": {
                             "displayName": "type",
+                            "type": "string",
                             "repeat": "false",
                             "required": "true",
                             "enum": [
@@ -265,6 +276,7 @@
                 },
                 "amazon-apigateway-integration-aws": {
                     "displayName": "amazon-apigateway-integration-aws",
+                    "type": "string",
                     "example": {
                         "type": "aws",
                         "uri": "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:ACCOUNT_ID:function:myFunction/invocations",
@@ -308,6 +320,7 @@
                     "properties": {
                         "type": {
                             "displayName": "type",
+                            "type": "string",
                             "repeat": "false",
                             "required": "true",
                             "enum": [
@@ -332,6 +345,7 @@
                         },
                         "uri": {
                             "displayName": "uri",
+                            "type": "string",
                             "repeat": "false",
                             "required": "true",
                             "__METADATA__": {
@@ -372,6 +386,7 @@
                         },
                         "credentials": {
                             "displayName": "credentials",
+                            "type": "string",
                             "repeat": "false",
                             "required": "true",
                             "__METADATA__": {
@@ -431,6 +446,7 @@
                         },
                         "cacheNamespace": {
                             "displayName": "cacheNamespace",
+                            "type": "string",
                             "repeat": "false",
                             "required": "true",
                             "__METADATA__": {
@@ -471,11 +487,13 @@
                         },
                         "responses": {
                             "displayName": "responses",
+                            "type": "string",
                             "repeat": "false",
                             "required": "true",
                             "properties": {
                                 "[]": {
                                     "displayName": "[]",
+                                    "type": "string",
                                     "repeat": "false",
                                     "required": "true",
                                     "properties": {
@@ -648,7 +666,9 @@
                 "type": "Pass Through",
                 "describedBy": {
                     "headers": {
-                        "x-api-key": {}
+                        "x-api-key": {
+                            "type": null
+                        }
                     }
                 }
             }

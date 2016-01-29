@@ -2,6 +2,7 @@
     "types": {
         "Address": {
             "displayName": "Address",
+            "type": "string",
             "example": {
                 "country": "US",
                 "city": "SF",
@@ -14,6 +15,7 @@
             "properties": {
                 "country": {
                     "displayName": "country",
+                    "type": "string",
                     "repeat": "false",
                     "required": "true",
                     "enum": [
@@ -41,6 +43,7 @@
                 },
                 "city": {
                     "displayName": "city",
+                    "type": "string",
                     "repeat": "false",
                     "required": "true",
                     "__METADATA__": {
@@ -62,6 +65,7 @@
                 },
                 "street": {
                     "displayName": "street",
+                    "type": "string",
                     "repeat": "false",
                     "required": "true",
                     "__METADATA__": {
@@ -83,6 +87,7 @@
                 },
                 "house": {
                     "displayName": "house",
+                    "type": "string",
                     "repeat": "false",
                     "required": "true",
                     "__METADATA__": {
@@ -141,6 +146,7 @@
         },
         "Email": {
             "displayName": "Email",
+            "type": "string",
             "example": "press@mulesoft.com",
             "repeat": "false",
             "required": "true",
@@ -166,6 +172,7 @@
         },
         "User": {
             "displayName": "User",
+            "type": "string",
             "examples": [
                 {
                     "id": "11",
@@ -195,6 +202,7 @@
             "facets": {
                 "role": {
                     "displayName": "role",
+                    "type": "string",
                     "repeat": "false",
                     "required": "true",
                     "default": "user",
@@ -244,6 +252,7 @@
                 },
                 "name": {
                     "displayName": "name",
+                    "type": "string",
                     "repeat": "false",
                     "required": "true",
                     "__METADATA__": {
@@ -284,6 +293,7 @@
                 },
                 "phone": {
                     "displayName": "phone",
+                    "type": "string",
                     "repeat": "false",
                     "required": "true",
                     "minLength": 15,
@@ -432,6 +442,7 @@
         },
         "Team": {
             "displayName": "Team",
+            "type": "string",
             "repeat": "false",
             "required": "true",
             "properties": {
@@ -456,6 +467,7 @@
                 },
                 "title": {
                     "displayName": "title",
+                    "type": "string",
                     "repeat": "false",
                     "required": "true",
                     "pattern": "/[A-Z][a-z]*/",
@@ -535,6 +547,7 @@
                 },
                 "info": {
                     "displayName": "info",
+                    "type": "string",
                     "repeat": "false",
                     "required": "true",
                     "properties": {
@@ -709,11 +722,13 @@
                     "body": {
                         "applciation/json": {
                             "displayName": "applciation/json",
+                            "type": "string",
                             "repeat": "false",
                             "required": "true",
                             "properties": {
                                 "title": {
                                     "displayName": "title",
+                                    "type": "string",
                                     "repeat": "false",
                                     "required": "true",
                                     "pattern": "[A-Z][a-z]*",
@@ -798,6 +813,7 @@
                     "uriParameters": {
                         "id": {
                             "displayName": "id",
+                            "type": "string",
                             "repeat": "false",
                             "required": "true",
                             "__METADATA__": {
@@ -864,6 +880,7 @@
                                     "body": {
                                         "text/plain": {
                                             "displayName": "text/plain",
+                                            "type": "string",
                                             "repeat": "false",
                                             "required": "true",
                                             "__METADATA__": {
@@ -982,6 +999,7 @@
             "uriParameters": {
                 "id": {
                     "displayName": "id",
+                    "type": "string",
                     "repeat": "false",
                     "required": "true",
                     "__METADATA__": {
@@ -1060,6 +1078,7 @@
     "baseUriParameters": {
         "version": {
             "displayName": "version",
+            "type": "string",
             "repeat": "false",
             "required": "true",
             "__METADATA__": {

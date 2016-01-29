@@ -12,6 +12,7 @@
                 }
             },
             "displayName": "MyType",
+            "type": "string",
             "repeat": "false",
             "required": "true",
             "__METADATA__": {
@@ -35,6 +36,7 @@
     "annotationTypes": {
         "simpleAnnotation": {
             "displayName": "simpleAnnotation",
+            "type": "string",
             "repeat": "false",
             "required": "true",
             "minLength": 8,
@@ -59,16 +61,19 @@
         },
         "objectAnnotation": {
             "displayName": "objectAnnotation",
+            "type": "string",
             "repeat": "false",
             "required": "true",
             "properties": {
                 "property1": {
                     "displayName": "property1",
+                    "type": "string",
                     "repeat": "false",
                     "required": "true",
                     "properties": {
                         "field1": {
                             "displayName": "field1",
+                            "type": "string",
                             "repeat": "false",
                             "required": "true",
                             "__METADATA__": {
@@ -127,6 +132,7 @@
                 },
                 "property2": {
                     "displayName": "property2",
+                    "type": "string",
                     "repeat": "false",
                     "required": "true",
                     "__METADATA__": {
@@ -219,6 +225,7 @@
     "baseUriParameters": {
         "version": {
             "displayName": "version",
+            "type": "string",
             "repeat": "false",
             "required": "true",
             "__METADATA__": {

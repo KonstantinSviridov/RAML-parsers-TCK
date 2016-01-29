@@ -2,16 +2,19 @@
     "types": {
         "baseAnnotation": {
             "displayName": "baseAnnotation",
+            "type": "string",
             "repeat": "false",
             "required": "true",
             "properties": {
                 "baseProperty1": {
                     "displayName": "baseProperty1",
+                    "type": "string",
                     "repeat": "false",
                     "required": "true",
                     "properties": {
                         "field1": {
                             "displayName": "field1",
+                            "type": "string",
                             "repeat": "false",
                             "required": "true",
                             "__METADATA__": {
@@ -70,6 +73,7 @@
                 },
                 "baseProperty2": {
                     "displayName": "baseProperty2",
+                    "type": "string",
                     "repeat": "false",
                     "required": "true",
                     "__METADATA__": {
@@ -120,6 +124,7 @@
                 }
             },
             "displayName": "MyType",
+            "type": "string",
             "repeat": "false",
             "required": "true",
             "__METADATA__": {
@@ -149,6 +154,7 @@
             "properties": {
                 "childProperty1": {
                     "displayName": "childProperty1",
+                    "type": "string",
                     "repeat": "false",
                     "required": "true",
                     "default": "enum_defaultValue",
@@ -264,6 +270,7 @@
     "baseUriParameters": {
         "version": {
             "displayName": "version",
+            "type": "string",
             "repeat": "false",
             "required": "true",
             "__METADATA__": {
