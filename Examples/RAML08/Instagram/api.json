@@ -607,6 +607,7 @@
             "relativeUriPathSegments": [
                 "media"
             ],
+            "displayName": "/media",
             "securedBy": [
                 "oauth_2_0",
                 "clientId"
@@ -617,6 +618,7 @@
                     "relativeUriPathSegments": [
                         "{mediaId}"
                     ],
+                    "displayName": "/{mediaId}",
                     "type": "base",
                     "securedBy": [
                         "oauth_2_0",
@@ -626,7 +628,25 @@
                         "mediaId": {
                             "displayName": "mediaId",
                             "type": "string",
-                            "required": true
+                            "repeat": "false",
+                            "required": "true",
+                            "__METADATA__": {
+                                "calculated": true,
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    },
+                                    "type": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "required": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
                         }
                     },
                     "methods": [
@@ -636,6 +656,7 @@
                             "protocols": [
                                 "HTTPS"
                             ],
+                            "displayName": "get",
                             "securedBy": [
                                 "oauth_2_0",
                                 "clientId"
@@ -645,13 +666,46 @@
                                     "description": "Number of items you would like to receive.",
                                     "displayName": "count",
                                     "type": "integer",
-                                    "example": "1"
+                                    "example": "1",
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 },
                                 "callback": {
                                     "description": "Callback function name. All output will be wrapper under this function name.\n",
                                     "displayName": "callback",
                                     "type": "string",
-                                    "example": "callbackFunction"
+                                    "example": "callbackFunction",
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "type": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 }
                             },
                             "is": [
@@ -670,6 +724,13 @@
                                 "503": {
                                     "description": "Server Unavailable. Check Your Rate Limits.\n"
                                 }
+                            },
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    }
+                                }
                             }
                         }
                     ],
@@ -679,6 +740,7 @@
                             "relativeUriPathSegments": [
                                 "comments"
                             ],
+                            "displayName": "/comments",
                             "type": {
                                 "secured": {
                                     "scope": "comments"
@@ -694,6 +756,7 @@
                                     "protocols": [
                                         "HTTPS"
                                     ],
+                                    "displayName": "get",
                                     "securedBy": [
                                         "oauth_2_0"
                                     ],
@@ -702,13 +765,46 @@
                                             "description": "Number of items you would like to receive.",
                                             "displayName": "count",
                                             "type": "integer",
-                                            "example": "1"
+                                            "example": "1",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         },
                                         "callback": {
                                             "description": "Callback function name. All output will be wrapper under this function name.\n",
                                             "displayName": "callback",
                                             "type": "string",
-                                            "example": "callbackFunction"
+                                            "example": "callbackFunction",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "type": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         }
                                     },
                                     "is": [
@@ -727,6 +823,13 @@
                                         "503": {
                                             "description": "Server Unavailable. Check Your Rate Limits.\n"
                                         }
+                                    },
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            }
+                                        }
                                     }
                                 },
                                 {
@@ -735,6 +838,7 @@
                                     "protocols": [
                                         "HTTPS"
                                     ],
+                                    "displayName": "post",
                                     "securedBy": [
                                         "oauth_2_0"
                                     ],
@@ -745,7 +849,21 @@
                                                     "description": "Text to post as a comment on the media as specified in {mediaId}.",
                                                     "displayName": "text",
                                                     "type": "string",
-                                                    "required": "true"
+                                                    "repeat": "false",
+                                                    "required": "true",
+                                                    "__METADATA__": {
+                                                        "primitiveValuesMeta": {
+                                                            "displayName": {
+                                                                "calculated": true
+                                                            },
+                                                            "type": {
+                                                                "insertedAsDefault": true
+                                                            },
+                                                            "repeat": {
+                                                                "insertedAsDefault": true
+                                                            }
+                                                        }
+                                                    }
                                                 }
                                             }
                                         }
@@ -762,6 +880,13 @@
                                         "503": {
                                             "description": "Server Unavailable. Check Your Rate Limits.\n"
                                         }
+                                    },
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            }
+                                        }
                                     }
                                 }
                             ],
@@ -771,6 +896,7 @@
                                     "relativeUriPathSegments": [
                                         "{commentId}"
                                     ],
+                                    "displayName": "/{commentId}",
                                     "type": {
                                         "secured": {
                                             "scope": "comments"
@@ -784,7 +910,21 @@
                                             "description": "Identifier of the comment",
                                             "displayName": "commentId",
                                             "type": "integer",
-                                            "required": true
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         }
                                     },
                                     "methods": [
@@ -794,6 +934,7 @@
                                             "protocols": [
                                                 "HTTPS"
                                             ],
+                                            "displayName": "delete",
                                             "securedBy": [
                                                 "oauth_2_0"
                                             ],
@@ -810,17 +951,39 @@
                                                 "503": {
                                                     "description": "Server Unavailable. Check Your Rate Limits.\n"
                                                 }
+                                            },
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    }
+                                                }
                                             }
                                         }
-                                    ]
+                                    ],
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            }
+                                        }
+                                    }
                                 }
-                            ]
+                            ],
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    }
+                                }
+                            }
                         },
                         {
                             "relativeUri": "/likes",
                             "relativeUriPathSegments": [
                                 "likes"
                             ],
+                            "displayName": "/likes",
                             "type": {
                                 "secured": {
                                     "scope": "likes"
@@ -836,6 +999,7 @@
                                     "protocols": [
                                         "HTTPS"
                                     ],
+                                    "displayName": "get",
                                     "securedBy": [
                                         "oauth_2_0"
                                     ],
@@ -844,13 +1008,46 @@
                                             "description": "Number of items you would like to receive.",
                                             "displayName": "count",
                                             "type": "integer",
-                                            "example": "1"
+                                            "example": "1",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         },
                                         "callback": {
                                             "description": "Callback function name. All output will be wrapper under this function name.\n",
                                             "displayName": "callback",
                                             "type": "string",
-                                            "example": "callbackFunction"
+                                            "example": "callbackFunction",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "type": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         }
                                     },
                                     "is": [
@@ -869,6 +1066,13 @@
                                         "503": {
                                             "description": "Server Unavailable. Check Your Rate Limits.\n"
                                         }
+                                    },
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            }
+                                        }
                                     }
                                 },
                                 {
@@ -877,6 +1081,7 @@
                                     "protocols": [
                                         "HTTPS"
                                     ],
+                                    "displayName": "post",
                                     "securedBy": [
                                         "oauth_2_0"
                                     ],
@@ -893,6 +1098,13 @@
                                         "503": {
                                             "description": "Server Unavailable. Check Your Rate Limits.\n"
                                         }
+                                    },
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            }
+                                        }
                                     }
                                 },
                                 {
@@ -901,6 +1113,7 @@
                                     "protocols": [
                                         "HTTPS"
                                     ],
+                                    "displayName": "delete",
                                     "securedBy": [
                                         "oauth_2_0"
                                     ],
@@ -919,17 +1132,39 @@
                                         "503": {
                                             "description": "Server Unavailable. Check Your Rate Limits.\n"
                                         }
+                                    },
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            }
+                                        }
                                     }
                                 }
-                            ]
+                            ],
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    }
+                                }
+                            }
                         }
-                    ]
+                    ],
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "calculated": true
+                            }
+                        }
+                    }
                 },
                 {
                     "relativeUri": "/search",
                     "relativeUriPathSegments": [
                         "search"
                     ],
+                    "displayName": "/search",
                     "type": "mediaSearch",
                     "securedBy": [
                         "oauth_2_0",
@@ -942,6 +1177,7 @@
                             "protocols": [
                                 "HTTPS"
                             ],
+                            "displayName": "get",
                             "securedBy": [
                                 "oauth_2_0",
                                 "clientId"
@@ -950,40 +1186,148 @@
                                 "max_timestamp": {
                                     "description": "Return media before this UNIX timestamp.",
                                     "displayName": "max_timestamp",
-                                    "type": "integer"
+                                    "type": "integer",
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 },
                                 "min_timestamp": {
                                     "description": "Return media after this UNIX timestamp.",
                                     "displayName": "min_timestamp",
-                                    "type": "integer"
+                                    "type": "integer",
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 },
                                 "lat": {
                                     "description": "Latitude of the center search coordinate. If used, lng is required.",
                                     "displayName": "lat",
-                                    "type": "number"
+                                    "type": "number",
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 },
                                 "lng": {
                                     "description": "Longitude of the center search coordinate. If used, lat is required.",
                                     "displayName": "lng",
-                                    "type": "number"
+                                    "type": "number",
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 },
                                 "distance": {
                                     "description": "Default is 1000m (distance=1000), max distance is 5000.",
                                     "displayName": "distance",
                                     "type": "integer",
-                                    "default": 1000
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "default": 1000,
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 },
                                 "count": {
                                     "description": "Number of items you would like to receive.",
                                     "displayName": "count",
                                     "type": "integer",
-                                    "example": "1"
+                                    "example": "1",
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 },
                                 "callback": {
                                     "description": "Callback function name. All output will be wrapper under this function name.\n",
                                     "displayName": "callback",
                                     "type": "string",
-                                    "example": "callbackFunction"
+                                    "example": "callbackFunction",
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "type": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 }
                             },
                             "is": [
@@ -1004,15 +1348,30 @@
                                 "503": {
                                     "description": "Server Unavailable. Check Your Rate Limits.\n"
                                 }
+                            },
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    }
+                                }
                             }
                         }
-                    ]
+                    ],
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "calculated": true
+                            }
+                        }
+                    }
                 },
                 {
                     "relativeUri": "/popular",
                     "relativeUriPathSegments": [
                         "popular"
                     ],
+                    "displayName": "/popular",
                     "type": "mediaSearch",
                     "securedBy": [
                         "oauth_2_0",
@@ -1025,6 +1384,7 @@
                             "protocols": [
                                 "HTTPS"
                             ],
+                            "displayName": "get",
                             "securedBy": [
                                 "oauth_2_0",
                                 "clientId"
@@ -1034,13 +1394,46 @@
                                     "description": "Number of items you would like to receive.",
                                     "displayName": "count",
                                     "type": "integer",
-                                    "example": "1"
+                                    "example": "1",
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 },
                                 "callback": {
                                     "description": "Callback function name. All output will be wrapper under this function name.\n",
                                     "displayName": "callback",
                                     "type": "string",
-                                    "example": "callbackFunction"
+                                    "example": "callbackFunction",
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "type": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 }
                             },
                             "is": [
@@ -1059,17 +1452,39 @@
                                 "503": {
                                     "description": "Server Unavailable. Check Your Rate Limits.\n"
                                 }
+                            },
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    }
+                                }
                             }
                         }
-                    ]
+                    ],
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "calculated": true
+                            }
+                        }
+                    }
                 }
-            ]
+            ],
+            "__METADATA__": {
+                "primitiveValuesMeta": {
+                    "displayName": {
+                        "calculated": true
+                    }
+                }
+            }
         },
         {
             "relativeUri": "/tags",
             "relativeUriPathSegments": [
                 "tags"
             ],
+            "displayName": "/tags",
             "securedBy": [
                 "oauth_2_0",
                 "clientId"
@@ -1080,6 +1495,7 @@
                     "relativeUriPathSegments": [
                         "{tagName}"
                     ],
+                    "displayName": "/{tagName}",
                     "type": "base",
                     "securedBy": [
                         "oauth_2_0",
@@ -1090,7 +1506,24 @@
                             "description": "Name of tag.",
                             "displayName": "tagName",
                             "type": "string",
-                            "required": true
+                            "repeat": "false",
+                            "required": "true",
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    },
+                                    "type": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "required": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
                         }
                     },
                     "methods": [
@@ -1100,6 +1533,7 @@
                             "protocols": [
                                 "HTTPS"
                             ],
+                            "displayName": "get",
                             "securedBy": [
                                 "oauth_2_0",
                                 "clientId"
@@ -1109,13 +1543,46 @@
                                     "description": "Number of items you would like to receive.",
                                     "displayName": "count",
                                     "type": "integer",
-                                    "example": "1"
+                                    "example": "1",
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 },
                                 "callback": {
                                     "description": "Callback function name. All output will be wrapper under this function name.\n",
                                     "displayName": "callback",
                                     "type": "string",
-                                    "example": "callbackFunction"
+                                    "example": "callbackFunction",
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "type": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 }
                             },
                             "is": [
@@ -1134,6 +1601,13 @@
                                 "503": {
                                     "description": "Server Unavailable. Check Your Rate Limits.\n"
                                 }
+                            },
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    }
+                                }
                             }
                         }
                     ],
@@ -1144,6 +1618,7 @@
                                 "media",
                                 "recent"
                             ],
+                            "displayName": "/media/recent",
                             "type": "base",
                             "securedBy": [
                                 "oauth_2_0",
@@ -1156,6 +1631,7 @@
                                     "protocols": [
                                         "HTTPS"
                                     ],
+                                    "displayName": "get",
                                     "securedBy": [
                                         "oauth_2_0",
                                         "clientId"
@@ -1164,24 +1640,87 @@
                                         "min_id": {
                                             "description": "Return media later than this min_id.",
                                             "displayName": "min_id",
-                                            "type": "integer"
+                                            "type": "integer",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         },
                                         "max_id": {
                                             "description": "Return media earlier than this max_id.",
                                             "displayName": "max_id",
-                                            "type": "integer"
+                                            "type": "integer",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         },
                                         "count": {
                                             "description": "Number of items you would like to receive.",
                                             "displayName": "count",
                                             "type": "integer",
-                                            "example": "1"
+                                            "example": "1",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         },
                                         "callback": {
                                             "description": "Callback function name. All output will be wrapper under this function name.\n",
                                             "displayName": "callback",
                                             "type": "string",
-                                            "example": "callbackFunction"
+                                            "example": "callbackFunction",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "type": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         }
                                     },
                                     "is": [
@@ -1201,17 +1740,39 @@
                                         "503": {
                                             "description": "Server Unavailable. Check Your Rate Limits.\n"
                                         }
+                                    },
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            }
+                                        }
                                     }
                                 }
-                            ]
+                            ],
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    }
+                                }
+                            }
                         }
-                    ]
+                    ],
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "calculated": true
+                            }
+                        }
+                    }
                 },
                 {
                     "relativeUri": "/search",
                     "relativeUriPathSegments": [
                         "search"
                     ],
+                    "displayName": "/search",
                     "type": "base",
                     "securedBy": [
                         "oauth_2_0",
@@ -1224,6 +1785,7 @@
                             "protocols": [
                                 "HTTPS"
                             ],
+                            "displayName": "get",
                             "securedBy": [
                                 "oauth_2_0",
                                 "clientId"
@@ -1234,19 +1796,66 @@
                                     "displayName": "q",
                                     "type": "string",
                                     "example": "nofilter",
-                                    "required": "true"
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "type": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 },
                                 "count": {
                                     "description": "Number of items you would like to receive.",
                                     "displayName": "count",
                                     "type": "integer",
-                                    "example": "1"
+                                    "example": "1",
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 },
                                 "callback": {
                                     "description": "Callback function name. All output will be wrapper under this function name.\n",
                                     "displayName": "callback",
                                     "type": "string",
-                                    "example": "callbackFunction"
+                                    "example": "callbackFunction",
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "type": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 }
                             },
                             "is": [
@@ -1265,17 +1874,39 @@
                                 "503": {
                                     "description": "Server Unavailable. Check Your Rate Limits.\n"
                                 }
+                            },
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    }
+                                }
                             }
                         }
-                    ]
+                    ],
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "calculated": true
+                            }
+                        }
+                    }
                 }
-            ]
+            ],
+            "__METADATA__": {
+                "primitiveValuesMeta": {
+                    "displayName": {
+                        "calculated": true
+                    }
+                }
+            }
         },
         {
             "relativeUri": "/users",
             "relativeUriPathSegments": [
                 "users"
             ],
+            "displayName": "/users",
             "securedBy": [
                 "oauth_2_0",
                 "clientId"
@@ -1286,6 +1917,7 @@
                     "relativeUriPathSegments": [
                         "{userId}"
                     ],
+                    "displayName": "/{userId}",
                     "type": "base",
                     "securedBy": [
                         "oauth_2_0",
@@ -1295,7 +1927,25 @@
                         "userId": {
                             "displayName": "userId",
                             "type": "string",
-                            "required": true
+                            "repeat": "false",
+                            "required": "true",
+                            "__METADATA__": {
+                                "calculated": true,
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    },
+                                    "type": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "required": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
                         }
                     },
                     "methods": [
@@ -1305,6 +1955,7 @@
                             "protocols": [
                                 "HTTPS"
                             ],
+                            "displayName": "get",
                             "securedBy": [
                                 "oauth_2_0",
                                 "clientId"
@@ -1314,13 +1965,46 @@
                                     "description": "Number of items you would like to receive.",
                                     "displayName": "count",
                                     "type": "integer",
-                                    "example": "1"
+                                    "example": "1",
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 },
                                 "callback": {
                                     "description": "Callback function name. All output will be wrapper under this function name.\n",
                                     "displayName": "callback",
                                     "type": "string",
-                                    "example": "callbackFunction"
+                                    "example": "callbackFunction",
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "type": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 }
                             },
                             "is": [
@@ -1339,6 +2023,13 @@
                                 "503": {
                                     "description": "Server Unavailable. Check Your Rate Limits.\n"
                                 }
+                            },
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    }
+                                }
                             }
                         }
                     ],
@@ -1348,6 +2039,7 @@
                             "relativeUriPathSegments": [
                                 "follows"
                             ],
+                            "displayName": "/follows",
                             "type": "usersListing",
                             "securedBy": [
                                 "oauth_2_0"
@@ -1359,6 +2051,7 @@
                                     "protocols": [
                                         "HTTPS"
                                     ],
+                                    "displayName": "get",
                                     "securedBy": [
                                         "oauth_2_0"
                                     ],
@@ -1367,13 +2060,46 @@
                                             "description": "Number of items you would like to receive.",
                                             "displayName": "count",
                                             "type": "integer",
-                                            "example": "1"
+                                            "example": "1",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         },
                                         "callback": {
                                             "description": "Callback function name. All output will be wrapper under this function name.\n",
                                             "displayName": "callback",
                                             "type": "string",
-                                            "example": "callbackFunction"
+                                            "example": "callbackFunction",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "type": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         }
                                     },
                                     "is": [
@@ -1392,15 +2118,30 @@
                                         "503": {
                                             "description": "Server Unavailable. Check Your Rate Limits.\n"
                                         }
+                                    },
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            }
+                                        }
                                     }
                                 }
-                            ]
+                            ],
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    }
+                                }
+                            }
                         },
                         {
                             "relativeUri": "/followed-by",
                             "relativeUriPathSegments": [
                                 "followed-by"
                             ],
+                            "displayName": "/followed-by",
                             "type": "usersListing",
                             "securedBy": [
                                 "oauth_2_0"
@@ -1412,6 +2153,7 @@
                                     "protocols": [
                                         "HTTPS"
                                     ],
+                                    "displayName": "get",
                                     "securedBy": [
                                         "oauth_2_0"
                                     ],
@@ -1420,13 +2162,46 @@
                                             "description": "Number of items you would like to receive.",
                                             "displayName": "count",
                                             "type": "integer",
-                                            "example": "1"
+                                            "example": "1",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         },
                                         "callback": {
                                             "description": "Callback function name. All output will be wrapper under this function name.\n",
                                             "displayName": "callback",
                                             "type": "string",
-                                            "example": "callbackFunction"
+                                            "example": "callbackFunction",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "type": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         }
                                     },
                                     "is": [
@@ -1445,9 +2220,23 @@
                                         "503": {
                                             "description": "Server Unavailable. Check Your Rate Limits.\n"
                                         }
+                                    },
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            }
+                                        }
                                     }
                                 }
-                            ]
+                            ],
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    }
+                                }
+                            }
                         },
                         {
                             "relativeUri": "/media/recent",
@@ -1455,6 +2244,7 @@
                                 "media",
                                 "recent"
                             ],
+                            "displayName": "/media/recent",
                             "type": "feedsListing",
                             "securedBy": [
                                 "oauth_2_0",
@@ -1467,6 +2257,7 @@
                                     "protocols": [
                                         "HTTPS"
                                     ],
+                                    "displayName": "get",
                                     "securedBy": [
                                         "oauth_2_0",
                                         "clientId"
@@ -1475,34 +2266,127 @@
                                         "min_id": {
                                             "description": "Return media later than this min_id.",
                                             "displayName": "min_id",
-                                            "type": "integer"
+                                            "type": "integer",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         },
                                         "max_id": {
                                             "description": "Return media earlier than this max_id.",
                                             "displayName": "max_id",
-                                            "type": "integer"
+                                            "type": "integer",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         },
                                         "max_timestamp": {
                                             "description": "Return media before this UNIX timestamp.",
                                             "displayName": "max_timestamp",
-                                            "type": "integer"
+                                            "type": "integer",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         },
                                         "min_timestamp": {
                                             "description": "Return media after this UNIX timestamp.",
                                             "displayName": "min_timestamp",
-                                            "type": "integer"
+                                            "type": "integer",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         },
                                         "count": {
                                             "description": "Number of items you would like to receive.",
                                             "displayName": "count",
                                             "type": "integer",
-                                            "example": "1"
+                                            "example": "1",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         },
                                         "callback": {
                                             "description": "Callback function name. All output will be wrapper under this function name.\n",
                                             "displayName": "callback",
                                             "type": "string",
-                                            "example": "callbackFunction"
+                                            "example": "callbackFunction",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "type": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         }
                                     },
                                     "is": [
@@ -1523,15 +2407,30 @@
                                         "503": {
                                             "description": "Server Unavailable. Check Your Rate Limits.\n"
                                         }
+                                    },
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            }
+                                        }
                                     }
                                 }
-                            ]
+                            ],
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    }
+                                }
+                            }
                         },
                         {
                             "relativeUri": "/relationship",
                             "relativeUriPathSegments": [
                                 "relationship"
                             ],
+                            "displayName": "/relationship",
                             "type": {
                                 "secured": {
                                     "scope": "comments"
@@ -1547,6 +2446,7 @@
                                     "protocols": [
                                         "HTTPS"
                                     ],
+                                    "displayName": "get",
                                     "securedBy": [
                                         "oauth_2_0"
                                     ],
@@ -1555,13 +2455,46 @@
                                             "description": "Number of items you would like to receive.",
                                             "displayName": "count",
                                             "type": "integer",
-                                            "example": "1"
+                                            "example": "1",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         },
                                         "callback": {
                                             "description": "Callback function name. All output will be wrapper under this function name.\n",
                                             "displayName": "callback",
                                             "type": "string",
-                                            "example": "callbackFunction"
+                                            "example": "callbackFunction",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "type": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         }
                                     },
                                     "is": [
@@ -1580,6 +2513,13 @@
                                         "503": {
                                             "description": "Server Unavailable. Check Your Rate Limits.\n"
                                         }
+                                    },
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            }
+                                        }
                                     }
                                 },
                                 {
@@ -1588,6 +2528,7 @@
                                     "protocols": [
                                         "HTTPS"
                                     ],
+                                    "displayName": "post",
                                     "securedBy": [
                                         "oauth_2_0"
                                     ],
@@ -1598,6 +2539,8 @@
                                                     "description": "One of follow/unfollow/block/unblock/approve/deny.",
                                                     "displayName": "action",
                                                     "type": "string",
+                                                    "repeat": "false",
+                                                    "required": "true",
                                                     "enum": [
                                                         "follow",
                                                         "unfollow",
@@ -1605,7 +2548,23 @@
                                                         "unblock",
                                                         "approve",
                                                         "deny"
-                                                    ]
+                                                    ],
+                                                    "__METADATA__": {
+                                                        "primitiveValuesMeta": {
+                                                            "displayName": {
+                                                                "calculated": true
+                                                            },
+                                                            "type": {
+                                                                "insertedAsDefault": true
+                                                            },
+                                                            "required": {
+                                                                "insertedAsDefault": true
+                                                            },
+                                                            "repeat": {
+                                                                "insertedAsDefault": true
+                                                            }
+                                                        }
+                                                    }
                                                 }
                                             }
                                         }
@@ -1622,17 +2581,39 @@
                                         "503": {
                                             "description": "Server Unavailable. Check Your Rate Limits.\n"
                                         }
+                                    },
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            }
+                                        }
                                     }
                                 }
-                            ]
+                            ],
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    }
+                                }
+                            }
                         }
-                    ]
+                    ],
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "calculated": true
+                            }
+                        }
+                    }
                 },
                 {
                     "relativeUri": "/search",
                     "relativeUriPathSegments": [
                         "search"
                     ],
+                    "displayName": "/search",
                     "type": "usersListing",
                     "securedBy": [
                         "oauth_2_0"
@@ -1644,6 +2625,7 @@
                             "protocols": [
                                 "HTTPS"
                             ],
+                            "displayName": "get",
                             "securedBy": [
                                 "oauth_2_0"
                             ],
@@ -1653,19 +2635,66 @@
                                     "displayName": "q",
                                     "type": "string",
                                     "example": "some query",
-                                    "required": "true"
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "type": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 },
                                 "count": {
                                     "description": "Number of users to return.",
                                     "displayName": "count",
                                     "type": "integer",
-                                    "example": "10"
+                                    "example": "10",
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 },
                                 "callback": {
                                     "description": "Callback function name. All output will be wrapper under this function name.\n",
                                     "displayName": "callback",
                                     "type": "string",
-                                    "example": "callbackFunction"
+                                    "example": "callbackFunction",
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "type": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 }
                             },
                             "is": [
@@ -1684,15 +2713,30 @@
                                 "503": {
                                     "description": "Server Unavailable. Check Your Rate Limits.\n"
                                 }
+                            },
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    }
+                                }
                             }
                         }
-                    ]
+                    ],
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "calculated": true
+                            }
+                        }
+                    }
                 },
                 {
                     "relativeUri": "/self",
                     "relativeUriPathSegments": [
                         "self"
                     ],
+                    "displayName": "/self",
                     "type": {
                         "secured": {
                             "scope": "basic"
@@ -1708,6 +2752,7 @@
                             "protocols": [
                                 "HTTPS"
                             ],
+                            "displayName": "get",
                             "securedBy": [
                                 "oauth_2_0"
                             ],
@@ -1716,13 +2761,46 @@
                                     "description": "Number of items you would like to receive.",
                                     "displayName": "count",
                                     "type": "integer",
-                                    "example": "1"
+                                    "example": "1",
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 },
                                 "callback": {
                                     "description": "Callback function name. All output will be wrapper under this function name.\n",
                                     "displayName": "callback",
                                     "type": "string",
-                                    "example": "callbackFunction"
+                                    "example": "callbackFunction",
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "type": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 }
                             },
                             "is": [
@@ -1741,6 +2819,13 @@
                                 "503": {
                                     "description": "Server Unavailable. Check Your Rate Limits.\n"
                                 }
+                            },
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    }
+                                }
                             }
                         }
                     ],
@@ -1750,6 +2835,7 @@
                             "relativeUriPathSegments": [
                                 "feed"
                             ],
+                            "displayName": "/feed",
                             "type": "feedsListing",
                             "securedBy": [
                                 "oauth_2_0",
@@ -1762,6 +2848,7 @@
                                     "protocols": [
                                         "HTTPS"
                                     ],
+                                    "displayName": "get",
                                     "securedBy": [
                                         "oauth_2_0",
                                         "clientId"
@@ -1770,24 +2857,87 @@
                                         "min_id": {
                                             "description": "Return media later than this min_id.",
                                             "displayName": "min_id",
-                                            "type": "integer"
+                                            "type": "integer",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         },
                                         "max_id": {
                                             "description": "Return media earlier than this max_id.",
                                             "displayName": "max_id",
-                                            "type": "integer"
+                                            "type": "integer",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         },
                                         "count": {
                                             "description": "Number of items you would like to receive.",
                                             "displayName": "count",
                                             "type": "integer",
-                                            "example": "1"
+                                            "example": "1",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         },
                                         "callback": {
                                             "description": "Callback function name. All output will be wrapper under this function name.\n",
                                             "displayName": "callback",
                                             "type": "string",
-                                            "example": "callbackFunction"
+                                            "example": "callbackFunction",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "type": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         }
                                     },
                                     "is": [
@@ -1807,15 +2957,30 @@
                                         "503": {
                                             "description": "Server Unavailable. Check Your Rate Limits.\n"
                                         }
+                                    },
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            }
+                                        }
                                     }
                                 }
-                            ]
+                            ],
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    }
+                                }
+                            }
                         },
                         {
                             "relativeUri": "/requested-by",
                             "relativeUriPathSegments": [
                                 "requested-by"
                             ],
+                            "displayName": "/requested-by",
                             "type": "usersListing",
                             "securedBy": [
                                 "oauth_2_0",
@@ -1828,6 +2993,7 @@
                                     "protocols": [
                                         "HTTPS"
                                     ],
+                                    "displayName": "get",
                                     "securedBy": [
                                         "oauth_2_0",
                                         "oauth_2_0"
@@ -1837,13 +3003,46 @@
                                             "description": "Number of items you would like to receive.",
                                             "displayName": "count",
                                             "type": "integer",
-                                            "example": "1"
+                                            "example": "1",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         },
                                         "callback": {
                                             "description": "Callback function name. All output will be wrapper under this function name.\n",
                                             "displayName": "callback",
                                             "type": "string",
-                                            "example": "callbackFunction"
+                                            "example": "callbackFunction",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "type": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         }
                                     },
                                     "is": [
@@ -1862,9 +3061,23 @@
                                         "503": {
                                             "description": "Server Unavailable. Check Your Rate Limits.\n"
                                         }
+                                    },
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            }
+                                        }
                                     }
                                 }
-                            ]
+                            ],
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    }
+                                }
+                            }
                         },
                         {
                             "relativeUri": "/media/liked",
@@ -1872,6 +3085,7 @@
                                 "media",
                                 "liked"
                             ],
+                            "displayName": "/media/liked",
                             "type": "feedsListing",
                             "securedBy": [
                                 "oauth_2_0",
@@ -1884,6 +3098,7 @@
                                     "protocols": [
                                         "HTTPS"
                                     ],
+                                    "displayName": "get",
                                     "securedBy": [
                                         "oauth_2_0",
                                         "clientId"
@@ -1893,19 +3108,67 @@
                                             "description": "Return media liked before this id.",
                                             "displayName": "max_like_id",
                                             "type": "integer",
-                                            "example": "100"
+                                            "example": "100",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         },
                                         "count": {
                                             "description": "Number of items you would like to receive.",
                                             "displayName": "count",
                                             "type": "integer",
-                                            "example": "1"
+                                            "example": "1",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         },
                                         "callback": {
                                             "description": "Callback function name. All output will be wrapper under this function name.\n",
                                             "displayName": "callback",
                                             "type": "string",
-                                            "example": "callbackFunction"
+                                            "example": "callbackFunction",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "type": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         }
                                     },
                                     "is": [
@@ -1924,19 +3187,48 @@
                                         "503": {
                                             "description": "Server Unavailable. Check Your Rate Limits.\n"
                                         }
+                                    },
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            }
+                                        }
                                     }
                                 }
-                            ]
+                            ],
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    }
+                                }
+                            }
                         }
-                    ]
+                    ],
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "calculated": true
+                            }
+                        }
+                    }
                 }
-            ]
+            ],
+            "__METADATA__": {
+                "primitiveValuesMeta": {
+                    "displayName": {
+                        "calculated": true
+                    }
+                }
+            }
         },
         {
             "relativeUri": "/locations",
             "relativeUriPathSegments": [
                 "locations"
             ],
+            "displayName": "/locations",
             "securedBy": [
                 "oauth_2_0",
                 "clientId"
@@ -1947,6 +3239,7 @@
                     "relativeUriPathSegments": [
                         "{locId}"
                     ],
+                    "displayName": "/{locId}",
                     "type": "base",
                     "securedBy": [
                         "oauth_2_0",
@@ -1956,7 +3249,21 @@
                         "locId": {
                             "displayName": "locId",
                             "type": "integer",
-                            "required": true
+                            "repeat": "false",
+                            "required": "true",
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    },
+                                    "required": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
                         }
                     },
                     "methods": [
@@ -1966,6 +3273,7 @@
                             "protocols": [
                                 "HTTPS"
                             ],
+                            "displayName": "get",
                             "securedBy": [
                                 "oauth_2_0",
                                 "clientId"
@@ -1975,13 +3283,46 @@
                                     "description": "Number of items you would like to receive.",
                                     "displayName": "count",
                                     "type": "integer",
-                                    "example": "1"
+                                    "example": "1",
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 },
                                 "callback": {
                                     "description": "Callback function name. All output will be wrapper under this function name.\n",
                                     "displayName": "callback",
                                     "type": "string",
-                                    "example": "callbackFunction"
+                                    "example": "callbackFunction",
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "type": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 }
                             },
                             "is": [
@@ -2000,6 +3341,13 @@
                                 "503": {
                                     "description": "Server Unavailable. Check Your Rate Limits.\n"
                                 }
+                            },
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    }
+                                }
                             }
                         }
                     ],
@@ -2010,6 +3358,7 @@
                                 "media",
                                 "recent"
                             ],
+                            "displayName": "/media/recent",
                             "type": "feedsListing",
                             "securedBy": [
                                 "oauth_2_0",
@@ -2022,6 +3371,7 @@
                                     "protocols": [
                                         "HTTPS"
                                     ],
+                                    "displayName": "get",
                                     "securedBy": [
                                         "oauth_2_0",
                                         "clientId"
@@ -2030,34 +3380,127 @@
                                         "min_id": {
                                             "description": "Return media later than this min_id.",
                                             "displayName": "min_id",
-                                            "type": "integer"
+                                            "type": "integer",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         },
                                         "max_id": {
                                             "description": "Return media earlier than this max_id.",
                                             "displayName": "max_id",
-                                            "type": "integer"
+                                            "type": "integer",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         },
                                         "max_timestamp": {
                                             "description": "Return media before this UNIX timestamp.",
                                             "displayName": "max_timestamp",
-                                            "type": "integer"
+                                            "type": "integer",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         },
                                         "min_timestamp": {
                                             "description": "Return media after this UNIX timestamp.",
                                             "displayName": "min_timestamp",
-                                            "type": "integer"
+                                            "type": "integer",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         },
                                         "count": {
                                             "description": "Number of items you would like to receive.",
                                             "displayName": "count",
                                             "type": "integer",
-                                            "example": "1"
+                                            "example": "1",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         },
                                         "callback": {
                                             "description": "Callback function name. All output will be wrapper under this function name.\n",
                                             "displayName": "callback",
                                             "type": "string",
-                                            "example": "callbackFunction"
+                                            "example": "callbackFunction",
+                                            "repeat": "false",
+                                            "required": "true",
+                                            "__METADATA__": {
+                                                "primitiveValuesMeta": {
+                                                    "displayName": {
+                                                        "calculated": true
+                                                    },
+                                                    "type": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "required": {
+                                                        "insertedAsDefault": true
+                                                    },
+                                                    "repeat": {
+                                                        "insertedAsDefault": true
+                                                    }
+                                                }
+                                            }
                                         }
                                     },
                                     "is": [
@@ -2078,17 +3521,39 @@
                                         "503": {
                                             "description": "Server Unavailable. Check Your Rate Limits.\n"
                                         }
+                                    },
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            }
+                                        }
                                     }
                                 }
-                            ]
+                            ],
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    }
+                                }
+                            }
                         }
-                    ]
+                    ],
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "calculated": true
+                            }
+                        }
+                    }
                 },
                 {
                     "relativeUri": "/search",
                     "relativeUriPathSegments": [
                         "search"
                     ],
+                    "displayName": "/search",
                     "type": "base",
                     "securedBy": [
                         "oauth_2_0",
@@ -2101,6 +3566,7 @@
                             "protocols": [
                                 "HTTPS"
                             ],
+                            "displayName": "get",
                             "securedBy": [
                                 "oauth_2_0",
                                 "clientId"
@@ -2109,40 +3575,154 @@
                                 "foursquare_v2_id": {
                                     "description": "Returns a location mapped off of a foursquare v2 api location id. If\nused, you are not required to use lat and lng.\n",
                                     "displayName": "foursquare_v2_id",
-                                    "type": "string"
+                                    "type": "string",
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "type": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 },
                                 "foursquare_id": {
                                     "description": "Returns a location mapped off of a foursquare v1 api location id. If used,\nyou are not required to use lat and lng. Note that this method is deprecated;\nyou should use the new foursquare IDs with V2 of their API.\n",
                                     "displayName": "foursquare_id",
-                                    "type": "string"
+                                    "type": "string",
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "type": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 },
                                 "lat": {
                                     "description": "Latitude of the center search coordinate. If used, lng is required.",
                                     "displayName": "lat",
-                                    "type": "number"
+                                    "type": "number",
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 },
                                 "lng": {
                                     "description": "Longitude of the center search coordinate. If used, lat is required.",
                                     "displayName": "lng",
-                                    "type": "number"
+                                    "type": "number",
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 },
                                 "distance": {
                                     "description": "Default is 1000m (distance=1000), max distance is 5000.",
                                     "displayName": "distance",
                                     "type": "integer",
-                                    "default": 1000
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "default": 1000,
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 },
                                 "count": {
                                     "description": "Number of items you would like to receive.",
                                     "displayName": "count",
                                     "type": "integer",
-                                    "example": "1"
+                                    "example": "1",
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 },
                                 "callback": {
                                     "description": "Callback function name. All output will be wrapper under this function name.\n",
                                     "displayName": "callback",
                                     "type": "string",
-                                    "example": "callbackFunction"
+                                    "example": "callbackFunction",
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "type": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 }
                             },
                             "is": [
@@ -2162,11 +3742,32 @@
                                 "503": {
                                     "description": "Server Unavailable. Check Your Rate Limits.\n"
                                 }
+                            },
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    }
+                                }
                             }
                         }
-                    ]
+                    ],
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "calculated": true
+                            }
+                        }
+                    }
                 }
-            ]
+            ],
+            "__METADATA__": {
+                "primitiveValuesMeta": {
+                    "displayName": {
+                        "calculated": true
+                    }
+                }
+            }
         },
         {
             "relativeUri": "/geographies/{geoId}/media/recent",
@@ -2176,6 +3777,7 @@
                 "media",
                 "recent"
             ],
+            "displayName": "/geographies/{geoId}/media/recent",
             "type": "base",
             "securedBy": [
                 "oauth_2_0",
@@ -2185,7 +3787,25 @@
                 "geoId": {
                     "displayName": "geoId",
                     "type": "string",
-                    "required": true
+                    "repeat": "false",
+                    "required": "true",
+                    "__METADATA__": {
+                        "calculated": true,
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "calculated": true
+                            },
+                            "type": {
+                                "insertedAsDefault": true
+                            },
+                            "required": {
+                                "insertedAsDefault": true
+                            },
+                            "repeat": {
+                                "insertedAsDefault": true
+                            }
+                        }
+                    }
                 }
             },
             "methods": [
@@ -2195,6 +3815,7 @@
                     "protocols": [
                         "HTTPS"
                     ],
+                    "displayName": "get",
                     "securedBy": [
                         "oauth_2_0",
                         "clientId"
@@ -2204,19 +3825,67 @@
                             "description": "Return media before this min_id.",
                             "displayName": "min_id",
                             "type": "integer",
-                            "example": "0"
+                            "example": "0",
+                            "repeat": "false",
+                            "required": "true",
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    },
+                                    "required": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
                         },
                         "count": {
                             "description": "Number of items you would like to receive.",
                             "displayName": "count",
                             "type": "integer",
-                            "example": "1"
+                            "example": "1",
+                            "repeat": "false",
+                            "required": "true",
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    },
+                                    "required": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
                         },
                         "callback": {
                             "description": "Callback function name. All output will be wrapper under this function name.\n",
                             "displayName": "callback",
                             "type": "string",
-                            "example": "callbackFunction"
+                            "example": "callbackFunction",
+                            "repeat": "false",
+                            "required": "true",
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    },
+                                    "type": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "required": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
                         }
                     },
                     "is": [
@@ -2228,15 +3897,30 @@
                         "503": {
                             "description": "Server Unavailable. Check Your Rate Limits.\n"
                         }
+                    },
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "calculated": true
+                            }
+                        }
                     }
                 }
-            ]
+            ],
+            "__METADATA__": {
+                "primitiveValuesMeta": {
+                    "displayName": {
+                        "calculated": true
+                    }
+                }
+            }
         },
         {
             "relativeUri": "/subscriptions",
             "relativeUriPathSegments": [
                 "subscriptions"
             ],
+            "displayName": "/subscriptions",
             "type": "base",
             "securedBy": [
                 "oauth_2_0",
@@ -2249,6 +3933,7 @@
                     "protocols": [
                         "HTTPS"
                     ],
+                    "displayName": "get",
                     "securedBy": [
                         "oauth_2_0"
                     ],
@@ -2257,25 +3942,86 @@
                             "description": "Application's client id",
                             "displayName": "client_id",
                             "type": "string",
-                            "required": "true"
+                            "repeat": "false",
+                            "required": "true",
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    },
+                                    "type": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
                         },
                         "client_secret": {
                             "description": "Application's client secret",
                             "displayName": "client_secret",
                             "type": "string",
-                            "required": "true"
+                            "repeat": "false",
+                            "required": "true",
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    },
+                                    "type": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
                         },
                         "count": {
                             "description": "Number of items you would like to receive.",
                             "displayName": "count",
                             "type": "integer",
-                            "example": "1"
+                            "example": "1",
+                            "repeat": "false",
+                            "required": "true",
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    },
+                                    "required": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
                         },
                         "callback": {
                             "description": "Callback function name. All output will be wrapper under this function name.\n",
                             "displayName": "callback",
                             "type": "string",
-                            "example": "callbackFunction"
+                            "example": "callbackFunction",
+                            "repeat": "false",
+                            "required": "true",
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    },
+                                    "type": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "required": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
                         }
                     },
                     "is": [
@@ -2294,6 +4040,13 @@
                         "503": {
                             "description": "Server Unavailable. Check Your Rate Limits.\n"
                         }
+                    },
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "calculated": true
+                            }
+                        }
                     }
                 },
                 {
@@ -2302,6 +4055,7 @@
                     "protocols": [
                         "HTTPS"
                     ],
+                    "displayName": "post",
                     "securedBy": [
                         "oauth_2_0",
                         "clientId"
@@ -2313,55 +4067,193 @@
                                     "description": "Application's client id",
                                     "displayName": "client_id",
                                     "type": "string",
-                                    "required": "true"
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "type": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 },
                                 "client_secret": {
                                     "description": "Application's client secret",
                                     "displayName": "client_secret",
                                     "type": "string",
-                                    "required": "true"
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "type": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 },
                                 "object": {
                                     "description": "The object you'd like to subscribe to.",
                                     "displayName": "object",
                                     "type": "string",
+                                    "repeat": "false",
+                                    "required": "true",
                                     "enum": [
                                         "location",
                                         "user",
                                         "geography",
                                         "tag"
-                                    ]
+                                    ],
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "type": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 },
                                 "object_id": {
                                     "description": "Used for user, location and tag subscriptions only. Required. In case of user and location represents 'id' of the desired object. In case of tag represents 'name' of the desired tag.",
                                     "displayName": "object_id",
-                                    "type": "string"
+                                    "type": "string",
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "type": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 },
                                 "aspect": {
                                     "description": "The aspect of the object you'd like to subscribe to. Note that we only support \"media\" at this time, but we might support other types of subscriptions in the future.\n",
                                     "displayName": "aspect",
-                                    "type": "string"
+                                    "type": "string",
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "type": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 },
                                 "callback_url": {
                                     "description": "When we have new updates to send your server, we do a simple POST with a payload containing updates to a URL on your server. This callback URL must support GET and POST methods.\n\nWhen you add a subscription, we will send a GET request to your callback URL to verify the existence of the URL and that want to create the subscription. When we have new data, we'll POST this data to your callback URL. We'll explain more about what this URL needs to do later on this page.\n",
                                     "displayName": "callback_url",
                                     "type": "string",
-                                    "required": "true"
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "type": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 },
                                 "lat": {
                                     "description": "Geography area's center latitude. Used for geography subscription only. Required.",
                                     "displayName": "lat",
-                                    "type": "number"
+                                    "type": "number",
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 },
                                 "lng": {
                                     "description": "Geography area's center longitude. Used for geography subscription only. Required.",
                                     "displayName": "lng",
-                                    "type": "number"
+                                    "type": "number",
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 },
                                 "radius": {
                                     "description": "Geography area's radius.Used for geography subscription only. Required.",
                                     "displayName": "radius",
-                                    "type": "number"
+                                    "type": "number",
+                                    "repeat": "false",
+                                    "required": "true",
+                                    "__METADATA__": {
+                                        "primitiveValuesMeta": {
+                                            "displayName": {
+                                                "calculated": true
+                                            },
+                                            "required": {
+                                                "insertedAsDefault": true
+                                            },
+                                            "repeat": {
+                                                "insertedAsDefault": true
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -2378,6 +4270,13 @@
                         "503": {
                             "description": "Server Unavailable. Check Your Rate Limits.\n"
                         }
+                    },
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "calculated": true
+                            }
+                        }
                     }
                 },
                 {
@@ -2386,6 +4285,7 @@
                     "protocols": [
                         "HTTPS"
                     ],
+                    "displayName": "delete",
                     "securedBy": [
                         "oauth_2_0"
                     ],
@@ -2394,30 +4294,94 @@
                             "description": "Application's client id",
                             "displayName": "client_id",
                             "type": "string",
-                            "required": "true"
+                            "repeat": "false",
+                            "required": "true",
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    },
+                                    "type": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
                         },
                         "client_secret": {
                             "description": "Application's client secret",
                             "displayName": "client_secret",
                             "type": "string",
-                            "required": "true"
+                            "repeat": "false",
+                            "required": "true",
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    },
+                                    "type": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
                         },
                         "id": {
                             "description": "Id of subscription to be removed.",
                             "displayName": "id",
-                            "type": "string"
+                            "type": "string",
+                            "repeat": "false",
+                            "required": "true",
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    },
+                                    "type": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "required": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
                         },
                         "object": {
                             "description": "If you'd like to remove all subscriptions of a certain object type, you may include the object type. Also you can clear all your current subscriptions by setting 'object' to 'all'.",
                             "displayName": "object",
                             "type": "string",
+                            "repeat": "false",
+                            "required": "true",
                             "enum": [
                                 "geography",
                                 "location",
                                 "tag",
                                 "user",
                                 "all"
-                            ]
+                            ],
+                            "__METADATA__": {
+                                "primitiveValuesMeta": {
+                                    "displayName": {
+                                        "calculated": true
+                                    },
+                                    "type": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "required": {
+                                        "insertedAsDefault": true
+                                    },
+                                    "repeat": {
+                                        "insertedAsDefault": true
+                                    }
+                                }
+                            }
                         }
                     },
                     "responses": {
@@ -2432,9 +4396,23 @@
                         "503": {
                             "description": "Server Unavailable. Check Your Rate Limits.\n"
                         }
+                    },
+                    "__METADATA__": {
+                        "primitiveValuesMeta": {
+                            "displayName": {
+                                "calculated": true
+                            }
+                        }
                     }
                 }
-            ]
+            ],
+            "__METADATA__": {
+                "primitiveValuesMeta": {
+                    "displayName": {
+                        "calculated": true
+                    }
+                }
+            }
         }
     ],
     "baseUriParameters": {
@@ -2444,6 +4422,7 @@
             "repeat": "false",
             "required": "true",
             "__METADATA__": {
+                "calculated": true,
                 "primitiveValuesMeta": {
                     "displayName": {
                         "calculated": true
