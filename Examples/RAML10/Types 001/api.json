@@ -532,7 +532,7 @@
                 },
                 "members": {
                     "displayName": "members",
-                    "type": "User[]",
+                    "type": "(User|Team)[]",
                     "repeat": "false",
                     "required": "true",
                     "__METADATA__": {
